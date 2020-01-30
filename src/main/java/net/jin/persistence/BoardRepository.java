@@ -5,6 +5,7 @@
  * Created on : Jan 2020 
  * Contents : BoardRepository for Board object
  */
+
 package net.jin.persistence;
 
 import org.springframework.data.repository.CrudRepository;
