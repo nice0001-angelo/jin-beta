@@ -1,3 +1,10 @@
+/*
+ * This is a Jin-beta Project
+ * File name : Board.java
+ * Created by : Jinhyun
+ * Created on : Jan 2020 
+ * Contents : Board table object
+ */
 package net.jin.domain;
 
 import java.sql.Timestamp;

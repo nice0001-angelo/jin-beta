@@ -1,3 +1,10 @@
+/*
+ * This is a Jin-beta Project
+ * File name : BoardRepositoryTests.java
+ * Created by : Jinhyun
+ * Created on : Jan 2020 
+ * Contents : JUnit test
+ */
 package net.jin;
 
 
@@ -16,11 +23,6 @@ public class BoardRepositoryTests {
 	
 	@Autowired
 	private BoardRepository boardRepo;
-	
-	@Test
-	public void inspect() {
-		
-	}
 	
 	@Test
 	public void insert() {
