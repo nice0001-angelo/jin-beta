@@ -1,3 +1,10 @@
+/*
+ * This is a Jin-beta Project
+ * File name : Users.java
+ * Created by : Jinhyun
+ * Created on : Jan 2020
+ * Contents : Table Object
+ */
 package net.jin.model;
 
 import javax.persistence.Entity;
