@@ -22,6 +22,8 @@ public class JoinService {
 			users.setUser_id(userId);
 			users.setUser_pw(userPw);
 			users.setUser_name(userName);
+			
+			usersRepository.save(users);
 	}
 	
 	
