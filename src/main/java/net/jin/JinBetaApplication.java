@@ -1,3 +1,10 @@
+/*
+ * This is a Jin-beta Project
+ * File name : JinBetaApplication.java
+ * Created by : Jinhyun
+ * Created on : Jan 2020
+ * Contents : Main Application.java
+ */
 package net.jin;
 
 import org.springframework.boot.SpringApplication;
