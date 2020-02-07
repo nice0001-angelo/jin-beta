@@ -1,3 +1,10 @@
+/*
+ * This is a Jin-beta Project
+ * File name : UsersController.java
+ * Created by : Jinhyun
+ * Created on : Jan 2020
+ * Contents : for the UsersController
+ */
 package net.jin.controller;
 
 import javax.servlet.http.HttpServletRequest;
