@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainController {
 	
-	@RequestMapping(value = "/")
+	@RequestMapping("")
 	public String index() {
 		return "index";
 	}
 	
-	@RequestMapping(value="/joinPage")
+	@RequestMapping("/joinPage")
 	public String joinPage() {
 		return "join";
 	}
