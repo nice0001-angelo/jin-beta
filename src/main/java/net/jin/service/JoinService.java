@@ -13,6 +13,7 @@ import net.jin.model.Users;
 import net.jin.repository.UsersRepository;
 
 public class JoinService {
+	
 	public void joinUser(HttpServletRequest request, UsersRepository usersRepository) {
 			String userId = request.getParameter("user_id");
 			String userPw = request.getParameter("user_pw");

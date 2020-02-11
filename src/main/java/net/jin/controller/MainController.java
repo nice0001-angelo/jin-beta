@@ -8,17 +8,17 @@
 package net.jin.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
 	
-	@RequestMapping(value="/")
+	@GetMapping("/")
 	public String index() {
 		return "index";
 	}
 	
-	@RequestMapping(value="/joinPage")
+	@GetMapping("/joinPage")
 	public String joinPage() {
 		return "join";
 	}
