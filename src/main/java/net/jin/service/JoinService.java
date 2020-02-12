@@ -9,12 +9,17 @@ package net.jin.service;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import net.jin.model.Users;
 import net.jin.repository.UsersRepository;
 
 public class JoinService {
 	
-	public void joinUser(HttpServletRequest request, UsersRepository usersRepository) {
+	@Autowired
+	public UsersRepository usersRepository; 
+	
+	public void joinUser(HttpServletRequest request) {
 			String userId = request.getParameter("user_id");
 			String userPw = request.getParameter("user_pw");
 			String userName = request.getParameter("user_name");
