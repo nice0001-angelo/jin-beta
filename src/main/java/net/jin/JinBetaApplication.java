@@ -18,6 +18,7 @@ public class JinBetaApplication {
 
 /********************************** Start of Test Code *************************************/
 		System.out.println();
+		System.out.println();
 		System.out.println("Hello World");
 		System.out.println();
 		
