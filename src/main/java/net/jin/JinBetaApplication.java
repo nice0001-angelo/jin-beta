@@ -18,7 +18,8 @@ public class JinBetaApplication {
 
 /********************************** Start of Test Code *************************************/
 		System.out.println();
-		System.out.println("Hello Test");
+		System.out.println("Hello World");
+		System.out.println();
 		
 /*********************************** End of Test Code *******************************************/		
 	}
