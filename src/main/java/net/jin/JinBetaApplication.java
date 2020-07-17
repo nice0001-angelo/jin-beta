@@ -15,6 +15,12 @@ public class JinBetaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JinBetaApplication.class, args);
+
+/********************************** Start of Test Code *************************************/
+		System.out.println();
+		System.out.println("Hello Test");
+		
+/*********************************** End of Test Code *******************************************/		
 	}
 
 }
