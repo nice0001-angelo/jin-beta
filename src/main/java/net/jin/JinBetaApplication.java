@@ -21,6 +21,7 @@ public class JinBetaApplication {
 		System.out.println();
 		System.out.println("Hello World");
 		System.out.println();
+		System.out.println();
 		
 /*********************************** End of Test Code *******************************************/		
 	}
