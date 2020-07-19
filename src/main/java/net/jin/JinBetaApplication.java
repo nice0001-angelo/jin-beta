@@ -36,10 +36,10 @@ public class JinBetaApplication {
 				break;
 			}
 		}
-
+		System.out.println();
 		System.out.println("End");
 		
-
+		
 		
 		
 /*********************************** End of Test Code *******************************************/		
