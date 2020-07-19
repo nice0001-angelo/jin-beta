@@ -23,6 +23,11 @@ public class JinBetaApplication {
 
 /********************************** Start of Test Code *************************************/
 		
+		//Constructor test
+		
+		
+		
+		
 		//Enumeration Test
 		Week today = null;
 		
