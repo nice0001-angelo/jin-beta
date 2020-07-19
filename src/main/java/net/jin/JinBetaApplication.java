@@ -8,12 +8,16 @@
 package net.jin;
 
 import java.util.Calendar;
+import java.util.List;
 import java.util.Scanner;
+import java.util.*;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 import net.jin.enumeration.Week;
+import net.jin.utils.Board;
 import net.jin.utils.Car;
 
 @SpringBootApplication
@@ -23,6 +27,7 @@ public class JinBetaApplication {
 		SpringApplication.run(JinBetaApplication.class, args);
 
 /********************************** Start of Test Code *************************************/
+	
 		
 		//Constructor test
 		Car car1 = new Car();
