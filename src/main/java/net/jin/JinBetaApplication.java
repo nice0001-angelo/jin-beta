@@ -10,11 +10,10 @@ package net.jin;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
-import java.util.*;
+import java.util.Vector;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 
 import net.jin.enumeration.Week;
 import net.jin.utils.Board;
@@ -28,6 +27,20 @@ public class JinBetaApplication {
 
 /********************************** Start of Test Code *************************************/
 	
+		//Collection Vector
+		List<Board> vector = new Vector<Board>();
+		
+		vector.add(new Board("title1", "content1", "writer1"));
+		vector.add(new Board("title2", "content2", "writer2"));
+		vector.add(new Board("title3", "content3", "writer3"));
+		vector.add(new Board("title4", "content4", "writer4"));
+		vector.add(new Board("title5", "content5", "writer5"));
+	
+		for(int i=0; i<vector.size(); i++) {
+			Board board = vector.get(i);
+			System.out.println(board.title+"\t"+board.content+"\t"+board.writer);
+		}
+		
 		
 		//Constructor test
 		Car car1 = new Car();
