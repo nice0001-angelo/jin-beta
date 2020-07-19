@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JinBetaApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		SpringApplication.run(JinBetaApplication.class, args);
 
 /********************************** Start of Test Code *************************************/
@@ -22,6 +22,18 @@ public class JinBetaApplication {
 		System.out.println("Hello World");
 		System.out.println();
 		System.out.println();
+		
+		int keyCode;
+		
+		keyCode = System.in.read();
+		System.out.println("keyCode" + keyCode);
+		
+		keyCode = System.in.read();
+		System.out.println("keyCode" + keyCode);
+		
+		keyCode = System.in.read();
+		System.out.println("keyCode" + keyCode);
+		
 		
 /*********************************** End of Test Code *******************************************/		
 	}
