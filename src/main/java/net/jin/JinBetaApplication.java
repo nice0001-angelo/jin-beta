@@ -14,6 +14,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import net.jin.enumeration.Week;
+import net.jin.utils.Car;
 
 @SpringBootApplication
 public class JinBetaApplication {
@@ -24,6 +25,26 @@ public class JinBetaApplication {
 /********************************** Start of Test Code *************************************/
 		
 		//Constructor test
+		Car car1 = new Car();
+		System.out.println();
+		System.out.println("car1.company : "+car1.company);
+		System.out.println();
+		
+		Car car2 = new Car("GLE450");
+		System.out.println();
+		System.out.println("car2.company : "+car2.company);
+		System.out.println("car2.model : "+car2.model);
+		System.out.println("car2.color : "+car2.color);
+		System.out.println("car2.maxSpeed : "+car2.maxSpeed);
+		System.out.println();
+		
+		Car car3 = new Car("E300","black");
+		System.out.println();
+		System.out.println("car3.company : "+car3.company);
+		System.out.println("car3.model : "+car3.model);
+		System.out.println("car3.color : "+car3.color);
+		System.out.println("car3.maxSpeed : "+car3.maxSpeed);
+		System.out.println();
 		
 		
 		
