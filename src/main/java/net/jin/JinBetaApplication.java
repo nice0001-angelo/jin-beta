@@ -7,6 +7,8 @@
  */
 package net.jin;
 
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -23,14 +25,16 @@ public class JinBetaApplication {
 		System.out.println();
 		System.out.println();
 		
-		int keyCode;
-
+		
+		Scanner scanner = new Scanner(System.in);
+		String inputData;
+		
 		while(true) {
-			keyCode = System.in.read();
-			System.out.println("keyCode is = " + keyCode);
-			if(keyCode == 113) {
+			inputData = scanner.nextLine();
+			System.out.println("Input Data 는"+inputData+"입니다");
+			if(inputData.equals("q")){
 				break;
-			}		
+			}
 		}
 
 		System.out.println("End");
