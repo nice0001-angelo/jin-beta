@@ -27,9 +27,13 @@ public class JinBetaApplication {
 
 		while(true) {
 			keyCode = System.in.read();
-			System.out.println("keyCode" + keyCode);			
+			System.out.println("keyCode is = " + keyCode);
+			if(keyCode == 113) {
+				break;
+			}		
 		}
 
+		System.out.println("End");
 		
 
 		
