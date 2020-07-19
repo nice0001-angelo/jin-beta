@@ -24,15 +24,14 @@ public class JinBetaApplication {
 		System.out.println();
 		
 		int keyCode;
+
+		while(true) {
+			keyCode = System.in.read();
+			System.out.println("keyCode" + keyCode);			
+		}
+
 		
-		keyCode = System.in.read();
-		System.out.println("keyCode" + keyCode);
-		
-		keyCode = System.in.read();
-		System.out.println("keyCode" + keyCode);
-		
-		keyCode = System.in.read();
-		System.out.println("keyCode" + keyCode);
+
 		
 		
 /*********************************** End of Test Code *******************************************/		
