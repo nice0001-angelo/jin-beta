@@ -7,10 +7,6 @@
  */
 package net.jin;
 
-import java.util.Calendar;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Vector;
 import java.util.*;
 
 import org.springframework.boot.SpringApplication;
@@ -28,7 +24,24 @@ public class JinBetaApplication {
 		SpringApplication.run(JinBetaApplication.class, args);
 
 /********************************** Start of Test Code *************************************/
-        //Set Collection
+        //HashMap Collection
+		System.out.println();
+		System.out.println("*************Start of HashMap************ ");
+		Map<String, Integer> hashMap = new HashMap<String, Integer>();
+		
+		hashMap.put("Jin", 100);
+		hashMap.put("Jee", 100);
+		hashMap.put("Nam", 90);
+		hashMap.put("Lee", 80);
+		hashMap.put("Jin", 95);
+		System.out.println("hashMap.size() ==> " + hashMap.size());
+		System.out.println();
+		System.out.println("*************End of HashMap************ ");
+		
+		
+		//Set Collection
+		System.out.println();
+		System.out.println("*************Start of HashSet************ ");
 		Set<String> hashSet = new HashSet<String>();
 		
 		hashSet.add("Java");
@@ -42,9 +55,7 @@ public class JinBetaApplication {
 		System.out.println("Before remove hashSet size ==> "+hashSet.size());
 		System.out.println();
 		
-
-		
-		
+	
 		Iterator<String> iterator = hashSet.iterator();
 		while(iterator.hasNext()) {
 			String element = iterator.next();
@@ -61,8 +72,12 @@ public class JinBetaApplication {
 		for(String element : hashSet) {
 			System.out.println("\t"+element);
 		}
+		System.out.println();
+		System.out.println("*************End of HashSet************ ");
+		
 		
 		// participant vs completion
+		System.out.println();
 		System.out.println("*************Start of participant vs completion************ ");
 		Solution solution = new Solution();
 		String[] participant = {"leo", "kiki", "eden"};
@@ -70,9 +85,11 @@ public class JinBetaApplication {
 		System.out.println("before solution.participant ==> "+participant);
 		System.out.println("before solution.completion ==> "+completion);
 		solution.solution(participant, completion);
+		System.out.println();
 		System.out.println("*************End of participant vs completion************ ");
 		
 		//Name, Age check
+		System.out.println("*************Start of Name, Age Check************ ");
 		System.out.println("Please Enter Name Age ==> ");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Scanner value ==> "+sc);
@@ -83,12 +100,15 @@ public class JinBetaApplication {
 		if(age > 65 || age < 18 ) {
 			System.out.println(name + ", " + age + " is not an eligible age for this position");
 		}
-		
+		System.out.println();
+		System.out.println("*************End of Name, Age Check************ ");
 		
 		
 		
 		
 		//Collection Vector
+		System.out.println();
+		System.out.println("*************Start of Vector************ ");
 		List<Board> vector = new Vector<Board>();
 		
 		vector.add(new Board("title1", "content1", "writer1"));
@@ -101,7 +121,8 @@ public class JinBetaApplication {
 			Board board = vector.get(i);
 			System.out.println(board.title+"\t"+board.content+"\t"+board.writer);
 		}
-		
+		System.out.println();
+		System.out.println("*************End of Vector************ ");
 		
 		//Constructor test
 		Car car1 = new Car();
