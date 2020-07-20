@@ -35,18 +35,32 @@ public class JinBetaApplication {
 		hashSet.add("JDBC");
 		hashSet.add("JSP");
 		hashSet.add("Java");
+		hashSet.add("Spring Boot");
+		hashSet.add("Mybatis");
 			
-		int size = hashSet.size();
 		System.out.println();
-		System.out.println("hashSet size ==> "+size);
+		System.out.println("Before remove hashSet size ==> "+hashSet.size());
 		System.out.println();
+		
+
+		
 		
 		Iterator<String> iterator = hashSet.iterator();
 		while(iterator.hasNext()) {
 			String element = iterator.next();
 			System.out.println("\t"+element);
 		}
+		
+		hashSet.remove("Mybatis");
+		hashSet.remove("JSP");
 		System.out.println();
+		System.out.println("After remove hashSet size ==> "+hashSet.size());
+		System.out.println();
+
+		iterator = hashSet.iterator();
+		for(String element : hashSet) {
+			System.out.println("\t"+element);
+		}
 		
 		// participant vs completion
 		System.out.println("*************Start of participant vs completion************ ");
