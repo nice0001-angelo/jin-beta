@@ -35,11 +35,23 @@ public class JinBetaApplication {
 		hashMap.put("Lee", 80);
 		hashMap.put("Jin", 95);
 		System.out.println("hashMap.size() ==> " + hashMap.size());
+		
+		System.out.println("\t Jin : " + hashMap.get("Jin"));
 		System.out.println();
+		
+		Set<String> keySet = hashMap.keySet();
+		System.out.println("keySet ==> "+keySet);
+		Iterator<String> keyIterator = keySet.iterator();
+		while(keyIterator.hasNext()) {
+			String key = keyIterator.next();
+			Integer value = hashMap.get(key);
+			System.out.println("\t key ==> " + key + ": value ==> " + value);
+			}
+		
 		System.out.println("*************End of HashMap************ ");
 		
 		
-		//Set Collection
+		//HashSet Collection
 		System.out.println();
 		System.out.println("*************Start of HashSet************ ");
 		Set<String> hashSet = new HashSet<String>();
