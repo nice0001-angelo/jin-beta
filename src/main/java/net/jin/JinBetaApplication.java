@@ -52,6 +52,15 @@ public class JinBetaApplication {
 		hashMap.remove("Lee");
 		System.out.println("After remove hashMap.size() ==> " + hashMap.size());
 		
+		Set<Map.Entry<String, Integer>> entrySet = hashMap.entrySet();
+		Iterator<Map.Entry<String, Integer>> entryIterator = entrySet.iterator();
+		while (entryIterator.hasNext()) {
+			Map.Entry<String, Integer> entry =  entryIterator.next();
+			String key = entry.getKey();
+			Integer value = entry.getValue();
+			System.out.println("\t key ==> " + key + ": value ==> " + value);
+		}
+		
 		
 		System.out.println();
 		System.out.println("*************End of HashMap************ ");
