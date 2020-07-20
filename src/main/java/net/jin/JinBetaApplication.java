@@ -18,6 +18,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import net.jin.enumeration.Week;
 import net.jin.utils.Board;
 import net.jin.utils.Car;
+import net.jin.utils.Solution;
 
 @SpringBootApplication
 public class JinBetaApplication {
@@ -26,9 +27,17 @@ public class JinBetaApplication {
 		SpringApplication.run(JinBetaApplication.class, args);
 
 /********************************** Start of Test Code *************************************/
-	
-		//Name, Age check
+		// participant vs completion
+		System.out.println("*************Start of participant vs completion************ ");
+		Solution solution = new Solution();
+		String[] participant = {"leo", "kiki", "eden"};
+		String[] completion = {"eden", "kiki"};
+		System.out.println("before solution.participant ==> "+participant);
+		System.out.println("before solution.completion ==> "+completion);
+		solution.solution(participant, completion);
+		System.out.println("*************End of participant vs completion************ ");
 		
+		//Name, Age check
 		System.out.println("Please Enter Name Age ==> ");
 		Scanner sc = new Scanner(System.in);
 		System.out.println(sc);
