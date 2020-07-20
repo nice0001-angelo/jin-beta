@@ -34,7 +34,7 @@ public class JinBetaApplication {
 		hashMap.put("Nam", 90);
 		hashMap.put("Lee", 80);
 		hashMap.put("Jin", 95);
-		System.out.println("hashMap.size() ==> " + hashMap.size());
+		System.out.println("Before remove hashMap.size() ==> " + hashMap.size());
 		
 		System.out.println("\t Jin : " + hashMap.get("Jin"));
 		System.out.println();
@@ -47,7 +47,13 @@ public class JinBetaApplication {
 			Integer value = hashMap.get(key);
 			System.out.println("\t key ==> " + key + ": value ==> " + value);
 			}
+		System.out.println();
 		
+		hashMap.remove("Lee");
+		System.out.println("After remove hashMap.size() ==> " + hashMap.size());
+		
+		
+		System.out.println();
 		System.out.println("*************End of HashMap************ ");
 		
 		
