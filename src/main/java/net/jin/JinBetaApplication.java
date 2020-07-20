@@ -27,6 +27,23 @@ public class JinBetaApplication {
 
 /********************************** Start of Test Code *************************************/
 	
+		//Name, Age check
+		
+		System.out.println("Please Enter Name Age ==> ");
+		Scanner sc = new Scanner(System.in);
+		System.out.println(sc);
+		String name = sc.next();
+		int age = sc.nextInt();
+		
+		
+		if(age > 65 || age < 18 ) {
+			System.out.println(name + ", " + age + " is not an eligible age for this position");
+		}
+		
+		
+		
+		
+		
 		//Collection Vector
 		List<Board> vector = new Vector<Board>();
 		
