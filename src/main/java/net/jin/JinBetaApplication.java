@@ -11,6 +11,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
+import java.util.*;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,6 +28,26 @@ public class JinBetaApplication {
 		SpringApplication.run(JinBetaApplication.class, args);
 
 /********************************** Start of Test Code *************************************/
+        //Set Collection
+		Set<String> hashSet = new HashSet<String>();
+		
+		hashSet.add("Java");
+		hashSet.add("JDBC");
+		hashSet.add("JSP");
+		hashSet.add("Java");
+			
+		int size = hashSet.size();
+		System.out.println();
+		System.out.println("hashSet size ==> "+size);
+		System.out.println();
+		
+		Iterator<String> iterator = hashSet.iterator();
+		while(iterator.hasNext()) {
+			String element = iterator.next();
+			System.out.println("\t"+element);
+		}
+		System.out.println();
+		
 		// participant vs completion
 		System.out.println("*************Start of participant vs completion************ ");
 		Solution solution = new Solution();
