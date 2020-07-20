@@ -40,7 +40,7 @@ public class JinBetaApplication {
 		//Name, Age check
 		System.out.println("Please Enter Name Age ==> ");
 		Scanner sc = new Scanner(System.in);
-		System.out.println(sc);
+		System.out.println("Scanner value ==> "+sc);
 		String name = sc.next();
 		int age = sc.nextInt();
 		
