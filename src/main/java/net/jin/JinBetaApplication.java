@@ -30,11 +30,11 @@ public class JinBetaApplication {
 		System.out.println("Hello Jinhyun");
 		String str = "Hello Jinhyun";
 		String result = "";
-		System.out.println(str.charAt(3));
-		System.out.println(str.length()-1);
+
 		for (int i = str.length()-1 ; i > -1 ; i--) {
 			result += str.charAt(i);
 		}
+		
 		System.out.println(result);
 		System.out.println("*************End of String Class************ ");
 		
