@@ -24,6 +24,19 @@ public class JinBetaApplication {
 		SpringApplication.run(JinBetaApplication.class, args);
 
 /********************************** Start of Test Code *************************************/
+		//String Class
+		System.out.println();
+		System.out.println("*************Start of String Class************ ");
+		System.out.println("Hello Jinhyun");
+		String str = "Hello Jinhyun";
+		System.out.println(str.charAt(3));
+		System.out.println(str.length()-1);
+		for (int i = str.length()-1 ; i > -1 ; i--) {
+			str += str.charAt(i);
+			System.out.println(str);
+		}
+		System.out.println("*************End of String Class************ ");
+		
         //HashMap Collection
 		System.out.println();
 		System.out.println("*************Start of HashMap************ ");
