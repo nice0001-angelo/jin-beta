@@ -37,13 +37,13 @@ public class JinBetaApplication {
 
 		System.out.println();
 		System.out.println("*************Start of String Class************ ");
-		String result = "";
+		String re = "";
         String s = "abcde";
         int size = s.length();
         double half = (double)(size)/2;
         if (half%2 == 0) {
         	int intHalf = (int)half;
-        	 System.out.println(s.charAt(intHalf-1));
+        	 //re = s.charAt(intHalf-1);
         } else {
         	int intHalf =(int)half;
         	System.out.println(s.charAt(intHalf));
