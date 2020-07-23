@@ -10,18 +10,21 @@ import org.springframework.boot.test.context.SpringBootTest;
 import net.jin.utils.Calculator;
 
 @SpringBootTest
-class JinBetaApplicationTests {
-
+public class JinBetaApplicationTests {
+	private Calculator calculator;
+	
+	public JinBetaApplicationTests() {
+		//given
+		this.calculator = new Calculator();
+	}
+	
 	@Test
 	public void plus() throws Exception{
-		//given
-		Calculator calculator = new Calculator();
-		
 		//when
-		int result = calculator.plus(2,5); 
+		int result = calculator.plus(2,5,7,10); 
 		
 		//then
-		assertThat(result, is(7));
+		assertThat(result, is(24));
 	}
 
 }
