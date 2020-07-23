@@ -30,11 +30,26 @@ public class JinBetaApplication {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(JinBetaApplication.class, args);
-
 		/**********************************
 		 * Start of Test Code
 		 *************************************/
 
+		System.out.println();
+		System.out.println("*************Start of System************ ");
+		long time1 = System.nanoTime();
+		
+		int sum = 0;
+		for(int i=1; i<=1000000; i++) {
+			sum += 1;
+		}
+		
+		long time2 = System.nanoTime();
+		
+		System.out.println("1~100000까지의 합 ==> "+ sum );
+		System.out.println("계산에"+(time2-time1)+"Nano초가 걸렸습니다.");
+		System.out.println();
+		System.out.println("*************End of System************ ");
+		
 		System.out.println();
 		System.out.println("*************Start of String Class************ ");
 		String re = "";
@@ -49,10 +64,10 @@ public class JinBetaApplication {
         	System.out.println(s.charAt(intHalf));
         }
         	
+        System.out.println();
+		System.out.println("*************End of String Class************ ");
 
-
-        
-		
+        	
 		// String Class
 		System.out.println();
 		System.out.println("*************Start of String Class************ ");
