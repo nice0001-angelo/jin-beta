@@ -47,7 +47,9 @@ public class JinBetaApplication {
 		System.out.println("[-128~127 이내의 값일 경우]");
 		Integer obj3 = 10;
 		Integer obj4 = 10;
-		
+		System.out.println(" == 결과는 : " + (obj3==obj4));
+		System.out.println(" 언박싱후 ==  결과는 : " + (obj3.intValue() == obj4.intValue()));
+		System.out.println(" equals() 결과는  : " + (obj3.equals(obj4)) );
 		
 		System.out.println();
 		System.out.println("*************End of System************ ");
