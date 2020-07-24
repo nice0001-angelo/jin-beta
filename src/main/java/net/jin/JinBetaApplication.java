@@ -33,7 +33,19 @@ public class JinBetaApplication {
 		/**********************************
 		 * Start of Test Code
 		 *************************************/
-
+		//Time check
+		System.out.println();
+		System.out.println("*************Start of System************ ");
+		System.out.println("[-128~127 초과값일 경우]");
+		Integer obj1 = 300;
+		Integer obj2 = 300;
+		System.out.println("== 결과는: " + (obj1==obj2));
+		System.out.println("언박싱후 == 결과는: " + (obj1.intValue() == obj2.intValue()));
+		System.out.println();
+		System.out.println("*************End of System************ ");
+		
+		
+		//Time check
 		System.out.println();
 		System.out.println("*************Start of System************ ");
 		long time1 = System.nanoTime();
@@ -42,6 +54,7 @@ public class JinBetaApplication {
 		for(int i=1; i<=1000000; i++) {
 			sum += 1;
 		}
+		
 		
 		long time2 = System.nanoTime();
 		
