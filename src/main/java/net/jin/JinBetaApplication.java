@@ -41,6 +41,12 @@ public class JinBetaApplication {
 		Integer obj2 = 300;
 		System.out.println("== 결과는: " + (obj1==obj2));
 		System.out.println("언박싱후 == 결과는: " + (obj1.intValue() == obj2.intValue()));
+		System.out.println("equals() 결과는: " + (obj1.equals(obj2)));
+		
+		System.out.println();
+		System.out.println("[-128~127 이내의 값일 경우]");
+		Integer obj3 = 10;
+		
 		System.out.println();
 		System.out.println("*************End of System************ ");
 		
