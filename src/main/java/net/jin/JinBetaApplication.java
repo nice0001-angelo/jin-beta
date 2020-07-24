@@ -46,6 +46,8 @@ public class JinBetaApplication {
 		System.out.println();
 		System.out.println("[-128~127 이내의 값일 경우]");
 		Integer obj3 = 10;
+		Integer obj4 = 10;
+		
 		
 		System.out.println();
 		System.out.println("*************End of System************ ");
