@@ -52,6 +52,16 @@ public class JinBetaApplication {
 		//Calendar
 		System.out.println();
 		System.out.println("*************Start of System************ ");
+		Calendar nowCal = Calendar.getInstance();
+		int year = nowCal.get(Calendar.YEAR);
+		int month = nowCal.get(Calendar.MONTH)+1;
+		int day = nowCal.get(Calendar.DAY_OF_MONTH);
+		
+		System.out.println(year);
+		System.out.println(month);
+		System.out.println(day);
+		
+		
 		
 		//Time check
 		System.out.println();
