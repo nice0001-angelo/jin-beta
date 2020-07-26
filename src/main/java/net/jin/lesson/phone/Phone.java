@@ -1,4 +1,4 @@
-package net.jin.lesson;
+package net.jin.lesson.phone;
 
 public abstract class Phone {
 	//field

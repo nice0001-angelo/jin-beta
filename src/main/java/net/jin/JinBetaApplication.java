@@ -23,7 +23,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import net.jin.enumeration.Week;
-import net.jin.lesson.SmartPhone;
+import net.jin.lesson.phone.SmartPhone;
 import net.jin.utils.Board;
 import net.jin.utils.Car;
 import net.jin.utils.Solution;

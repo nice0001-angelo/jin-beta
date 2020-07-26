@@ -1,4 +1,4 @@
-package net.jin.lesson;
+package net.jin.lesson.phone;
 
 public class SmartPhone extends Phone {
 	//Constructor
