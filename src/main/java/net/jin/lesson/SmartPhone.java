@@ -6,4 +6,8 @@ public class SmartPhone extends Phone {
 		super(owner);
 	}
 
+	//Method
+	public void internetSearch() {
+		System.out.println("인터넷 검색을 합니다");
+	}
 }

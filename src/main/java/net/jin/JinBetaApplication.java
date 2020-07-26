@@ -23,6 +23,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import net.jin.enumeration.Week;
+import net.jin.lesson.SmartPhone;
 import net.jin.utils.Board;
 import net.jin.utils.Car;
 import net.jin.utils.Solution;
@@ -35,6 +36,21 @@ public class JinBetaApplication {
 		/**********************************
 		 * Start of Test Code
 		 *************************************/
+		
+		System.out.println();
+		System.out.println("*************Start of Abstract class Phone************ ");
+		//Abstract Phone <- SmartPhone
+		//Phone phone = new Phone("남진현");
+		
+		SmartPhone smartPhone = new SmartPhone("남진현");
+		
+		smartPhone.turnOn();
+		smartPhone.internetSearch();
+		smartPhone.turnOff();
+		
+		System.out.println();
+		System.out.println("*************End of Abstract class Phone************ ");
+		
 		//Date
 		System.out.println();
 		System.out.println("*************Start of Date************ ");
