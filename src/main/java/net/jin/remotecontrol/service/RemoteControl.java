@@ -8,5 +8,5 @@ public interface RemoteControl {
 	//Abstract Method
 	public abstract void turnOn();
 	public abstract void turnOff();
-	public abstract void setVolumn(int volumn);
+	public abstract void setVolumn(int volume);
 }
