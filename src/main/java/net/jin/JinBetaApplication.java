@@ -22,6 +22,8 @@ import java.util.Vector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import net.jin.car.service.*;
+import net.jin.car.service.impl.*;
 import net.jin.enumeration.Week;
 import net.jin.lesson.animal.Animal;
 import net.jin.lesson.animal.Cat;
@@ -39,6 +41,14 @@ public class JinBetaApplication {
 		/**********************************
 		 * Start of Test Code
 		 *************************************/
+		System.out.println();
+		System.out.println("*************Start of Interface JinCar************ ");
+		JinCar myCar = new JinCar();
+		myCar.run();
+		System.out.println();
+		System.out.println("*************End of Interfae JinCar************ ");
+		
+		
 		System.out.println();
 		System.out.println("*************Start of Abstract class Animal************ ");
 		Animal dog = new Dog();

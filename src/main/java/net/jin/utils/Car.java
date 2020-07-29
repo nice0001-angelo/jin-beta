@@ -7,7 +7,7 @@ public class Car {
 	public String color;
 	public int maxSpeed;
 	
-	//Costructor
+	//Constructor
 	public Car(){
 	}
 	
