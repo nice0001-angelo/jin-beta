@@ -1,5 +1,6 @@
 package net.jin.vehicle.service;
 
 public interface Vehicle {
-	public void run();
+	//abstract method
+	public abstract void run();
 }
