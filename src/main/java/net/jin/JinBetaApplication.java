@@ -44,6 +44,14 @@ public class JinBetaApplication {
 		 * Start of Test Code
 		 *************************************/
 		System.out.println();
+		System.out.println("*************Start of Interface fareCheck************ ");
+		
+		
+		System.out.println();
+		System.out.println("*************End of Interfae fareCheck*************");
+		
+		
+		System.out.println();
 		System.out.println("*************Start of Interface Vehicle************ ");
 		Driver driver = new Driver();
 		
@@ -54,6 +62,7 @@ public class JinBetaApplication {
 		
 		System.out.println();
 		System.out.println("*************End of Interfae Vehicle*************");
+		
 		
 		System.out.println();
 		System.out.println("*************Start of Interface JinCar************ ");
