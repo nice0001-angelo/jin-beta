@@ -1,6 +1,6 @@
-package net.jin.car.service.impl;
+package net.jin.tire.service.impl;
 
-import net.jin.car.service.Tire;
+import net.jin.tire.service.Tire;
 
 public class KumhoTire implements Tire{
 	@Override

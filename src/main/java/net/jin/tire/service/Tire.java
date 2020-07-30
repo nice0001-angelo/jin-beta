@@ -1,4 +1,4 @@
-package net.jin.car.service;
+package net.jin.tire.service;
 
 public interface Tire {
 	//abstract method

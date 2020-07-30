@@ -22,13 +22,13 @@ import java.util.Vector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import net.jin.car.service.*;
-import net.jin.car.service.impl.*;
 import net.jin.enumeration.Week;
 import net.jin.lesson.animal.Animal;
 import net.jin.lesson.animal.Cat;
 import net.jin.lesson.animal.Dog;
 import net.jin.lesson.phone.SmartPhone;
+import net.jin.tire.service.*;
+import net.jin.tire.service.impl.*;
 import net.jin.utils.Board;
 import net.jin.utils.Car;
 import net.jin.utils.Solution;
