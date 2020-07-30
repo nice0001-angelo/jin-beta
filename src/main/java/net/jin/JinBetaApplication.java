@@ -27,11 +27,13 @@ import net.jin.lesson.animal.Animal;
 import net.jin.lesson.animal.Cat;
 import net.jin.lesson.animal.Dog;
 import net.jin.lesson.phone.SmartPhone;
-import net.jin.tire.service.*;
-import net.jin.tire.service.impl.*;
+import net.jin.tire.service.impl.JinCar;
 import net.jin.utils.Board;
 import net.jin.utils.Car;
 import net.jin.utils.Solution;
+import net.jin.vehicle.service.impl.Bus;
+import net.jin.vehicle.service.impl.Driver;
+import net.jin.vehicle.service.impl.Taxi;
 
 @SpringBootApplication
 public class JinBetaApplication {
@@ -41,6 +43,18 @@ public class JinBetaApplication {
 		/**********************************
 		 * Start of Test Code
 		 *************************************/
+		System.out.println();
+		System.out.println("*************Start of Interface Vehicle************ ");
+		Driver driver = new Driver();
+		
+		Bus bus = new Bus();
+		Taxi taxi = new Taxi();
+		
+		driver.driver(taxi);
+		
+		System.out.println();
+		System.out.println("*************End of Interfae Vehicle*************");
+		
 		System.out.println();
 		System.out.println("*************Start of Interface JinCar************ ");
 		JinCar myCar = new JinCar();
