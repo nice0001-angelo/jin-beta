@@ -18,7 +18,7 @@ public class TryCatchFinallyRuntimeException {
 			int value2 = Integer.parseInt(data2);
 			int result = value1 + value2;
 			System.out.println(value1 + " + " + value2 + " = " + result);
-		} catch (Exception e) {
+		} catch (NumberFormatException e) {
 			System.out.println("숫자로 변환할 수 없습니다");
 		} finally {
 			System.out.println("다시 실행하세요.");
