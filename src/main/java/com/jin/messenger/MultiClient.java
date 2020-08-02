@@ -24,7 +24,7 @@ public class MultiClient implements ActionListener {
    public boolean saypower = false;
    private boolean login = false;
 
-   Image img = new ImageIcon("D:\\Eclipse\\Java\\�׸�����\\C.jpg").getImage();
+   Image img = new ImageIcon("./kitty.jpg").getImage();
 
    public MultiClient() {
       /*ip = argIp;
@@ -225,7 +225,7 @@ public class MultiClient implements ActionListener {
    }
    
    public void init() throws IOException {
-      socket = new Socket("192.168.200.138", 5000);
+      socket = new Socket("192.168.25.3", 5000);
       System.out.println("connected...");
       oos = new ObjectOutputStream(socket.getOutputStream());
       ois = new ObjectInputStream(socket.getInputStream());

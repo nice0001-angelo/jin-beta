@@ -1,4 +1,4 @@
-package com.jin;
+package com.jin.runnable;
 
 public class BeepPrint {
 
