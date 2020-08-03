@@ -17,11 +17,16 @@ public class InputStreamReadMethod {
 	 */
 	public static void main(String[] args) throws Exception {
 		InputStream is = new FileInputStream("C:\\Temp/test2.txt");
+		
+		byte[] buffer = new byte[100];
+		
 		while (true) {
-			int data = is.read();
-			if (data == -1)
+			int readByteNum = is.read(buffer);
+			if (readByteNum == -1)
 				break;
-			System.out.println(data);
+			for(int i=0; i<readByteNum; i++) {
+				System.out.println(buffer[i]);
+			}
 		}
 		System.out.println("End of read");
 		is.close();
