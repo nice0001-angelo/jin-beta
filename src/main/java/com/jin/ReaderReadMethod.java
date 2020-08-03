@@ -16,21 +16,18 @@ public class ReaderReadMethod {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		Reader reader = new FileReader("C:\\Temp/test8.txt");
-		
-		char[] buffer = new char[100];
-		
-		while (true) {
-			int readCharNum = reader.read(buffer);
-			if (readCharNum == -1) {
-				break;
+		Reader reader = new FileReader("C:\\Temp/test9.txt");
+
+		char[] buffer = new char[5];
+
+		int readCharNum = reader.read(buffer, 2, 3);
+		if (readCharNum != -1) {
+			for (int i = 0; i < buffer.length; i++) {
+				System.out.println(buffer[i]);
 			}
-			for(int i=0; i<readCharNum; i++) {
-				System.out.println(buffer[i]);	
-			}
-			
 		}
 		reader.close();
+
 	}
 
 }
