@@ -16,15 +16,20 @@ public class WriterWriteMethod {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception{
-		Writer writer = new FileWriter("C:\\Temp/test7.txt");
+		Writer writer = new FileWriter("C:\\Temp/test8.txt");
 		
-		char a = 'A';
-		char b = 'B';
-		char c = 'C';
+//		char a = 'A';
+//		char b = 'B';
+//		char c = 'C';
+//		
+//		writer.write(a);
+//		writer.write(b);
+//		writer.write(c);
 		
-		writer.write(a);
-		writer.write(b);
-		writer.write(c);
+		char[] array = {'A','B','C'};
+		
+		writer.write(array);
+		
 		
 		writer.flush();
 		writer.close();
