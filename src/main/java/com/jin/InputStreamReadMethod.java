@@ -19,9 +19,11 @@ public class InputStreamReadMethod {
 		InputStream is = new FileInputStream("C:\\Temp/test2.txt");
 		
 		byte[] buffer = new byte[100];
+		System.out.println("buffer[1]: "+buffer[1]);
 		
 		while (true) {
 			int readByteNum = is.read(buffer);
+			System.out.println("buffer[1]: "+buffer[1]);
 			if (readByteNum == -1)
 				break;
 			for(int i=0; i<readByteNum; i++) {
