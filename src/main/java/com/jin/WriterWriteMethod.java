@@ -16,7 +16,7 @@ public class WriterWriteMethod {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception{
-		Writer writer = new FileWriter("C:\\Temp/test9.txt");
+		Writer writer = new FileWriter("C:\\Temp/test10.txt");
 		
 //		char a = 'A';
 //		char b = 'B';
@@ -26,9 +26,11 @@ public class WriterWriteMethod {
 //		writer.write(b);
 //		writer.write(c);
 		
-		char[] array = {'A','B','C','D','E'};
+//		char[] array = {'A','B','C','D','E'};
 		
-		writer.write(array,1,3);
+		String str = "ABC"; 
+		
+		writer.write(str);
 		
 		
 		writer.flush();
