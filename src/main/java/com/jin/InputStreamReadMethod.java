@@ -16,7 +16,7 @@ public class InputStreamReadMethod {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
-		InputStream is = new FileInputStream("C:\\Temp/test1.txt");
+		InputStream is = new FileInputStream("C:\\Temp/test2.txt");
 		while (true) {
 			int data = is.read();
 			if (data == -1)
