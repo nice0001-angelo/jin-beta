@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin;
+package com.jin.stream;
 
 import java.io.FileReader;
 import java.io.Reader;
