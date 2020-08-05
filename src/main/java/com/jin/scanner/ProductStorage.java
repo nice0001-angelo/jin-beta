@@ -30,6 +30,7 @@ public class ProductStorage {
 			case "2":
 				showProduct();				
 				break;
+				
 			case "3":
 				return;
 			}
@@ -37,10 +38,30 @@ public class ProductStorage {
 	}
 	
 	public void registerProduct() {
-		
+		try {
+			Product product = new Product();
+			product.setPno(++counter);
+			
+			System.out.println("상품명: ");
+			product.setName(scanner.nextLine());
+			
+			System.out.println("가격: ");
+			product.setPrice(Integer.parseInt(scanner.nextLine()));
+			
+			System.out.println("재고: ");
+			product.setStock(Integer.parseInt(scanner.nextLine()));
+			
+			list.add(product);
+			
+		} catch (Exception e) {
+			System.out.println("등록에러: "+e.getMessage());
+		}
 	}
 	
+	
 	public void showProduct() {
-		
+		for(Product p : list) {
+			System.out.println(p.getPno() + "\t" + p.getName() + "\t" + p.getPrice() + "\t" + p.getStock());
+		}
 	}
 }
