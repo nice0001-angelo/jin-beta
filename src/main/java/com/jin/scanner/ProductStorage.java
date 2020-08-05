@@ -42,13 +42,13 @@ public class ProductStorage {
 			Product product = new Product();
 			product.setPno(++counter);
 			
-			System.out.println("상품명: ");
+			System.out.println("상품명: "+"\n");
 			product.setName(scanner.nextLine());
 			
-			System.out.println("가격: ");
+			System.out.println("가격: "+"\n");
 			product.setPrice(Integer.parseInt(scanner.nextLine()));
 			
-			System.out.println("재고: ");
+			System.out.println("재고: "+"\n");
 			product.setStock(Integer.parseInt(scanner.nextLine()));
 			
 			list.add(product);
@@ -61,7 +61,7 @@ public class ProductStorage {
 	
 	public void showProduct() {
 		for(Product p : list) {
-			System.out.println(p.getPno() + "\t" + p.getName() + "\t" + p.getPrice() + "\t" + p.getStock());
+			System.out.println(p.getPno() + "\n" + p.getName() + "\n" + p.getPrice() + "\n" + p.getStock());
 		}
 	}
 }
