@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.jin.messenger;
 
 import java.net.*;
