@@ -8,12 +8,12 @@ import java.net.*;
 import java.util.*;
 
 public class MultiServer {
-	private ArrayList<MultiServerThread> list;
-	private Socket socket;
+	private ArrayList<MultiServerThread> list; //List 컬렉션(ArrayList) 필드
+	private Socket socket; //Socket 필드
 
 	public MultiServer() throws IOException {
-		list = new ArrayList<MultiServerThread>();
-		ServerSocket serverSocket = new ServerSocket(5000);
+		list = new ArrayList<MultiServerThread>();//list로 ArrayList 객체생성
+		ServerSocket serverSocket = new ServerSocket(5000); //ServerSocket(int port) 생성자 호출 5000포트
 		MultiServerThread mst = null;
 		boolean isStop = false;
 		while (!isStop) {
