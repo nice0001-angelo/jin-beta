@@ -228,7 +228,7 @@ public class MultiClient implements ActionListener {
    }
    
    public void init() throws IOException {
-      socket = new Socket("192.168.25.3", 5000);
+      socket = new Socket("192.168.0.177", 5000);
       System.out.println("connected...");
       oos = new ObjectOutputStream(socket.getOutputStream());
       ois = new ObjectInputStream(socket.getInputStream());
