@@ -6,6 +6,7 @@ package com.jin.messenger;
 import java.net.*;
 import java.io.*;
 
+//멀티쓰레드와 스트림 사용
 public class MultiServerThread implements Runnable {
 	private Socket socket;
 	private MultiServer ms;
