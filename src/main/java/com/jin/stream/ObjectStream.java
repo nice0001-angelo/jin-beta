@@ -40,10 +40,16 @@ public class ObjectStream {
 		FileOutputStream fos = new FileOutputStream("C:\\Temp/board.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(list);
+		oos.flush();
+		oos.close();
 	}
 	
 	
 	public static List<Board> readList() throws Exception{
-		
+		FileInputStream fis = new FileInputStream("C:\\Temp/board.txt");
+		ObjectInputStream ois = new ObjectInputStream(fis);
+		List<Board> list = (List<Board>) ois.readObject();
+		return list;
+				
 	}
 }
