@@ -5,7 +5,7 @@ package com.jin.thread;
 
 /**
  * @author njh
- *
+ * 2020.Aug
  */
 public class ThreadB extends Thread{
 	
