@@ -7,8 +7,8 @@ package com.jin.thread;
  * @author njh
  * 2020.Aug
  */
-public class ThreadA extends Thread {
-	public ThreadA() {
+public class NameThreadA extends Thread {
+	public NameThreadA() {
 		setName("ThreadA");
 	}
 	
