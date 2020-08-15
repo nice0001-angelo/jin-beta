@@ -13,7 +13,7 @@ public class CalculatorMainThread {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+		Calculator calculator = new Calculator();
 
 	}
 
