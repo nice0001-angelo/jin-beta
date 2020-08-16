@@ -10,9 +10,9 @@ package com.jin.thread;
 public class CalculatorUser2 extends Thread{
 	private Calculator calculator;
 
-	public void setCalculastor(Calculator calculastor) {
+	public void setcalculator(Calculator calculator) {
 		this.setName("User2");
-		this.calculator = calculastor;
+		this.calculator = calculator;
 	}
     
 	public void run() {
