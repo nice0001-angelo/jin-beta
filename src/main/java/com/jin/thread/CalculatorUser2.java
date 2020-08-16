@@ -8,14 +8,14 @@ package com.jin.thread;
  *
  */
 public class CalculatorUser2 extends Thread{
-	private Calculator calculastor;
+	private Calculator calculator;
 
 	public void setCalculastor(Calculator calculastor) {
 		this.setName("User2");
-		this.calculastor = calculastor;
+		this.calculator = calculastor;
 	}
     
 	public void run() {
-		calculastor.setMemory(50);
+		calculator.setMemory(50);
 	}
 }
