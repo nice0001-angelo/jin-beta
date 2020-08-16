@@ -7,7 +7,7 @@ package com.jin.thread;
  * @author njh
  *
  */
-public class StopFlagPrintThread extends Thread {
+public class StopFlagPrintThread1 extends Thread {
 	private boolean stop;
 	
 	public void setStop(boolean stop) {

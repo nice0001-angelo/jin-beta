@@ -13,9 +13,16 @@ public class StopFlagMainThread {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		StopFlagMainThread stopFlagMainThread = new StopFlagMainThread();
+		StopFlagPrintThread1 stopFlagPrintThread = new StopFlagPrintThread1();
+		stopFlagPrintThread.start();
 		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO: handle exception
+		}
 		
+		stopFlagPrintThread.setStop(true);
 
 	}
 
