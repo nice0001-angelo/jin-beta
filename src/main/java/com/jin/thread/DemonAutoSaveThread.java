@@ -9,7 +9,7 @@ package com.jin.thread;
  */
 public class DemonAutoSaveThread extends Thread{
 	public void save() {
-		System.out.println("작업 네용을 저장함.");
+		System.out.println("작업 내용을 저장함.");
 	}
 	
 	@Override
