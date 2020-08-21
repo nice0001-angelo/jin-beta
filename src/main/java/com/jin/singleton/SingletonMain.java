@@ -12,7 +12,7 @@ public class SingletonMain {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String...args) {
 		//Singleton obj1 = new Singleton(); //private constructor
 		
 		Singleton obj1 = Singleton.getInstace();
