@@ -8,13 +8,17 @@ package com.jin.singleton;
  *
  */
 public class Singleton {
-	private Static Singleton singleton = new Singleton();
+	//private: can't access
+	//static member: field
+	private static Singleton singleton = new Singleton();
 	
+	//private: can't access
 	private Singleton() {
 		
 	}
-			
-	Static Singleton getInstace() {
+	
+	//static member: method
+	static Singleton getInstace() {
 		return singleton;
 	}
 }
