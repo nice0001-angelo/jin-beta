@@ -25,6 +25,13 @@ public class Shuffle {
 		}
 		System.out.println(deck);
 		System.out.println(deck.size());
+		
+		ArrayList<Integer> shuffledDeck = new ArrayList<Integer>();
+		
+		double ran = Math.random();
+		int index =  (int)(ran*deck.size());
+		System.out.println(ran);
+		System.out.println(index);
 	}
 
 }
