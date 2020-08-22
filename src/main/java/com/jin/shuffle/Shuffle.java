@@ -24,7 +24,7 @@ public class Shuffle {
 			deck.add(i);
 		}
 		System.out.println(deck);
-
+		System.out.println(deck.size());
 	}
 
 }
