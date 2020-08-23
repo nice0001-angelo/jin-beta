@@ -34,6 +34,8 @@ public class Shuffle {
 			shuffledDeck.add(deck.remove(index));
 		}
 		System.out.println("after deck: " + deck);
+		System.out.println("type of deck: "+deck.getClass().getName());
+		System.out.println("tyoe of shuffledDeck: "+shuffledDeck.getClass().getName());
 		System.out.println("shuffledDeck: "+shuffledDeck);
 		
 	}
