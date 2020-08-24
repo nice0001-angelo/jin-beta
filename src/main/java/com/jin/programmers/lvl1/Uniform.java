@@ -7,7 +7,7 @@ import net.jin.utils.*;
 
 /**
  * @author njh
- *
+ * 체육복: 탐욕법(Greedy)
  */
 public class Uniform {
 
