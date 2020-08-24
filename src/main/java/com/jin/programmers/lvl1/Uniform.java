@@ -16,7 +16,7 @@ public class Uniform {
 	 */
 	static int n = 10;
 	static int[] lost = { 2, 4 };
-	static int[] reserve = { 1, 3, 5 };
+	static int[] reserve = { 1 };
 
 	public static void main(String[] args) {
 
