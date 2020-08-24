@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin.uniform;
+package com.jin.programmers.lvl1;
 
 import net.jin.utils.*;
 
