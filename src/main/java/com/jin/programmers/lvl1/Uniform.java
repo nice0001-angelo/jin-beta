@@ -21,7 +21,7 @@ public class Uniform {
 	public static void main(String[] args) {
 
 		int sol = Solution(n, lost, reserve);
-		System.out.println("The Answer is: "+sol);
+		System.out.println("The Answer is: "+ sol);
 	}
 
 	public static int Solution(int n, int[] lost, int[] reserve) {
