@@ -3,6 +3,8 @@
  */
 package com.jin.programmers.lvl1;
 
+import org.hibernate.validator.internal.util.privilegedactions.*;
+
 import net.jin.utils.*;
 
 /**
@@ -20,14 +22,21 @@ public class Uniform {
 
 	public static void main(String[] args) {
 
+		
+		int[] namjinhyun = {1,3,5,6,7,8};
+		
+		
+		
 		int sol = Solution(n, lost, reserve);
 		System.out.println("The Answer is: "+ sol);
 	}
 
 	public static int Solution(int n, int[] lost, int[] reserve) {
-		int[] people = new int[n];
-		int answer = n;
+		int[] people = new int[n];//size n 인 int 형 배열 people 객체형 필드 생성
+		int answer = n; //초기값을 n 으로 하는 int 타입 answer 필드 정의
 
+		
+		// uniform 을 잃어버린 학생의 번호를 
 		for (int l : lost) {
 			people[l - 1]--;
 		}
