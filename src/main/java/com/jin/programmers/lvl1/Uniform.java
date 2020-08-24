@@ -14,7 +14,7 @@ public class Uniform {
 	/**
 	 * @param args
 	 */
-	static int n = 5;
+	static int n = 10;
 	static int[] lost = { 2, 4 };
 	static int[] reserve = { 1, 3, 5 };
 
