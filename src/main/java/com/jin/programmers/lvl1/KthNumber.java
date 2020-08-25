@@ -18,10 +18,12 @@ public class KthNumber {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Solution(array, commands);
+		
+		KthNumber kthNumber = new KthNumber();
+		kthNumber.Solution(array, commands);
 	}
 	
-	public static int[] Solution(int[] array, int[][] commands) {
+	public int[] Solution(int[] array, int[][] commands) {
 		int[] answer = {};
 		return answer;
 	}

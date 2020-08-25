@@ -21,21 +21,12 @@ public class Uniform {
 	static int[] reserve = { 1 };
 
 	public static void main(String[] args) {
-
-		
-		int[] nam = {1,3,5,6,7,8};
-		int[]  peo = new int[5];
-		for(int n : nam) {
-			peo[n-1]--;
-		}
-		
-		
-		
-		int sol = Solution(n, lost, reserve);
+		Uniform uniform = new Uniform();
+		int sol = uniform.Solution(n, lost, reserve);
 		System.out.println("The Answer is: "+ sol);
 	}
 
-	public static int Solution(int n, int[] lost, int[] reserve) {
+	public int Solution(int n, int[] lost, int[] reserve) {
 		int[] people = new int[n];//size n 인 int 형 배열 people 객체형 필드 생성
 		int answer = n; //초기값을 n 으로 하는 int 타입 answer 필드 정의
 
