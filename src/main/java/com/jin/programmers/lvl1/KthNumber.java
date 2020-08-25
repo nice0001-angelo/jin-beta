@@ -20,7 +20,8 @@ public class KthNumber {
 		// TODO Auto-generated method stub
 		
 		KthNumber kthNumber = new KthNumber();
-		kthNumber.Solution(array, commands);
+		int[] kth = kthNumber.Solution(array, commands);
+		System.out.println(kth);
 	}
 	
 	public int[] Solution(int[] array, int[][] commands) {
