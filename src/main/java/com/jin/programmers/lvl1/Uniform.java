@@ -24,7 +24,7 @@ public class Uniform {
 
 		
 		int[] nam = {1,3,5,6,7,8};
-		int[] peo = new int[5];
+		int[]  peo = new int[5];
 		for(int n : nam) {
 			peo[n-1]--;
 		}
