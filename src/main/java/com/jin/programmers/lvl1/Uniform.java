@@ -23,7 +23,11 @@ public class Uniform {
 	public static void main(String[] args) {
 
 		
-		int[] namjinhyun = {1,3,5,6,7,8};
+		int[] nam = {1,3,5,6,7,8};
+		int[] peo = new int[5];
+		for(int n : nam) {
+			peo[n-1]--;
+		}
 		
 		
 		
