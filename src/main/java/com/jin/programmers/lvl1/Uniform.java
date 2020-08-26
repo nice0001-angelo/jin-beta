@@ -31,7 +31,7 @@ public class Uniform {
 		int answer = n; //초기값을 n 으로 하는 int 타입 answer 필드 정의
 
 		
-		// uniform 을 잃어버린 학생의 번호를 
+		// uniform 을 잃어버린 학생의 번호를 하나씩 꺼낸다 가령 2일때 people[2-1] 
 		for (int l : lost) {
 			people[l - 1]--;
 		}
