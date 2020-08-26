@@ -4,7 +4,7 @@
 package com.jin.singleton;
 
 /**
- * @author njh
+ * @author njh/
  *
  */
 public class SingletonMain {
