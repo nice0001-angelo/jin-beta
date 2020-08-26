@@ -14,7 +14,8 @@ public class SingletonMain {
 	 */
 	public static void main(String...args) {
 		//Singleton obj1 = new Singleton(); //private constructor
-		
+
+		//Singlton check
 		Singleton obj1 = Singleton.getInstace();
 		Singleton obj2 = Singleton.getInstace();
 		
@@ -24,5 +25,4 @@ public class SingletonMain {
 			System.out.println("다른 Singleton 객체입니다");
 		}
 	}
-
 }

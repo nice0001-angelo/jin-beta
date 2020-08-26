@@ -52,8 +52,6 @@ public class Uniform {
 					answer--;
 			}
 		}
-
 		return answer;
-
 	}
 }
