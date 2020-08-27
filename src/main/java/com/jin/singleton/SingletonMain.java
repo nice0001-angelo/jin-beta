@@ -20,9 +20,9 @@ public class SingletonMain {
 		Singleton obj2 = Singleton.getInstace();
 		
 		if(obj1.equals(obj2)) {
-			System.out.println("같은 Singleton 객체입니다");
+			System.out.println("같은  Singleton 객체입니다");
 		} else {
-			System.out.println("다른 Singleton 객체입니다");
+			System.out.println("다른  Singleton 객체입니다");
 		}
 	}
 }
