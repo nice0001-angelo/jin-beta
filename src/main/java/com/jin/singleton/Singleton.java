@@ -10,7 +10,8 @@ package com.jin.singleton;
 public class Singleton {
 	//private: can't access
 	//static member: field
-	private static Singleton singleton = new Singleton();//call constructor
+	private static Singleton singleton = null;
+	private int count = 0;
 	
 	//private: can't access Constructor
 	private Singleton() {
@@ -19,6 +20,14 @@ public class Singleton {
 	
 	//static member: method
 	static Singleton getInstace() {
+		if(singleton.equals(null)){
+			singleton = new Singleton();
+		}
 		return singleton;
+	}
+	
+	public void print(String input) {
+		count++;
+		System.out.println(input+"count: "+count);
 	}
 }
