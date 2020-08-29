@@ -10,9 +10,9 @@ package com.jin.singleton;
 public class Singleton {
 	//private: can't access
 	//static member: field
-	private static Singleton singleton = new Singleton();
+	private static Singleton singleton = new Singleton();//call constructor
 	
-	//private: can't access
+	//private: can't access Constructor
 	private Singleton() {
 		
 	}
