@@ -24,6 +24,6 @@ public class Singleton {
 	
 	public void print(String input) {
 		count++;
-		System.out.println(input+"count: "+count);
+		System.out.println(input + "count: " + count);
 	}
 }
