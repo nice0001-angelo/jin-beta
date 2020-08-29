@@ -19,7 +19,7 @@ public class SleepMainThread {
 		for(int i=0; i<10; i++) {
 			toolkit.beep();
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO: handle exception
 			}
