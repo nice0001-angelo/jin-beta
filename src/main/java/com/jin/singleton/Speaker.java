@@ -9,11 +9,21 @@ package com.jin.singleton;
  */
 public class Speaker {
 	private static Speaker speaker = new Speaker();
+	private int volume;
 	
 	private Speaker() {
+		volume = 5;
 	}
 
-	private static Speaker getInstance() {
+	public static Speaker getInstance() {
 		return speaker;
+	}
+	
+	public int getVolume() {
+		return volume;
+	}
+	
+	public void setVolume(int volume) {
+		this.volume = volume;
 	}
 }
