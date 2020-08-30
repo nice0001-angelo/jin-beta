@@ -22,7 +22,7 @@ public class CenterCharacter {
 		String answer = "";
 		int size = s.length();
 		int half = size/2;
-		System.out.println(s.charAt(2));
+		System.out.println(s.charAt(2)&&s.charAt(3));
 //		if (size % 2 == 0) {
 //			answer = System.out.println(s.charAt(2) + s.charAt(3));
 //		} else {
