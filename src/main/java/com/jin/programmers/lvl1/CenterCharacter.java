@@ -14,20 +14,11 @@ public class CenterCharacter {
 	 */
 	public static void main(String[] args) {
 		CenterCharacter centerCharacter = new CenterCharacter();
-		String str = centerCharacter.solution("abcde");
+		String str = centerCharacter.solution("abcdef");
 		System.out.println(str);
 	}
 
 	public String solution(String s) {
-		String answer = "";
-		int size = s.length();
-		int half = size/2;
-		System.out.println(s.charAt(2)&&s.charAt(3));
-//		if (size % 2 == 0) {
-//			answer = System.out.println(s.charAt(2) + s.charAt(3));
-//		} else {
-//			answer = System.out.println(s.charAt(half));
-//		}
-		return answer;
+		return s.substring((s.length()-1)/2, s.length()/2+1);
 	}
 }
