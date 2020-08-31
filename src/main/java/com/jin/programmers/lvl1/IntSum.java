@@ -15,7 +15,7 @@ public class IntSum {
 	public static void main(String[] args) {
 		IntSum intsum = new IntSum();
 		long result = 0;
-		result = intsum.solution(5, 3);
+		result = intsum.solution(5, 5);
 		System.out.println("result is: " + result);
 
 	}
