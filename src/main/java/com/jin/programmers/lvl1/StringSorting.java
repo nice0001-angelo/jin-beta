@@ -3,6 +3,8 @@
  */
 package com.jin.programmers.lvl1;
 
+import net.jin.utils.*;
+
 /**
  * @author njh
  *
@@ -13,7 +15,10 @@ public class StringSorting {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String[] inString = {}; 
+		inString = {"sun","bed","car"};
+		Solution sol = new Solution(insString, 1);
+		sol();
 
 	}
 
