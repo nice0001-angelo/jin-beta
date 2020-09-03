@@ -15,10 +15,9 @@ public class StringSorting {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String[] inString = {}; 
-		inString = {"sun","bed","car"};
-		Solution sol = new Solution(insString, 1);
-		sol();
+		String[] inString = {"sun","bed","car"}; 
+		StringSorting strSort = new StringSorting();
+		strSort.solution(inString, 1);
 
 	}
 
