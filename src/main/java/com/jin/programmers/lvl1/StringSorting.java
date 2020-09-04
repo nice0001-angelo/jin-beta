@@ -25,7 +25,7 @@ public class StringSorting {
 		String[] answer = {};
 		for(String str : strings) {
 			System.out.println(str);
-			str[1];
+			
 			System.out.println();
 		}
 		
