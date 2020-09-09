@@ -26,6 +26,7 @@ public class StringSorting {
 		for(String str : strings) {
 			System.out.println(str);
 			System.out.println(str.getClass().getName());
+			System.out.println("");
 			System.out.println(str.getClass().getName());
 			System.out.println("");
 		}
