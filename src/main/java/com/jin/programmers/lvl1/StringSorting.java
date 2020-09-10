@@ -29,6 +29,7 @@ public class StringSorting {
 			System.out.println("");
 			System.out.println(str.getClass().getName());
 			System.out.println("");
+			System.out.println("");
 		}
 		
 		
