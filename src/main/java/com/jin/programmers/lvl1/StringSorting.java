@@ -31,9 +31,7 @@ public class StringSorting {
 			System.out.println("");
 			System.out.println("");
 			System.out.println("");
-			System.out.println("");
-			System.out.println("");
-			System.out.println("");
+
 		}
 		
 		
