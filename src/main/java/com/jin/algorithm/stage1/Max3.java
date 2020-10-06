@@ -20,10 +20,15 @@ public class Max3 {
 		System.out.println("find the maximum number from 3 numbers");
 		System.out.println("the number value a: ");
 		int a = scan.nextInt();
+		System.out.println("the value a is: "+a);
+		
 		System.out.println("the number value b: ");
 		int b = scan.nextInt();
+		System.out.println("the value b is: "+b);
+		
 		System.out.println("the number value c: ");
 		int c = scan.nextInt();
+		System.out.println("the value c is: "+c);
 		
 		int max = a;
 		if(a>b) {
