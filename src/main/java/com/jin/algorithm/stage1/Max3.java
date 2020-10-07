@@ -35,6 +35,8 @@ public class Max3 {
 			max = a;
 		} else if (b > c){
 			max = b;
+		} else {
+			max = c;
 		}
 		
 		System.out.println("the maximum value from a, b, c is "+max);
