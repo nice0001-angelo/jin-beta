@@ -39,7 +39,7 @@ public class Max3 {
 			max = c;
 		}
 		
-		System.out.println("the value of a: \n"+a+"The value of b: \n"+b+"The value of c:\n"+c+"the maximum value from a, b, c is "+max);
+		System.out.println("the value of a: "+a+"\nThe value of b: "+b+"\n The value of c: "+c+"\nthe maximum value from a, b, c is "+max);
 	}
 
 }
