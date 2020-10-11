@@ -17,18 +17,18 @@ public class Max3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("find the maximum number from 3 numbers");
-		System.out.println("the number value a: ");
+		System.out.println(" Find the maximum number from 3 numbers");
+		System.out.println(" The number value a: ");
 		int a = scan.nextInt();
-		System.out.println("the value a is: "+a);
+		System.out.println(" The value a is: "+a);
 		
-		System.out.println("the number value b: ");
+		System.out.println(" The number value b: ");
 		int b = scan.nextInt();
-		System.out.println("the value b is: "+b);
+		System.out.println(" The value b is: "+b);
 		
-		System.out.println("the number value c: ");
+		System.out.println(" The number value c: ");
 		int c = scan.nextInt();
-		System.out.println("the value c is: "+c);
+		System.out.println(" The value c is: "+c);
 		
 		int max = a;
 		if(a>b) {
@@ -39,7 +39,10 @@ public class Max3 {
 			max = c;
 		}
 		
-		System.out.println("the value of a: "+a+"\nThe value of b: "+b+"\n The value of c: "+c+"\nthe maximum value from a, b, c is "+max);
+		System.out.println(" The value of a: "+a+
+				"\n The value of b: "+b+
+				"\n The value of c: "+c+
+				"\n The maximum value from a, b, c is "+max);
 	}
 
 }
