@@ -3,6 +3,8 @@
  */
 package com.jin.algorithm.stage1;
 
+import java.util.*;
+
 /**
  * @author njh
  *
@@ -38,7 +40,12 @@ public class Median {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Finding the median from 3 numbers");
+		System.out.println("Input the number a: ");
+		int a = input.nextInt();
+		
 
 	}
 
