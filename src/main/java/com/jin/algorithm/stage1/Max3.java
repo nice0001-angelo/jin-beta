@@ -30,6 +30,14 @@ public class Max3 {
 		int c = scan.nextInt();
 		System.out.println(" The value c is: "+c);
 		
+		int max = max3(a,b,c);
+
+        System.out.println("\n The maximum value from a, b, c is "+max);
+
+	}
+	
+	
+	static int max3(int a, int b, int c) {
 		int max = a;
 		if(a>b) {
 			max = a;
@@ -39,10 +47,12 @@ public class Max3 {
 			max = c;
 		}
 		
-		System.out.println(" The value of a: "+a+
-				"\n The value of b: "+b+
-				"\n The value of c: "+c+
-				"\n The maximum value from a, b, c is "+max);
+		return max;
+		
+//		System.out.println(" The value of a: "+a+
+//				"\n The value of b: "+b+
+//				"\n The value of c: "+c+
+//				"\n The maximum value from a, b, c is "+max);
 	}
 
 }
