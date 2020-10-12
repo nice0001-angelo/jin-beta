@@ -20,9 +20,11 @@ public class Median {
 					return b;
 				} else if(c>=a) {
 					return a;
+				} else {
+					return c;
 				}
-			} else {
-				return c;
+			} else if(a>c){
+				
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
