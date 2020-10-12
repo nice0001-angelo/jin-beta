@@ -31,7 +31,7 @@ public class Median {
 				return b;
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			return -1;
 		}
 		}
 	
