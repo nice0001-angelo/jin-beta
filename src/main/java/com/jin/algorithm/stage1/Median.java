@@ -42,7 +42,7 @@ public class Median {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Finding the median from 3 numbers");
+		System.out.println("Hi lovely Jee~! Finding the median from 3 numbers");
 		System.out.println("Input the number a: ");
 		int a = input.nextInt();
 		System.out.println("The number a is: "+a);
