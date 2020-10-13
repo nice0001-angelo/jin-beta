@@ -53,9 +53,8 @@ public class Median {
 		int c = input.nextInt();
 		System.out.println("The number c is: "+c);
 		
-		
-		
-
+		int result = med3(a,b,c);
+		System.out.println("The median value is: "+result);
 	}
 
 }
