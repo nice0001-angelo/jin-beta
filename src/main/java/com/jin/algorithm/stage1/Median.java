@@ -45,6 +45,15 @@ public class Median {
 		System.out.println("Finding the median from 3 numbers");
 		System.out.println("Input the number a: ");
 		int a = input.nextInt();
+		System.out.println("The number a is: "+a);
+		System.out.println("Input the number b: ");
+		int b = input.nextInt();
+		System.out.println("The number b is: "+b);
+		System.out.println("Input the number c: ");
+		int c = input.nextInt();
+		System.out.println("The number c is: "+c);
+		
+		
 		
 
 	}
