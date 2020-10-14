@@ -15,7 +15,7 @@ public class SumWhile {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		new Scanner(source)
+		Scanner input = new Scanner(System.in);
 
 	}
 
