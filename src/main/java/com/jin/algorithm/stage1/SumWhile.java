@@ -25,13 +25,13 @@ public class SumWhile {
 		int i = 1;		
 		
 		try {
-			
+			while(i<=n) {
+				sum = sum+i;
+				i++;
+			}
+			System.out.println("The sum from 1 to "+n+" is "+sum);
 		} catch (Exception e) {
-			// TODO: handle exception
 		}
-
-		
-		whi
 	}
 
 }
