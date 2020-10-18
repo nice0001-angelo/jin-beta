@@ -19,10 +19,10 @@ public class TriangleLB {
 		int n;
 		
 		System.out.println("Please input the number: ");
-		int 
+		n = input.nextInt();
 		
 		
-		triLB(int n);
+		triLB(n);
 	}
 
 	static void triLB(int n) {
