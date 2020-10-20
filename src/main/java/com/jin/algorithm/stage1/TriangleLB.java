@@ -31,6 +31,7 @@ public class TriangleLB {
 				for(int j=0;j<=i;j++) {
 					System.out.print("*");
 				}
+				System.out.println();
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
