@@ -34,7 +34,7 @@ public class TriangleLB {
 				System.out.println();
 			}
 		} catch (Exception e) {
-			System.out.println("Exception from jimmy thanks no worry be happy virus~~!!! ! ~!! come back to move up up"+e );
+			System.out.println("Exception from jimmy thanks no worry be happy virus~~!!! ! ~!!! come back to move up up"+e );
 		}
 	}
 }
