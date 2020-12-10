@@ -13,7 +13,7 @@ public class TriangleLB {
 
 	/**
 	 * @param args
-	 */_
+	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int n;
@@ -34,7 +34,7 @@ public class TriangleLB {
 				System.out.println();
 			}
 		} catch (Exception e) {
-			System.out.println("Exception from jimmy thanks no worry be happy thanks!!!!!~! virus~go--~!!!!!! come back to move up up"+e );
+			System.out.println("Exception from jimmy thanks no worry be happy thanks!!!!!! virus~go--~!!!!!! come back to move up up"+e );
 		}
 	}
 }
