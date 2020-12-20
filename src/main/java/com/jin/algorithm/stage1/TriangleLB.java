@@ -34,7 +34,7 @@ public class TriangleLB {
 				System.out.println();
 			}
 		} catch (Exception e) {
-			System.out.println("Exception println"+e );
+			System.out.println("Exception printlnx"+e );
 		}
 	}
 }
