@@ -28,18 +28,24 @@ public class MaxOfArray {
 			height[i] = stdIn.nextInt();
 		}
 		
-		System.out.println("Maximum value:"+maxOf(height));
+		System.out.println("Maximum value is:"+maxOf(height));
 		
 	}
 	
 	static int maxOf(int[] a) {
-		int max = a[0];
-		for(int i=0; i<a.length; i++) {
-			if(a[i]>max) {
-				max = a[i];
+		try {
+			int max = a[0];
+			for(int i=0; i<a.length; i++) {
+				if(a[i]>max) {
+					max = a[i];
+				}
 			}
+			return max;
+		} catch (Exception e) {
+			System.out.println("Exception"+e);
+			return 0;
 		}
-		return max;
+		
 	}
 
 }
