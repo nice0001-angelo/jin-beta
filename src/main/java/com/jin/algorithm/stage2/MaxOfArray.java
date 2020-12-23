@@ -45,7 +45,6 @@ public class MaxOfArray {
 			System.out.println("Exception"+e);
 			return 0;
 		}
-		
 	}
 
 }
