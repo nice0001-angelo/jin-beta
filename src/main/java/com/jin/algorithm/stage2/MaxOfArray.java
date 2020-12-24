@@ -42,7 +42,7 @@ public class MaxOfArray {
 			}
 			return max;
 		} catch (Exception e) {
-			System.out.println("Exception ==>"+e);
+			System.out.println("Exception===>"+e);
 			return 0;
 		}
 	}
