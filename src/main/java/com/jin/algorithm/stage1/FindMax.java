@@ -13,7 +13,20 @@ public class FindMax {
 		int number2 = StdIn.nextInt();
 		System.out.println("Input 3rd Number; \n");
 		int number3 = StdIn.nextInt();
+		
+		int result = findMax(number1, number2, number3);
+		System.out.println("Max is "+result);
+		
+	}
 
+	private static int findMax(int a, int b, int c) {
+		int result = a;
+		if(b > result) {
+			result = b;
+		} else if(c > result) {
+			result = c;
+		}
+		return result;
 	}
 
 }
