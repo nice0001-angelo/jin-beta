@@ -13,9 +13,10 @@ public class Findmax3 {
 		
 		System.out.println("Insert number1: ");
 		input[0] = stdIn.nextInt();
-		System.out.println("Inser number2: ");
+		System.out.println("Insert number2: ");
 		input[1] = stdIn.nextInt();
-		System.out.println();
+		System.out.println("Insert number3: ");
+		input[2] = stdIn.nextInt();
 	}
 
 }
