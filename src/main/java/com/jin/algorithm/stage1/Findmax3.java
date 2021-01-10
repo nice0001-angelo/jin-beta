@@ -19,6 +19,7 @@ public class Findmax3 {
 		input[2] = stdIn.nextInt();
 		
 		max = findMax3(input[0], input[1], input[2]);
+		System.out.println();
 	}
 
 	private static int findMax3(int i, int j, int k) {
