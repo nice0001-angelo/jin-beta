@@ -19,12 +19,13 @@ public class Findmax3 {
 		input[2] = stdIn.nextInt();
 		
 		max = findMax3(input[0], input[1], input[2]);
-		System.out.println();
+		System.out.println("max is :"+max);
 	}
 
 	private static int findMax3(int i, int j, int k) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+	
 
 }
