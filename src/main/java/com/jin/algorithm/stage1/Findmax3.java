@@ -25,8 +25,9 @@ public class Findmax3 {
 
 	private static int findMax3(int i, int j, int k) {
 		int result = i;
-
-		return 0;
+		if(j > result)	result = j;
+		if(k > result)  result = k; 
+		return result;
 		
 	}
 	
