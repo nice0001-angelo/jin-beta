@@ -9,7 +9,7 @@ import java.util.*;
  * @author njh
  *
  */
-public class SumWhile {
+public class SumWhile1 {
 
 	/**
 	 * @param args

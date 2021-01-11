@@ -9,7 +9,7 @@ import java.util.*;
  * @author njh
  *
  */
-public class SumFor {
+public class SumFor1 {
 
 	/**
 	 * @param args
