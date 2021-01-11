@@ -5,7 +5,7 @@ import java.util.*;
 public class Findmax3 {
 
 	public static void main(String[] args) {
-		int max = 0; 
+		 
 		int cnt = 5;
 		int[] input = new int[cnt];
 		
@@ -19,8 +19,8 @@ public class Findmax3 {
 		System.out.println("Insert number3: ");
 		input[2] = stdIn.nextInt();
 		
-		max = findMax3(input[0], input[1], input[2]);
-		System.out.println("max is :"+max);
+		
+		System.out.println("max is :"+findMax3(input[0], input[1], input[2]));
 	}
 
 	private static int findMax3(int i, int j, int k) {
