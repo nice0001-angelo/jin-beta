@@ -9,7 +9,7 @@ import java.util.*;
  * @author njh
  *
  */
-public class Median {
+public class Median1 {
 
 	/**
 	 * @param args
