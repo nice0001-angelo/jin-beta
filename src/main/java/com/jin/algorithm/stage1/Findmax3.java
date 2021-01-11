@@ -24,8 +24,10 @@ public class Findmax3 {
 	}
 
 	private static int findMax3(int i, int j, int k) {
-		// TODO Auto-generated method stub
+		int result = i;
+
 		return 0;
+		
 	}
 	
 
