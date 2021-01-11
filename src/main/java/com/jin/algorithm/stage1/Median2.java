@@ -6,7 +6,6 @@ public class Median2 {
 
 	public static void main(String[] args) {
 		
-		int result = 0;
 		Scanner stdIn = new Scanner(System.in);
 		
 		System.out.println("Input 3 number: ");
@@ -14,12 +13,19 @@ public class Median2 {
 		int b = stdIn.nextInt();
 		int c = stdIn.nextInt();
 		
-		result = median2(a, b, c);
+		System.out.println("the midian number is: "+median2(a, b, c));
 	}
 
 	private static int median2(int a, int b, int c) {
-		// TODO Auto-generated method stub
-		return 0;
+		int mid = a;
+		if (b > mid) {
+			if(c > b) {
+				mid = b;
+			} else if(c > mid) {
+				mid = c;
+			}
+		}
+		return mid;
 	}
 
 }
