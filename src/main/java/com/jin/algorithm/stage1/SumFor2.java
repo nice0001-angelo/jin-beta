@@ -7,9 +7,13 @@ public class SumFor2 {
 	public static void main(String[] args) {
 		try {
 			Scanner stdIn = new Scanner(System.in);
+			
+			System.out.println("Please input the number n: \n");
 			int input = stdIn.nextInt();
 			int result = sumFor2(input);
-			System.out.println("Please input the number n: \n");
+			
+			System.out.println("the sum from 1 to "+input+" is : "+result);
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
@@ -17,8 +21,11 @@ public class SumFor2 {
 	}
 
 	private static int sumFor2(int input) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = 0;
+		for(int i=0; i<input; i++) {
+			result = result+i;
+		}
+		return result;
 	}
 }
 
