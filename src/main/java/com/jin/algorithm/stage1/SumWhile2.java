@@ -10,10 +10,26 @@ public class SumWhile2 {
 		try {
 			System.out.println("Input n value: ");
 			int input = stdIn.nextInt(); 
+			result = sumWhile2(input);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 
+	}
+
+	private static int sumWhile2(int input) {
+		int result = 0;
+		if(input == 0) {
+			result = 1;
+		} else {
+		try {
+			int i = 0;
+			while (i < input) {
+				result = result + i;
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 
 }
