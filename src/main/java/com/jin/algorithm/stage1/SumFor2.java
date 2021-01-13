@@ -30,7 +30,7 @@ public class SumFor2 {
 			result = 1;
 		} else {
 		try {
-			for(int i=0; i<input; i++) {
+			for(int i=0; i<= input; i++) {
 				result = result+i;
 			}
 				
