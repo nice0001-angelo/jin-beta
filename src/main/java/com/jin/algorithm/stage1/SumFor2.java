@@ -15,15 +15,28 @@ public class SumFor2 {
 			System.out.println("the sum from 1 to "+input+" is : "+result);
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			if(e.getMessage().equals(null)) {
+				System.out.println("You can't input null");
+			}
+				
+			
 		}
 		
 	}
 
 	private static int sumFor2(int input) {
 		int result = 0;
-		for(int i=0; i<input; i++) {
-			result = result+i;
+		if(input == 0) {
+			result = 1;
+		} else {
+		try {
+			for(int i=0; i<input; i++) {
+				result = result+i;
+			}
+				
+		} catch (Exception e) {
+			
+		}
 		}
 		return result;
 	}
