@@ -25,11 +25,13 @@ public class SumWhile2 {
 		try {
 			int i = 0;
 			while (i < input) {
+				i = i + 1;
 				result = result + i;
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 	}
-
+		return result;
+	}	
 }
