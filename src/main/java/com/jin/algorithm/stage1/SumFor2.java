@@ -9,7 +9,7 @@ public class SumFor2 {
 			Scanner stdIn = new Scanner(System.in);
 			int input = stdIn.nextInt();
 			int result = sumFor2(input);
-			System.out.println();
+			System.out.println("Please input the number n: \n");
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
