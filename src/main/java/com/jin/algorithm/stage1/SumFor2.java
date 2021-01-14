@@ -18,10 +18,7 @@ public class SumFor2 {
 			if(e.getMessage().equals(null)) {
 				System.out.println("You can't input null");
 			}
-				
-			
 		}
-		
 	}
 
 	private static int sumFor2(int input) {
@@ -35,9 +32,8 @@ public class SumFor2 {
 			}
 				
 		} catch (Exception e) {
-			
-		}
-		}
+	}
+}
 		return result;
 	}
 }
