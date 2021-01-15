@@ -12,7 +12,7 @@ public class SumFor2 {
 			int input = stdIn.nextInt();
 			int result = sumFor2(input);
 			
-			System.out.println("the sum from 1 to "+input+" is : "+result);
+			System.out.println("the sum from 1 to "+input+" is : " +result);
 			
 		} catch (Exception e) {
 			if(e.getMessage().equals(null)) {
