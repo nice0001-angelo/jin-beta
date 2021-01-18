@@ -16,7 +16,7 @@ public class SumFor2 {
 			
 		} catch (Exception e) {
 			if(e.getMessage().equals(null)) {
-				System.out.println("You can't input null!~");
+				System.out.println("You can't input null~!");
 			}
 		}
 	}
