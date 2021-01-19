@@ -40,7 +40,7 @@ public class SumFor1 {
 			// TODO: handle exception
 		}
 
+		
 		System.out.println("The sum from 1 to "+n+" is "+sum);
 	}
-
 }

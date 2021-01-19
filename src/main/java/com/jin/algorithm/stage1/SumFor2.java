@@ -32,8 +32,8 @@ public class SumFor2 {
 			}
 				
 		} catch (Exception e) {
-	}
-}
+		}
+		}
 		return result;
 	}
 }
