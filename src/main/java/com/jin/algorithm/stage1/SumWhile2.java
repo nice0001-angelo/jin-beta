@@ -11,11 +11,10 @@ public class SumWhile2 {
 			System.out.println("Input n value: ");
 			int input = stdIn.nextInt(); 
 			result = sumWhile2(input);
-			System.out.println("The Sum from 1 to " +input+ " is " + result);
+			System.out.println("The Sum from 1 to " +input+ "is" + result);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-
 	}
 
 	private static int sumWhile2(int input) {
