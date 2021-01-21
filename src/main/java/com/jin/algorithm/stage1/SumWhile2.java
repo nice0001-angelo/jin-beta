@@ -13,7 +13,7 @@ public class SumWhile2 {
 			result = sumWhile2(input);
 			System.out.println("The Sum from 1 to " +input+ "is" + result);
 		} catch (Exception e) {
-			// TODO: handle exception
+			// TODO: handle exception 
 		}
 	}
 
