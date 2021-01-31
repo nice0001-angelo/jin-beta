@@ -29,7 +29,7 @@ public class SumWhile2 {
 				result = result + i;
 			}
 		} catch (Exception e) {
-			// TODO: handle ex ception~!!!
+			// TODO: handle exception~!!!
 		}
 	}
 		return result;
