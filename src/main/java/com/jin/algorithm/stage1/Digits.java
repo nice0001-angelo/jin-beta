@@ -28,7 +28,7 @@ public class Digits {
 		do {
 			System.out.println("Input: ");
 			no = stdIn.nextInt(); 
-		} while(no < 10 || no > 99);
+		} while(!(no >= 10 && no <= 99));
 		
 		System.out.println("variable no's value is:  "+no);
 		
