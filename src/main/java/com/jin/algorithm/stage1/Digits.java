@@ -15,11 +15,9 @@ public class Digits {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int no;
-
+		int no = 0;
 		System.out.println("Please input 2 diggits number");
-		
-		digits(int no);
+		digits(no);
 
 	}
 
@@ -30,7 +28,9 @@ public class Digits {
 		do {
 			System.out.println("Input: ");
 			no = stdIn.nextInt(); 
-		}
+		} while(no < 10 || no > 99);
+		
+		System.out.println("variable no's value is:  "+no);
 		
 	}
 
