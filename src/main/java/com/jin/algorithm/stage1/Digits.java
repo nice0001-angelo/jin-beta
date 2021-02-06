@@ -16,7 +16,7 @@ public class Digits {
 	 */
 	public static void main(String[] args) {
 		int no = 0;
-		System.out.println("Please input 2 diggits number");
+		System.out.println("Please input 2 diggits number(10~99)");
 		digits(no);
 
 	}
