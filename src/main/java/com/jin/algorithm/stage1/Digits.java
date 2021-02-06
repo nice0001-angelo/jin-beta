@@ -16,7 +16,6 @@ public class Digits {
 	 */
 	public static void main(String[] args) {
 		int no = 0;
-		System.out.println("Please input 2 diggits number(10~99)");
 		digits(no);
 
 	}
@@ -26,6 +25,7 @@ public class Digits {
 		Scanner stdIn = new Scanner(System.in);
 		
 		do {
+			System.out.println("Please input 2 diggits number(10~99)");
 			System.out.println("Input: ");
 			no = stdIn.nextInt(); 
 		} while(!(no >= 10 && no <= 99));
