@@ -13,7 +13,7 @@ public class Multi99Table {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println("=============99============");
+		System.out.println("=============99=============");
 		
 		try {
 			for(int i=1; i<=10	; i++) {
