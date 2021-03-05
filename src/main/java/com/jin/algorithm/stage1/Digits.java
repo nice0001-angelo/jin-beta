@@ -17,7 +17,7 @@ public class Digits {
 	public static void main(String[] args) {
 		int no = 0;
 		digits(no);
-
+		// 연결되었습니다.//
 	}
 
 	private static void digits(int no) {
