@@ -9,12 +9,10 @@ public class FindMax1 {
 		
 		String yes = "Jimmy";
 		
-		String[] strArray = yes.split("");
+		System.out.println(yes);
 		
-		System.out.println(strArray);
-		
-		for(int i=0; i<strArray.length; i++) {
-			System.out.println("The result of strArray is: "+strArray[i]);
+		for(int i=0; i<yes.length(); i++) {
+			System.out.println("The result of strArray is: "+yes.charAt(i));
 		}
 
 		/* Scanner StdIn = new Scanner(System.in); */
