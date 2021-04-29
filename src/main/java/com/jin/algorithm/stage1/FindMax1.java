@@ -14,6 +14,8 @@ public class FindMax1 {
 		for(int i=0; i<yes.length(); i++) {
 			System.out.println("The result of strArray is: "+yes.charAt(i));
 		}
+		
+		System.out.println();
 
 		/* Scanner StdIn = new Scanner(System.in); */
 		
