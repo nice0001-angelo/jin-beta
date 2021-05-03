@@ -30,12 +30,22 @@ public class LongestSubstring {
 				}
 			}
 		}
-		
+		System.out.println("result: "+result);
 		return result;
 	}
 	
 	private static boolean checkRepeat(String s, int start, int end) {
+		int[] chars = new int[128];
 		
+		for(int i=start; i < end; i++) {
+			char c = s.charAt(i);
+			System.out.println("s.charAt(i): "+c);
+			chars[c]++;
+			if(chars[c] > 1) {
+				return false;
+			}
+		}
+		return true;
 		
 	}
 }
