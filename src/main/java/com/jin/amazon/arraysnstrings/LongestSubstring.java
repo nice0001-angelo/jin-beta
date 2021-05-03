@@ -25,8 +25,8 @@ public class LongestSubstring {
 		int result = 0;
 		for(int i=0; i < s.length(); i++) {
 			for(int j=i; j < s.length(); j++) {
-				if() {
-					result = Math.max(result, b); 
+				if(checkRepeat(s,i,j)) {
+					result = Math.max(result, j-i+1); 
 				}
 			}
 		}
@@ -34,7 +34,8 @@ public class LongestSubstring {
 		return result;
 	}
 	
-	private boolean checkRepeat(String s, int start, int end) {
+	private static boolean checkRepeat(String s, int start, int end) {
+		
 		
 	}
 }
