@@ -25,8 +25,11 @@ public class LongestSubstring {
 		String[] strArray = s.split("");
 		System.out.println("strArray: "+strArray);
 		System.out.println("strArray size: "+strArray.length);
-		for(int i = 0; i< strArray.length; i++) {
-			
+		for(int i = 0; i < strArray.length; i++) {
+			for(int j=i+1; j < strArray.length; j++) {
+				
+			}
+		
 		}
 		
 	}
