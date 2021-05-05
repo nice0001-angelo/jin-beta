@@ -3,6 +3,8 @@
  */
 package com.jin.amazon.arraysnstrings;
 
+import ch.qos.logback.core.net.*;
+
 /**
  * @author njh
  *
@@ -18,6 +20,8 @@ public class IToRom {
 	
 	public static void main(String[] args) {
 
+		String result = integerToRoman(234);
+		System.out.println("result: "+result);
 		
 		
 	}
@@ -27,6 +31,13 @@ public class IToRom {
 		StringBuilder sb = new StringBuilder();
 		
 		//Loop through each symbol, stopping if num becomes 0.
-		for(int i = 0; i < values.length ; )
+		for(int i = 0; i < values.length && num > 0; i++) {
+			//Repeat while the current symbol still fits into num.
+			while(values[i] <= num) {
+				num -= values[i];
+				sb.append(symbols[i]);
+			}
+		}
+		return sb.toString();
 	}
 }
