@@ -25,9 +25,11 @@ public class MostWater {
 		
 		for(int i = 0 ; i < height.length ; i++) {
 			for(int j = i+1 ; j < height.length ; j++) {
-				int smt = (height[i]*height[j]);
-				if(smt >= result)
-				result = smt;
+				int smt1 = Math.min(height[i], height[j]);
+				int width = j-i;
+				int smt2 = smt1*width;
+				if(smt2 >= result)
+				result = smt2;
 			}
 
 		}
