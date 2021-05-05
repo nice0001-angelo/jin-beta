@@ -13,7 +13,7 @@ public class MyAtoi {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String input = "      -3211"; 
+		String input = "4193 with words"; 
 		int output = myAtoi(input);
 		System.out.println("output: "+output);
 
@@ -40,7 +40,7 @@ public class MyAtoi {
 			sign = (s.charAt(i++) == '-' ) ? -1 : 1;
 		
 		//Build the result check for overflow/underflow condition 
-		while(i < s.length() && s.charAt(i) >= '0' && s.charAt(i) < '9') {
+		while(i < s.length() && s.charAt(i) >= '0' && s.charAt(i) <= '9') {
 			if(result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && s.charAt(i) - '0' > Integer.MAX_VALUE % 10)) {
 				return (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
 			}
