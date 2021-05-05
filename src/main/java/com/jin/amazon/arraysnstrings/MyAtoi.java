@@ -25,5 +25,13 @@ public class MyAtoi {
 		if(s.length()==0) {
 			return 0;
 		}
+		
+		while(i < s.length() && s.charAt(i) == ' ') {
+			i++;
+		}
+		
+		if( i < s.length() && (s.charAt(i) == '+' || s.charAt(i) == '-'))
+			sign = (s.charAt(i++) == '-' ) ? -1 : 1;
+		
 	}
 }
