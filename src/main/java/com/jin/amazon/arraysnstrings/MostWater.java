@@ -15,12 +15,13 @@ public class MostWater {
 	public static void main(String[] args) {
 		//int[] height = {7,6,5,3,5,6};
 		int[] height = {1,8,6,2,5,4,8,3,7};
-		int output = maxArea(height);
+		int output = maxArea1(height);
 		System.out.println("the result is: "+output);
 
 	}
 	
-	public static int maxArea(int[] height) {
+	//Brute Force
+	public static int maxArea1(int[] height) {
 		int result = 0;
 		
 		for(int i = 0 ; i < height.length ; i++) {
@@ -36,4 +37,6 @@ public class MostWater {
 		return result;
 	}
 
+	//Another option
+	
 }
