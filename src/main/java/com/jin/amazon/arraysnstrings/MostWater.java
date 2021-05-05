@@ -18,8 +18,11 @@ public class MostWater {
 	}
 	
 	public static int maxArea(int[] height) {
+		int result = ;
+		
 		for(int i = 0 ; i < height.length ; i++) {
 			for(int j = i+1 ; j < height.length ; j++) {
+				result = (height[i]*height[j]);
 				
 			}
 				
