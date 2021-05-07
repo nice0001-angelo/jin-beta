@@ -25,7 +25,30 @@ public class ThreeSum {
 	
 	public static List<List<Integer>> threeSum(int[] nums) {
 		Arrays.sort(nums);
+		List<List<Integer>> res = new ArrayList<>();
+		for(int i = 0; i < nums.length && nums[i] <= 0; i++) {
+			if( i == 0 || nums[i-1] != nums[i]) {
+				twoSumII(nums, i, res);
+			}
+		}
+		
+	}
 
+
+	private static void twoSumII(int[] nums, int i, List<List<Integer>> res) {
+		int Io = i + 1, hi = nums.length - 1;
+		while(Io < hi){
+			int sum = nums[i] + nums[Io] + nums[hi];
+			if(sum < 0) {
+				++Io;
+			} else if(sum > 0) {
+				--hi;
+			} else {
+				res.add(Arrays.asList(nums[i], nums[Io++], nums[hi--]));
+				while(Io < hi && nums[Io] == nums[Io-1])++Io;
+				
+			}
+		}
 		
 	}
 }
