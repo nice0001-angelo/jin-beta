@@ -3,6 +3,8 @@
  */
 package com.jin.amazon.arraysnstrings;
 
+import java.util.*;
+
 /**
  * @author njh
  *
@@ -15,21 +17,15 @@ public class ThreeSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] input = {-1,0,1,2,-1,-4};
-		int result = threeSum(input);
+		list<list<Integer>> = threeSum(input);
 		System.out.println("result: "+result);
 
 	}
 
 	
 	public static List<List<Integer>> threeSum(int[] nums) {
-		for(int i = 0; i < nums.length; i++) {
-			for(int j = i+1; j< nums.length; j++) {
-				for(int k = j+1; k < nums.length; k++) {
-					if(nums[i]+nums[j]+nums[k] == 0) {
-					System.out.println("["+nums[i]+","+nums[j]+","+nums[k]+"]");
-					}
-				}
-			}
-		}
+		Arrays.sort(nums);
+
+		
 	}
 }
