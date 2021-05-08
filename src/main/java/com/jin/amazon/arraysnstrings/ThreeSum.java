@@ -35,6 +35,7 @@ public class ThreeSum {
 	}
 
 
+	//집중필요
 	private static void twoSumII(int[] nums, int i, List<List<Integer>> res) {
 		int Io = i + 1, hi = nums.length - 1;
 		while(Io < hi){
