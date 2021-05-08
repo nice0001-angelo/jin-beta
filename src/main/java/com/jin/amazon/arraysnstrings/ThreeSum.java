@@ -37,16 +37,17 @@ public class ThreeSum {
 
 	//집중필요
 	private static void twoSumII(int[] nums, int i, List<List<Integer>> res) {
-		int Io = i + 1, hi = nums.length - 1;
-		while(Io < hi){
-			int sum = nums[i] + nums[Io] + nums[hi];
+		int lo = i + 1;
+		int hi = nums.length - 1;
+		while(lo < hi){
+			int sum = nums[i] + nums[lo] + nums[hi];
 			if(sum < 0) {
-				++Io;
+				++lo;
 			} else if(sum > 0) {
 				--hi;
 			} else {
-				res.add(Arrays.asList(nums[i], nums[Io++], nums[hi--]));
-				while(Io < hi && nums[Io] == nums[Io-1])++Io;
+				res.add(Arrays.asList(nums[i], nums[lo++], nums[hi--]));
+				while(lo < hi && nums[lo] == nums[lo-1])++lo;
 				
 			}
 		}
