@@ -15,7 +15,9 @@ public class TransactionLogs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		List<String> logs = {"77 99 1234", "88 99 2345","99 32 100"};
+		int threshold = 2;
+		processLogs(logs, threshold);
 
 	}
 	
@@ -74,6 +76,7 @@ public class TransactionLogs {
 		if(resultList.size() == 0) {
 			resultList.add("");
 		}
+		return resultList;
 	}
 
 }
