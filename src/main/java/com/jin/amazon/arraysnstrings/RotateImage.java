@@ -13,8 +13,18 @@ public class RotateImage {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+		int[][] result = rotateImage(matrix);
+		System.out.println("result: "+result);
+	}
+	
+	public static int[][] rotateImage(int[][] matrix){
+		int n = matrix.length;
+		for(int i = 0; i < (n+1)/2; i++) {
+			for(int j=0; j< n/2; j++) {
+				
+			}
+		}
 	}
 
 }
