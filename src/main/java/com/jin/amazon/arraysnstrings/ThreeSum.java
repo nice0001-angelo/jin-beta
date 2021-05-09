@@ -35,7 +35,7 @@ public class ThreeSum {
 	}
 
 
-	//집중필요
+	//집중필요(해석 필요)
 	private static void twoSumII(int[] nums, int i, List<List<Integer>> res) {
 		int lo = i + 1;
 		int hi = nums.length - 1;
