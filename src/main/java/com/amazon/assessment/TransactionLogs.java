@@ -29,7 +29,7 @@ public class TransactionLogs {
 		
 		int[] njh = {1,2,3,4};
 	    Arrays.sort(njh);
-		System.out.println(njh);
+		System.out.println(Arrays.toString(njh));
 		
 		//System.out.println(njh.charAt(1));
 		
