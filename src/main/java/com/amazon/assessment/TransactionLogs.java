@@ -15,10 +15,24 @@ public class TransactionLogs {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		List<String> logs = {"77 99 1234", "88 99 2345","99 32 100"};
+		List<String> logs = new ArrayList<String>();
+		logs.add("77 99 1234");	
+		logs.add("88 99 2345");
+		logs.add("99 32 100");
+			
 		int threshold = 2;
-		processLogs(logs, threshold);
+		
+		List<String> result = new ArrayList<String>();
+		result = processLogs(logs, threshold);
+		System.out.println(result);
 
+		
+		int[] njh = {1,2,3,4};
+	    Arrays.sort(njh);
+		System.out.println(njh);
+		
+		//System.out.println(njh.charAt(1));
+		
 	}
 	
 	public static List<String> processLogs(List<String> logs, int threshold){
