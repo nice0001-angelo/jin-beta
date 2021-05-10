@@ -15,7 +15,8 @@ public class RobotRodeo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		commands = ;
+		List<String> commands = new ArrayList(); 
+		commands = {"R","G"};
 		doesCircleExist(commands);
 
 	}
