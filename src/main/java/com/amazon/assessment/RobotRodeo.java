@@ -41,7 +41,13 @@ public class RobotRodeo {
 						dir = (dir+3) % 4;
 					}
 				}
+			if ( x==0 && y==0 || dir !=0) {
+				result = "YES";
+			} else {
+				result = "NO";
 			}
+			resultList.add(result);
 		}
+		return resultList;
 	}
 }
