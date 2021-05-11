@@ -24,7 +24,6 @@ public class FizzBuzz {
         System.out.println(FizzBuzz.fizzBuzz(3, map)); // "FIZZ"
         System.out.println(FizzBuzz.fizzBuzz(4, map)); // "BUZZ"
         System.out.println(FizzBuzz.fizzBuzz(12, map)); // "FIZZBUZZ"
-
 	}
 
 	
@@ -44,5 +43,4 @@ public class FizzBuzz {
 	        }
 	        return result;
 	    }
-
 }
