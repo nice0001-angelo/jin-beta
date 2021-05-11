@@ -37,12 +37,11 @@ public class FizzBuzz {
 	        } else if ( number % 3 == 0){
 	            result = "FIZZ";
 	        } else if ( number % 4== 0){
-	            result ="BUZZ";
+	            result = "BUZZ";
 	        } else {
 	            result = String.valueOf(number);
 	            result = Integer.toString(number);
 	        }
-
 	        return result;
 	    }
 
