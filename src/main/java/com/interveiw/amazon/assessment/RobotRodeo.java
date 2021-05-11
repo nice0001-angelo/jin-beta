@@ -54,7 +54,7 @@ public class RobotRodeo {
 	 */
 	public static void main(String[] args) {
 		List<String> commands = new ArrayList<>(); 
-		commands.add(0,"GR");
+		commands.add(0,"GRRR");
 		//commands.add(1,"G");
 		//System.out.println(commands.get(1));
 		List<String> result = new ArrayList<>();

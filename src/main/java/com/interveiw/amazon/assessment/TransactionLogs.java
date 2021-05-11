@@ -19,6 +19,7 @@ public class TransactionLogs {
 		logs.add("77 99 1234");	
 		logs.add("88 99 2345");
 		logs.add("99 32 100");
+		logs.add("99 32 100");
 			
 		int threshold = 2;
 		
@@ -27,9 +28,10 @@ public class TransactionLogs {
 		System.out.println(result);
 
 		
-		int[] njh = {1,2,3,4};
-	    Arrays.sort(njh);
-		System.out.println(Arrays.toString(njh));
+		/*
+		 * int[] njh = {2,1,4,3}; Arrays.sort(njh);
+		 * System.out.println(Arrays.toString(njh));
+		 */
 		
 		//System.out.println(njh.charAt(1));
 		
