@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.amazon.assessment;
+package com.interveiw.amazon.assessment;
 
 import java.util.*;
 
