@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin.amazon.arraysnstrings;
+package com.jin.leetcode.amazon.arraysnstrings;
 
 /**
  * @author njh
