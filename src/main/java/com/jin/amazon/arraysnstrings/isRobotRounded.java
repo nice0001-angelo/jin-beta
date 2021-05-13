@@ -30,12 +30,12 @@ public class isRobotRounded {
 		// facing north
 		int idx = 0;
 		
-		for(char i : commands.toCharArray() ) {
-			if(i == 'L')
-				idx = (idx+3)%4;
-			else if (i == 'R')
-				idx = (idx+1)%4;
-			else {
+		for(char i : commands.toCharArray()) {
+			if(i == 'L') {
+				idx = (idx+3) % 4;
+			} else if (i == 'R') {
+				idx = (idx+1) % 4;
+			} else {
 				x += directions[idx][0];
 				y += directions[idx][1];
 			}
