@@ -26,8 +26,6 @@ public class FizzBuzz {
         System.out.println(FizzBuzz.fizzBuzz(12, map)); // "FIZZBUZZ"
 	}
 
-	
-
     private static String fizzBuzz(int number, Map<Integer, String> map) {
 	        String result ="";
 	        

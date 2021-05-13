@@ -27,15 +27,14 @@ public class TransactionLogs {
 		result = processLogs(logs, threshold);
 		System.out.println(result);
 
-		
 		/*
 		 * int[] njh = {2,1,4,3}; Arrays.sort(njh);
 		 * System.out.println(Arrays.toString(njh));
 		 */
 		
 		//System.out.println(njh.charAt(1));
-		
 	}
+
 	
 	public static List<String> processLogs(List<String> logs, int threshold){
 		
@@ -65,7 +64,6 @@ public class TransactionLogs {
 					chkMap.put(toId, chkMap.get(toId)+1);
 				}
 			}
-			
 		}
 		
 		int[][] chkInt = new int[chkMap.size()][2];
@@ -94,5 +92,4 @@ public class TransactionLogs {
 		}
 		return resultList;
 	}
-
 }
