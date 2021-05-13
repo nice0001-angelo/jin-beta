@@ -27,23 +27,23 @@ public class isRobotRounded {
 		// initial position is in the center
 		int x=0, y=0;
 		
-		// facing north
-		int idx = 0;
+		// facing north index
+		int index = 0;
 		
 		for(char i : commands.toCharArray()) {
 			if(i == 'L') {
-				idx = (idx+3) % 4;
+				index = (index+3) % 4;
 			} else if (i == 'R') {
-				idx = (idx+1) % 4;
+				index = (index+1) % 4;
 			} else {
-				x += directions[idx][0];
-				y += directions[idx][1];
+				x += directions[index][0];
+				y += directions[index][1];
 			}
 		}
 		
 		//after one cycle
 		//robot returns into initial position
 		//or robot doesn't face north
-		return (x==0 && y==0)||(idx!=0);
+		return (x==0 && y==0)||(index != 0);
 	}
 }
