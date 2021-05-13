@@ -13,7 +13,7 @@ public class isRobotRounded {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String commands ="GLL";
+		String commands ="G";
 		boolean result;
 		result = isRobotRounded(commands);
 		System.out.println("result:"+result);
