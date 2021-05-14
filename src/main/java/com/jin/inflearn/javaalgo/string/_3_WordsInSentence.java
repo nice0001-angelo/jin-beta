@@ -25,8 +25,13 @@ public class _3_WordsInSentence {
 	public String solution(String str) {
 		String answer = "";
 		String[] s = str.split(" ");
+		int m = 0;
 		for(String x : s) {
-			System.out.println(x);
+			int len = x.length();
+			if( m < len) {
+				m = len; 
+				answer = x;
+			}
 			
 		}
 		return answer;
