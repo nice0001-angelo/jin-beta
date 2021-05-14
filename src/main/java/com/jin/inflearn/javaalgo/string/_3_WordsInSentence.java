@@ -17,14 +17,22 @@ public class _3_WordsInSentence {
 	public static void main(String[] args) {
 		_3_WordsInSentence T = new _3_WordsInSentence();
 		Scanner kb = new Scanner(System.in);
-		String str = kb.next();
+		String str = kb.nextLine(); //한줄 전체를 받을때는 nextLine();
 		System.out.println(T.solution(str));
 		
 	}
 	
 	public String solution(String str) {
 		String answer="";
-		
+		int m = Integer.MIN_VALUE;
+		String[] s = str.split(" ");
+		for(String x : s) {
+			int len = x.length();
+			if (len > m) {
+				m = len;
+				answer = x;
+			}
+		}
 		return answer;
 	}
 
