@@ -22,7 +22,9 @@ public class _4_ReverseWords {
 		
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
-		char c = kb.next().charAt(0);//String을 읽어들이고(next()) charAt(0)을 통해서 첫번째 char 값을 가져오는 것임
+		
+		//String을 읽어들이고(next()) charAt(0)을 통해서 첫번째 char 값을 가져오는 것임. charAt는 char 변수를 return함
+		char c = kb.next().charAt(0); 
 		
 		System.out.println();
 
