@@ -30,8 +30,11 @@ public class _4_ReverseWords {
 
 	}
 	
-	public int solution(String str, char c) {
+	public int solution(String str, char t) {
 		int answer=0;
+		str = str.toUpperCase();
+		t = Character.toUpperCase(t);
+		
 		return answer;
 	}
 
