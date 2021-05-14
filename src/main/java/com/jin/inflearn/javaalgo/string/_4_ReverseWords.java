@@ -41,8 +41,8 @@ public class _4_ReverseWords {
 		 *     } 
 		 *  }
 		 */
-		for(char x : str.charAt(i)) {
-			if(result == t) answer++;
+		for(char x : str.toCharArray()) {
+			if(x == t) answer++;
 		}
 		return answer;
 	}
