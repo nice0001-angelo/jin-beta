@@ -35,7 +35,11 @@ public class _4_ReverseWords {
 		str = str.toUpperCase();
 		t = Character.toUpperCase(t); //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이
 		/*
-		 * for(int i=0; i < str.length(); i++) { if(str.charAt(i) == t) { answer++; } }
+		 * for(int i=0; i < str.length(); i++) {
+		 *     if(str.charAt(i) == t) { 
+		 *     answer++; 
+		 *     } 
+		 *  }
 		 */
 		for(char x : str.charAt(i)) {
 			if(result == t) answer++;
