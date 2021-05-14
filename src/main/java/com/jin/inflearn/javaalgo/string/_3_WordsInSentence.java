@@ -25,7 +25,8 @@ public class _3_WordsInSentence {
 	public String solution(String str) {
 		String answer = "";
 		String[] s = str.split(" ");
-		int m = 0;
+		//int m = 0;
+		int m = Integer.MIN_VALUE; // -2147483648 [0x80000000]
 		for(String x : s) {
 			int len = x.length();
 			if( m < len) {
