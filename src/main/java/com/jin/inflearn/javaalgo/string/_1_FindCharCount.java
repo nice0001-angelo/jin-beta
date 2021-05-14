@@ -9,7 +9,7 @@ import java.util.*;
  * @author njh
  *
  */
-public class _4_ReverseWords {
+public class _1_FindCharCount {
 
 	/**
 	 * @param args
@@ -18,7 +18,7 @@ public class _4_ReverseWords {
 		
 		//static 에서 instance(Non-static) 객체를 생성하기 위해서는 이렇게 클래스 객체를 생성해야함
 		//이렇게 하면 호출할 메서드를 static으로 선언하지 않아도 됨
-		_4_ReverseWords T = new _4_ReverseWords();
+		_1_FindCharCount T = new _1_FindCharCount();
 		
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
