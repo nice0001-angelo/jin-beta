@@ -24,10 +24,10 @@ public class _3_WordsInSentence {
 	
 	public String solution(String str) {
 		String answer = "";
-		String[] s = str.split(str);
+		String[] s = str.split(" ");
 		for(String x : s) {
 			System.out.println(x);
-			answer += x;
+			
 		}
 		return answer;
 	}
