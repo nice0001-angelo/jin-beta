@@ -33,7 +33,8 @@ public class _4_ReverseWords {
 	public int solution(String str, char t) {
 		int answer=0;
 		str = str.toUpperCase();
-		t = Character.toUpperCase(t);
+		t = Character.toUpperCase(t); //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이
+		System.out.println(str+" "+t);
 		
 		return answer;
 	}
