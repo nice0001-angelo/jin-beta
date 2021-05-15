@@ -37,6 +37,7 @@ public class _3_WordsInSentence {
 				m = len;
 				answer = tmp;
 			}
+			str = str.substring(pos+1);
 		}
 		return answer;
 	}
