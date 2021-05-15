@@ -24,6 +24,7 @@ public class _3_WordsInSentence {
 
 	public String solution(String str) {
 		String answer = "";
+		int i = Integer.MIN_VALUE; 
 	}
 
 }
