@@ -21,7 +21,7 @@ public class _3_WordsInSentence {
 		System.out.println(T.solution(str));
 		
 	}
-	
+
 	public String solution(String str) {
 		String answer = "";
 		String[] s = str.split(" ");
@@ -38,6 +38,11 @@ public class _3_WordsInSentence {
 		 */
 		while((pos=str.indexOf(" "))!=-1) {
 			String tmp = str.substring(0,pos);
+			int len = str.length();
+			if (len > m){
+				m = len;
+				answer = tmp;
+			}
 		}
 		return answer;
 	}
