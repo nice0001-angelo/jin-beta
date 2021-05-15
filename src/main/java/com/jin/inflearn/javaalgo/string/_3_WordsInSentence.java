@@ -31,6 +31,7 @@ public class _3_WordsInSentence {
 		 */
 		int pos;
 		while((pos = str.indexOf(" "))!=-1) {
+			String tmp = str.substring(0,pos);
 			
 		}
 		return answer;
