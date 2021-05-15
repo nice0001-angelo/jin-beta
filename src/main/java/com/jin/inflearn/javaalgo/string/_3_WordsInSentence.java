@@ -39,6 +39,9 @@ public class _3_WordsInSentence {
 			}
 			str = str.substring(pos+1); //pos+1 부터 끝까지
 		}
+		if(str.length() > m) {
+			answer = str;
+		}
 		return answer;
 	}
 
