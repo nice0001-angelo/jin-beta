@@ -24,7 +24,16 @@ public class _3_WordsInSentence {
 
 	public String solution(String str) {
 		String answer = "";
-		int i = Integer.MIN_VALUE; 
+		int m = Integer.MIN_VALUE;
+		String[] s = str.split(" ");
+		for(String x : s) {
+			int len = x.length();
+			if(len > m) {
+				m = len;
+				answer = x;
+			}
+		}
+		return answer;
 	}
 
 }
