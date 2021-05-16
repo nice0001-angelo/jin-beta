@@ -28,9 +28,8 @@ public class _4_ReverseWords {
 	}
 	
 	
-
-	public ArrayList<String> solution(int n, String[] str) {
-		ArrayList<String> answer = new ArrayList<>();
+	public List<String> solution(int n, String[] str) {
+		List<String> answer = new ArrayList<>();
 		for(String x : str) {
 			String tmp = new StringBuilder(x).reverse().toString();
 			answer.add(tmp);
