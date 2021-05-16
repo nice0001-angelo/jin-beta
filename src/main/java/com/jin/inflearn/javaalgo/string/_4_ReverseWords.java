@@ -31,6 +31,10 @@ public class _4_ReverseWords {
 
 	public ArrayList<String> solution(int n, String[] str) {
 		ArrayList<String> answer = new ArrayList<>();
+		for(String x : str) {
+			String tmp = new StringBuilder(x);
+		}
+				
 		
 		return answer;
 	}
