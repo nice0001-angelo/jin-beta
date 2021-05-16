@@ -41,7 +41,11 @@ public class _4_ReverseWords {
 			int lt = 0;
 			int rt = x.length();
 			while(rt > lt) {
-				
+				char tmp = s[lt];
+				s[lt] = s[rt];
+				s[rt] = tmp;
+				rt--;
+				lt++;
 			}
 		}
 		return answer;
