@@ -47,6 +47,8 @@ public class _4_ReverseWords {
 				rt--;
 				lt++;
 			}
+			String tmp = String.valueOf(s);
+			answer.add(tmp);
 		}
 		return answer;
 	}
