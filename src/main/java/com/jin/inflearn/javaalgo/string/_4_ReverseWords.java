@@ -39,7 +39,7 @@ public class _4_ReverseWords {
 		for(String x : str) {
 			char[] s = x.toCharArray();
 			int lt = 0;
-			int rt = x.length();
+			int rt = x.length()-1;
 			while(rt > lt) {
 				char tmp = s[lt];
 				s[lt] = s[rt];
