@@ -26,14 +26,14 @@ public class _4_ReverseWords {
 		
 		 //solution을 호출하고 각각의 배열 값을 하나씩 print 함 
 		for(String x: T.solution(n, str)) {
-		 System.out.println(x); 
+			System.out.println(x); 
 		 }
 		 
 		// System.out.println(T.solution(n, str));
 	}
 
 	public List<String> solution(int n, String[] str) {
-		List<String> answer = new ArrayList<>();
+		List<String> answer = new ArrayList<String>();
 		/*
 		 * StringBuilde를 이용한 리버스 for(String x : str) { String tmp = new
 		 * StringBuilder(x).reverse().toString(); answer.add(tmp); }
