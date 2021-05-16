@@ -22,6 +22,7 @@ public class _8_EffectivePalindrome {
 	}
 
 	public String solution(String str) {
+		str = str.toUpperCase().replaceAll("[^A-Z]", ""); //정규식[^A-Z]: 대문자 A부터 Z까지가 아니면, "" 빈문자로 바꾼다
 		return " ";
 	}
 }
