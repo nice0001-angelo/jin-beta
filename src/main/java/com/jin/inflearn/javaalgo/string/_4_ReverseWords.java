@@ -19,11 +19,17 @@ public class _4_ReverseWords {
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		String[] str = new String[n];
-		
-		System.out.println(T.solution(str));
+		for(int i = 0; i < n; i++) {
+			str[i] = kb.next();
+		}
+		for(String x: T.solution(n, str)) {
+		System.out.println(x);
 	}
+	}
+	
+	
 
-	public void solution(String str) {
+	public void solution(int n, String[] str) {
 		
 	}
 }
