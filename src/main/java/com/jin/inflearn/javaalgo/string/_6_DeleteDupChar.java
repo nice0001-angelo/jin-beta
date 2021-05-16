@@ -23,6 +23,9 @@ public class _6_DeleteDupChar {
 
 	public String solution(String str) {
 		String answer = new String();
+		for(int i = 0; i < str.length(); i++) {
+			System.out.println(str.charAt(i)+" "+i+" "+str.indexOf(str.charAt(i)));
+		}
 		return answer;
 	}
 }
