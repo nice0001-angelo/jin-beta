@@ -29,7 +29,9 @@ public class _4_ReverseWords {
 	
 	
 
-	public void solution(int n, String[] str) {
+	public ArrayList<String> solution(int n, String[] str) {
+		ArrayList<String> answer = new ArrayList<>();
 		
+		return answer;
 	}
 }
