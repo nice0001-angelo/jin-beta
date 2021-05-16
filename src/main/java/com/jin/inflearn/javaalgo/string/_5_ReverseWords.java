@@ -16,5 +16,10 @@ public class _5_ReverseWords {
 		// TODO Auto-generated method stub
 
 	}
+	
+	public String solution(String str) {
+		String answer = "";
+		return answer;
+	}
 
 }
