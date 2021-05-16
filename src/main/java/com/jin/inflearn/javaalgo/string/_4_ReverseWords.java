@@ -50,8 +50,7 @@ public class _4_ReverseWords {
 				x[rt]=tmp;
 			}
 			String result = String.valueOf(x);
-			 
-					
+			answer.add(0, result);
 		}
 		
 		return answer;
