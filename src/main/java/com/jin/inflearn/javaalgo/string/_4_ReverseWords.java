@@ -23,14 +23,12 @@ public class _4_ReverseWords {
 		for (int i = 0; i < n; i++) {
 			str[i] = kb.next();
 		}
-
 		
 		 //solution을 호출하고 각각의 배열 값을 하나씩 print 함 
 		for(String x: T.solution(n, str)) {
 		 System.out.println(x); 
 		 }
 		 
-
 		// System.out.println(T.solution(n, str));
 	}
 
@@ -50,9 +48,8 @@ public class _4_ReverseWords {
 				x[rt]=tmp;
 			}
 			String result = String.valueOf(x);
-			answer.add(0, result);
+			answer.add(result);
 		}
-		
 		return answer;
 	}
 }
