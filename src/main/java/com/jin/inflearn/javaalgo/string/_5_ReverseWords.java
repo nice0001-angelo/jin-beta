@@ -40,8 +40,8 @@ public class _5_ReverseWords {
 				rt--;
 			}
 		}
-		//answer = s.toString();
-		answer = String.valueOf(s);
+		//answer = s.toString(); //s의 주소값이 그대로 스트링으로 리턴
+		answer = String.valueOf(s); //s의 실제 값이 리턴
 		return answer;	
 		}
 }
