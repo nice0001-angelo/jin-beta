@@ -17,7 +17,7 @@ public class _8_EffectivePalindrome {
 	public static void main(String[] args) {
 		_8_EffectivePalindrome T = new _8_EffectivePalindrome();
 		Scanner kb = new Scanner(System.in);
-		String str = kb.next();
+		String str = kb.nextLine();
 		System.out.println(T.solution(str));
 	}
 
