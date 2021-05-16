@@ -7,7 +7,7 @@ package com.jin.inflearn.javaalgo.string;
  * @author njh
  *
  */
-public class EffectivePalindrome {
+public class _8_EffectivePalindrome {
 
 	/**
 	 * @param args
