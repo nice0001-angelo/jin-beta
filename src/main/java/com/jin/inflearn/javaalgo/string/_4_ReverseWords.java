@@ -42,6 +42,16 @@ public class _4_ReverseWords {
 		 */
 		for(String s : str) {
 			char[] x = s.toCharArray();
+			int lt = 0;
+			int rt = s.length()-1;
+			while(rt > lt) {
+				char tmp = x[lt];
+				x[lt]=x[rt];
+				x[rt]=tmp;
+			}
+			String result = 
+			answer = 
+					
 		}
 		
 		return answer;
