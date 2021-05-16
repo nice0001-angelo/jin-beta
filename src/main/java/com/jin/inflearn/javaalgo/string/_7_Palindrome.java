@@ -24,8 +24,8 @@ public class _7_Palindrome {
 	public String solution(String str) {
 		//String answer = new String();
 		String upstr = str.toUpperCase();
+		int rt = upstr.length()-1;
 		for (int lt = 0 ; lt < upstr.length()/2; lt++) {
-			int rt = upstr.length()-1;
 			if(str.charAt(lt) == str.charAt(rt)) {
 				rt--;
 		    } else {
