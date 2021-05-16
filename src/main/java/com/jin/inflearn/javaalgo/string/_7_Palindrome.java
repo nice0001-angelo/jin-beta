@@ -34,7 +34,8 @@ public class _7_Palindrome {
 		 * "YES";
 		 */
 		String reveredStr = new StringBuffer(str).reverse().toString();
-		if(str.equals(reveredStr)) return "YES";
+		//if(str.equals(reveredStr)) return "YES"; // 대소문자구분할때
+		if(str.equalsIgnoreCase(reveredStr)) return "YES"; //대소문자 구분없이 무시하고 결과 낼때 
 		return "NO";
 	}
 }
