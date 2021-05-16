@@ -26,7 +26,7 @@ public class _5_ReverseWords {
 		String answer = "";
 		char[] s = str.toCharArray();
 		int lt = 0;
-		int rt = str.length();
+		int rt = str.length()-1;
 		while(rt > lt) {
 			if(!Character.isAlphabetic(s[lt])) {
 				lt++;
@@ -40,7 +40,8 @@ public class _5_ReverseWords {
 				rt--;
 			}
 		}
-		answer = s.toString();
+		//answer = s.toString();
+		answer = String.valueOf(s);
 		return answer;	
 		}
 }
