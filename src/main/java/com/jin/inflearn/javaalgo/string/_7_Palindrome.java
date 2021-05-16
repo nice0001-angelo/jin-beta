@@ -24,12 +24,9 @@ public class _7_Palindrome {
 	public String solution(String str) {
 		String answer = new String();
 		String upstr = str.toUpperCase();
-		int lt = 0, rt = upstr.length();
-		while(rt > lt) {
-			String tmp = upstr.valueOf(lt);
-			upstr.valueOf(lt) = upstr.valueOf(rt);
-			
-		}
+		char[] upstrArray = upstr.toCharArray();
+		int lt = 0, rt = upstr.length()-1;
+
 		return answer;
 	}
 
