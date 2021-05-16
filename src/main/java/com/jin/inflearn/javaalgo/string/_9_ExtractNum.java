@@ -21,7 +21,7 @@ public class _9_ExtractNum {
 		System.out.println(T.solution(str));
 	}
 
-	public String solution(String str) {
+	public int solution(String str) {
 		/*
 		 * int answer = 0; for(char x : str.toCharArray()) { if(x >=48 && x<=57) {
 		 * answer = answer*10 + (x-48); //숫자 0~9: ASCII 48~57 x 값에 있는 char은 숫자연산시 ASCII
@@ -33,7 +33,7 @@ public class _9_ExtractNum {
 				answer += x;
 			}
 		}
-		return answer;
+		return Integer.parseInt(answer);
 	}
 
 }
