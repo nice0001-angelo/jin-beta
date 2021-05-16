@@ -21,11 +21,16 @@ public class _9_ExtractNum {
 		System.out.println(T.solution(str));
 	}
 
-	public int solution(String str) {
-		int answer = 0;
+	public String solution(String str) {
+		/*
+		 * int answer = 0; for(char x : str.toCharArray()) { if(x >=48 && x<=57) {
+		 * answer = answer*10 + (x-48); //숫자 0~9: ASCII 48~57 x 값에 있는 char은 숫자연산시 ASCII
+		 * 값으로 연산된다 } }
+		 */
+		String answer = "";
 		for(char x : str.toCharArray()) {
-			if(x >=48 && x<=57) {
-				answer = answer*10 + (x-48); //숫자 0~9: ASCII 48~57 x 값에 있는 char은 숫자연산시 ASCII 값으로 연산된다
+			if(Character.isDigit(x)) {
+				answer += x;
 			}
 		}
 		return answer;
