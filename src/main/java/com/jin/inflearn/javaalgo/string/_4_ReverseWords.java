@@ -38,6 +38,11 @@ public class _4_ReverseWords {
 		 */
 		for(String x : str) {
 			char[] s = x.toCharArray();
+			int lt = 0;
+			int rt = x.length();
+			while(rt > lt) {
+				
+			}
 		}
 		return answer;
 	}
