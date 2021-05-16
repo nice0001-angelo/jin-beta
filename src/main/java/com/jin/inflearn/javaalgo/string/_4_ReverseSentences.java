@@ -50,7 +50,7 @@ public class _4_ReverseSentences {
 				rt--;
 			}
 			String result = String.valueOf(x);
-			answer.add(result);
+			answer.add(result); //answer List Collection
 		}
 		return answer;
 	}
