@@ -46,6 +46,8 @@ public class _4_ReverseWords {
 				char tmp = x[lt];
 				x[lt]=x[rt];
 				x[rt]=tmp;
+				lt++;
+				rt--;
 			}
 			String result = String.valueOf(x);
 			answer.add(result);
