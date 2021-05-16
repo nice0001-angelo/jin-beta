@@ -22,16 +22,19 @@ public class _7_Palindrome {
 	}
 	
 	public String solution(String str) {
-		//String answer = new String();
-		String upstr = str.toUpperCase();
+		//String upstr = str.toUpperCase();
 		/*
 		 * int rt = upstr.length()-1; for (int lt = 0 ; lt < upstr.length()/2; lt++) {
 		 * if(str.charAt(lt) == str.charAt(rt)) { rt--; } else { return "N0"; } } return
 		 * "YES";
 		 */
-		for(int i = 0 ; i < upstr.length()/2; i++) {
-			if(upstr.charAt(i)!=upstr.charAt(upstr.length()-1-i)) return "NO";
-		}
-		return "YES";
+		/*
+		 * for(int i = 0 ; i < upstr.length()/2; i++) {
+		 * if(upstr.charAt(i)!=upstr.charAt(upstr.length()-1-i)) return "NO"; } return
+		 * "YES";
+		 */
+		String reveredStr = new StringBuffer(str).reverse().toString();
+		if(str.equals(reveredStr)) return "YES";
+		return "NO";
 	}
 }
