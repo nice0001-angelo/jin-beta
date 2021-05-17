@@ -37,6 +37,14 @@ public class _10_MinDistanceChar {
 			}
 		}
 		int rp = 1000;
+		for(int i = str.length()-1 ; i >= 0 ; i--) {
+			if(str.charAt(i) == t) {
+				rp = 0;
+			} else {
+				rp++;
+				
+			}
+		}
 		return answer;
 	}
 	
