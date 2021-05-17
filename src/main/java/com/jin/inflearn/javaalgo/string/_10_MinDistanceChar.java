@@ -42,7 +42,7 @@ public class _10_MinDistanceChar {
 				rp = 0;
 			} else {
 				rp++;
-				
+				answer[i] = Math.min(rp, answer[i]);
 			}
 		}
 		return answer;
