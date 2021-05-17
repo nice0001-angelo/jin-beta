@@ -26,16 +26,17 @@ public class _10_MinDistanceChar {
 	
 	public int[] solution(String str, char t) {
 		int[] answer = new int[str.length()];
-		int p = 1000;
+		int lp = 1000;
 		for(int i = 0; i < str.length(); i++) {
 			if(str.charAt(i) == t) {
-				p = 0;
-				answer[i] = p;
+				lp = 0;
+				answer[i] = lp;
 			} else {
-				p++;
-				answer[i] = p;
+				lp++;
+				answer[i] = lp;
 			}
 		}
+		int rp = 1000;
 		return answer;
 	}
 	
