@@ -20,7 +20,7 @@ public class _10_MinDistanceChar {
 		String str = kb.next();
 		char t = kb.next().charAt(0);
 		for(int x : T.solution(str, t)) {
-			System.out.println(x+" ");
+			System.out.print(x+" ");
 		}
 	}
 	
