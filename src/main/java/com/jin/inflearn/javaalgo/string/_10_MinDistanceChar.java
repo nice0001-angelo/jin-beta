@@ -24,4 +24,6 @@ public class _10_MinDistanceChar {
 	public int solution(String str, char t) {
 		return 0;
 	}
+	
+	
 }
