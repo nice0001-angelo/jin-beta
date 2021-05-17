@@ -3,6 +3,8 @@
  */
 package com.jin.inflearn.javaalgo.string;
 
+import java.util.*;
+
 /**
  * @author njh
  *
@@ -13,7 +15,9 @@ public class _10_MinDistanceChar {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		_10_MinDistanceChar T = new _10_MinDistanceChar();
+		Scanner kb = new Scanner(System.in);
+		
 
 	}
 
