@@ -25,12 +25,8 @@ public class _11_CompressSentence {
 		int cnt = 1;
 		String result = new String();
 		for(int i = 0; i < str.length()-1; i++) {
-			for(int j = i+1; j < str.length(); j++) {
-				if(str.charAt(i) == str.charAt(j)) {
-					cnt++;
-					result = Character.toString(str.charAt(i));
-					result += cnt; 
-				}
+			if(str.charAt(i) == str.charAt(i+1)) {
+				cnt++;
 			}
 		}
 		return "";
