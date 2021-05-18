@@ -24,7 +24,7 @@ public class _1_12_Decription {
 
 	public String solution(int k, String str) {
 		String answer = "";
-		for(int i=0; i < str.length(); i++) {
+		for(int i=0; i < str.length() ; i++) {
 			if(str.charAt(i) == '#') {
 				answer += "1"; 
 			}else if(str.charAt(i) == '*') {
