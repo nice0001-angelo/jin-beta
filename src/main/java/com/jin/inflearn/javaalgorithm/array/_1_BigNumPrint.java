@@ -20,13 +20,15 @@ public class _1_BigNumPrint {
 		int n = kb.nextInt();
 		int[] arr = new int[n];
 		for(int i=0; i < n; i++) {
-			arr[i] = 
+			arr[i] = kb.nextInt(); 
+		}
+		for(int x : T.solution(n, arr)) {
+			System.out.println(x+" ");			
 		}
 		
-		System.out.println(T.solution(num));
 	}
 
-	public int[] solution(int num) {
+	public int[] solution(int n, int[] arr) {
 		
 	}
 }
