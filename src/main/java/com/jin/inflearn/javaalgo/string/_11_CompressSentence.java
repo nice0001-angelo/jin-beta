@@ -27,8 +27,10 @@ public class _11_CompressSentence {
 		for(int i = 0; i < str.length()-1; i++) {
 			if(str.charAt(i) == str.charAt(i+1)) {
 				cnt++;
+			}else {
+				result = str.charAt(i)+String.valueOf(cnt);
 			}
 		}
-		return "";
+		return result;
 	}
 }
