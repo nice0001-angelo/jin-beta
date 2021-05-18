@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _10_MinDistanceChar {
+public class _1_10_MinDistanceChar {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_10_MinDistanceChar T = new _10_MinDistanceChar();
+		_1_10_MinDistanceChar T = new _1_10_MinDistanceChar();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
 		char t = kb.next().charAt(0);

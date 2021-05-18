@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _8_EffectivePalindrome {
+public class _1_8_EffectivePalindrome {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_8_EffectivePalindrome T = new _8_EffectivePalindrome();
+		_1_8_EffectivePalindrome T = new _1_8_EffectivePalindrome();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.nextLine();
 		System.out.println(T.solution(str));

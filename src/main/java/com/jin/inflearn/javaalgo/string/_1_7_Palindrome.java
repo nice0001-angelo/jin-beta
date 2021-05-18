@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _7_Palindrome {
+public class _1_7_Palindrome {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_7_Palindrome T = new _7_Palindrome();
+		_1_7_Palindrome T = new _1_7_Palindrome();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
 		System.out.println(T.solution(str));

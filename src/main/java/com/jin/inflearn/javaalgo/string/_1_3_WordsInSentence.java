@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _3_WordsInSentence {
+public class _1_3_WordsInSentence {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_3_WordsInSentence T = new _3_WordsInSentence();
+		_1_3_WordsInSentence T = new _1_3_WordsInSentence();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.nextLine();
 		System.out.println(T.solution(str));

@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _4_ReverseSentences {
+public class _1_4_ReverseSentences {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_4_ReverseSentences T = new _4_ReverseSentences();
+		_1_4_ReverseSentences T = new _1_4_ReverseSentences();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt(); // 숫자 1자리수 받기
 		String[] str = new String[n]; // 스트링 배역 갯수를 n개로 제한

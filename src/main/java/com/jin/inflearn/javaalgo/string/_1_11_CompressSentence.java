@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _11_CompressSentence {
+public class _1_11_CompressSentence {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_11_CompressSentence T = new _11_CompressSentence();
+		_1_11_CompressSentence T = new _1_11_CompressSentence();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
 		System.out.println(T.solution(str));

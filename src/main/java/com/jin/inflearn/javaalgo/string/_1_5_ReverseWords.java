@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _5_ReverseWords {
+public class _1_5_ReverseWords {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_5_ReverseWords T = new _5_ReverseWords();
+		_1_5_ReverseWords T = new _1_5_ReverseWords();
 		Scanner kb = new Scanner(System.in);
 		//String str = kb.nextLine();
 		String str = kb.next();

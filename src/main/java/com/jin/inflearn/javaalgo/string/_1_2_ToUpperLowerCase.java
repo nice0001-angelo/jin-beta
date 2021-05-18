@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _2_ToUpperLowerCase {
+public class _1_2_ToUpperLowerCase {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_2_ToUpperLowerCase T = new _2_ToUpperLowerCase();
+		_1_2_ToUpperLowerCase T = new _1_2_ToUpperLowerCase();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
 		System.out.println(T.solution(str));
