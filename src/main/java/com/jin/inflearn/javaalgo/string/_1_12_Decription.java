@@ -20,16 +20,22 @@ public class _1_12_Decription {
 		int k = kb.nextInt();
 		String str = kb.next();
 		System.out.println(T.solution(k, str));
+		System.out.println(T.solution(k, str));
 	}
 
 	public String solution(int k, String str) {
 		String answer = "";
-		for(int i=0; i < str.length() ; i++) {
+		for(int i=0; i < k ; i++) {
+			String tmp = str.substring(0,7);
+			System.out.println(tmp);
 			if(str.charAt(i) == '#') {
 				answer += "1"; 
 			}else if(str.charAt(i) == '*') {
 				answer += "0";
 			}
+		}
+		for(int i = 0; i < k; i = 7*(i+1)) {
+			answer.substring(i, 7*i);
 		}
 		return answer;
 	}
