@@ -18,10 +18,12 @@ public class _1_BigNumPrint {
 		_1_BigNumPrint T = new _1_BigNumPrint();
 		Scanner kb = new Scanner(System.in);
 		int num = kb.nextInt();
+		int[] arr = new int[num];
+		
 		System.out.println(T.solution(num));
 	}
 
 	public int[] solution(int num) {
-		int[] num = new 
+		
 	}
 }
