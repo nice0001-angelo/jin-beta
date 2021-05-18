@@ -29,7 +29,10 @@ public class _11_CompressSentence {
 			if(str.charAt(i) == str.charAt(i+1)) {
 				cnt++;
 			}else {
-				result = str.charAt(i)+String.valueOf(cnt);
+				result += str.charAt(i);
+				if(cnt > 1) {
+					result += String.valueOf(cnt);
+				}
 				cnt = 1;
 			}
 		}
