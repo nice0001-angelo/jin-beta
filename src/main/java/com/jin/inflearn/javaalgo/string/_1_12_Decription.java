@@ -25,7 +25,7 @@ public class _1_12_Decription {
 	public String solution(int k, String str) {
 		String answer = "";
 		for(int i=0; i < k ; i++) {
-			String tmp = str.substring(0,7);
+			String tmp = str.substring(0,7).replace("#", "1").replace("*","0");
 			System.out.println(tmp);
 			str = str.substring(7);
 		}
