@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin.inflearn.javaalgo.string;
+package com.jin.inflearn.javaalgorithm.string;
 
 import java.util.*;
 
@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _1_12_Decription {
+public class _12_Decription {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_1_12_Decription T = new _1_12_Decription();
+		_12_Decription T = new _12_Decription();
 		Scanner kb = new Scanner(System.in);
 		int k = kb.nextInt();
 		String str = kb.next();

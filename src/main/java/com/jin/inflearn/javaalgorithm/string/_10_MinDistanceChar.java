@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin.inflearn.javaalgo.string;
+package com.jin.inflearn.javaalgorithm.string;
 
 import java.util.*;
 
@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _1_10_MinDistanceChar {
+public class _10_MinDistanceChar {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_1_10_MinDistanceChar T = new _1_10_MinDistanceChar();
+		_10_MinDistanceChar T = new _10_MinDistanceChar();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
 		char t = kb.next().charAt(0);

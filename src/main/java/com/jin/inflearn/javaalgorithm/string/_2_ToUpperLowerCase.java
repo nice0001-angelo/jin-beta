@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin.inflearn.javaalgo.string;
+package com.jin.inflearn.javaalgorithm.string;
 
 import java.util.*;
 
@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _1_2_ToUpperLowerCase {
+public class _2_ToUpperLowerCase {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_1_2_ToUpperLowerCase T = new _1_2_ToUpperLowerCase();
+		_2_ToUpperLowerCase T = new _2_ToUpperLowerCase();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
 		System.out.println(T.solution(str));

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jin.inflearn.javaalgo.string;
+package com.jin.inflearn.javaalgorithm.string;
 
 import java.util.*;
 
@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _1_6_DeleteDupChar {
+public class _6_DeleteDupChar {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_1_6_DeleteDupChar T = new _1_6_DeleteDupChar();
+		_6_DeleteDupChar T = new _6_DeleteDupChar();
 		Scanner tb = new Scanner(System.in);
 		String str = tb.next();
 		System.out.println(T.solution(str));
