@@ -28,6 +28,7 @@ public class _1_12_Decription {
 		for(int i=0; i < k ; i++) {
 			String tmp = str.substring(0,7);
 			System.out.println(tmp);
+			str = str.substring(7);
 			if(str.charAt(i) == '#') {
 				answer += "1"; 
 			}else if(str.charAt(i) == '*') {
