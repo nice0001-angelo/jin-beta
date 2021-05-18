@@ -19,10 +19,14 @@ public class _1_12_Decription {
 		Scanner kb = new Scanner(System.in);
 		int k = kb.nextInt();
 		String str = kb.next();
-		System.out.println(T.solution(str));
+		System.out.println(T.solution(k, str));
 	}
 
-	public String solution(String str) {
+	public String solution(int k, String str) {
+		char[] tmp;
+		for(int i=0; i < str.length(); i++) {
+			if(str.charAt(i) == '#') tmp = tmp. 
+		}
 		return "";
 	}
 }
