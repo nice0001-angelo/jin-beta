@@ -28,7 +28,7 @@ public class _1_BigNumPrint {
 		
 	}
 
-	public int[] solution(int n, int[] arr) {
-		
+	public ArrayList<Integer> solution(int n, int[] arr) {
+		ArrayList<Integer> answer = new ArrayList<>();
 	}
 }
