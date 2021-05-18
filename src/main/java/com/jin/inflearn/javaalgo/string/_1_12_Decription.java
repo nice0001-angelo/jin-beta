@@ -26,8 +26,9 @@ public class _1_12_Decription {
 		String answer = "";
 		for(int i=0; i < k ; i++) {
 			String tmp = str.substring(0,7).replace('#', '1').replace('*','0');
-			int num = Integer.parseInt(tmp);
+			int num = Integer.parseInt(tmp,2);
 			System.out.println(tmp);
+			System.out.println(num);
 			str = str.substring(7);
 		}
 		return answer;
