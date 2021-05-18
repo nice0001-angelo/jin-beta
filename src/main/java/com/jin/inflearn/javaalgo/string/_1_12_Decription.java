@@ -20,7 +20,6 @@ public class _1_12_Decription {
 		int k = kb.nextInt();
 		String str = kb.next();
 		System.out.println(T.solution(k, str));
-		System.out.println(T.solution(k, str));
 	}
 
 	public String solution(int k, String str) {
