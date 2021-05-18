@@ -23,9 +23,11 @@ public class _1_12_Decription {
 	}
 
 	public String solution(int k, String str) {
-		char[] tmp;
+		String anser = "";
 		for(int i=0; i < str.length(); i++) {
-			if(str.charAt(i) == '#') tmp = tmp. 
+			if(str.charAt(i) == '#') {
+				answer += "1"; 
+			}
 		}
 		return "";
 	}
