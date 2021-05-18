@@ -29,14 +29,6 @@ public class _1_12_Decription {
 			String tmp = str.substring(0,7);
 			System.out.println(tmp);
 			str = str.substring(7);
-			if(str.charAt(i) == '#') {
-				answer += "1"; 
-			}else if(str.charAt(i) == '*') {
-				answer += "0";
-			}
-		}
-		for(int i = 0; i < k; i = 7*(i+1)) {
-			answer.substring(i, 7*i);
 		}
 		return answer;
 	}
