@@ -21,5 +21,7 @@ public class _11_CompressSentence {
 		System.out.println(T.solution(str));
 	}
 
-	public
+	public String solution(String str) {
+		return "";
+	}
 }
