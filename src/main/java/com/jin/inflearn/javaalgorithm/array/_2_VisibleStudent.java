@@ -13,7 +13,7 @@ public class _2_VisibleStudent {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		_2_VisibleStudent T = new _2_VisibleStudent();
 
 	}
 
