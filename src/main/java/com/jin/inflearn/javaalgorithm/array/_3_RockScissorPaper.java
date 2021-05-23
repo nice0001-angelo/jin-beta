@@ -17,6 +17,7 @@ public class _3_RockScissorPaper {
 	public static void main(String[] args) {
 		_3_RockScissorPaper T = new _3_RockScissorPaper();
 		Scanner kb = new Scanner(System.in);
+		int n = kb.nextInt();
 
 	}
 
