@@ -29,7 +29,11 @@ public class _2_VisibleStudent {
 	
 	public int solution(int n, int[] arr) {
 		int answer = 1;
-		
+		int max = arr[0];
+		for(int i = 1 ; i < n-1 ; i++)
+			if(arr[i] > arr[i-1]) {
+				
+			}
 		return answer;
 	}
 }
