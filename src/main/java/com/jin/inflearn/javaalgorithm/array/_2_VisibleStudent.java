@@ -5,8 +5,6 @@ package com.jin.inflearn.javaalgorithm.array;
 
 import java.util.*;
 
-import org.graalvm.compiler.core.common.type.ArithmeticOpTable.BinaryOp.*;
-
 /**
  * @author njh
  *
@@ -29,10 +27,11 @@ public class _2_VisibleStudent {
 	
 	public int solution(int n, int[] arr) {
 		int answer = 1;
-		int max = arr[0];
+		int maxNum = arr[0];
 		for(int i = 1 ; i < n-1 ; i++)
 			if(arr[i] > arr[i-1]) {
-				
+				answer++;
+				maxNum = arr[i];
 			}
 		return answer;
 	}
