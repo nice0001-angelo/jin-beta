@@ -22,6 +22,9 @@ public class _3_RockScissorPaper {
 		int n = kb.nextInt();
 		int[] a = new int[n];
 		int[] b = new int[n];
+		for(int i = 0; i < n; i++) {
+			a[i] = kb.nextInt();
+		}
 		
 
 	}
