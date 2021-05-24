@@ -29,7 +29,9 @@ public class _6_ReversePrimeNumber {
 	
 	public ArrayList<String> solution(int n, int[] arr) {
 		ArrayList<String> answer = new ArrayList<String>();
-		
+		for(int i = 0; i < n; i++) {
+			
+		}
 		
 		
 		return answer;
