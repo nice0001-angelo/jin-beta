@@ -37,7 +37,7 @@ public class _6_ReversePrimeNumber {
 			while(tmp>0) {
 				int t = tmp%10; //arr[0] 25이면 5
 				res=res*10+t; //0*10+5=5
-				tmp=tmp/10; // 25/10=2.5
+				tmp=tmp/10; // 25/10=2
 			}
 			if(isPrime(res)) {
 				answer.add(res);
