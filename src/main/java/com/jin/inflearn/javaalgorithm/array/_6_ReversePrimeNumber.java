@@ -23,6 +23,14 @@ public class _6_ReversePrimeNumber {
 			arr[i] = kb.nextInt();
 		}
 
+		System.out.println(T.solution(n, arr));
+		
+	}
+	
+	public int[] solution(int n, int[] arr) {
+		int[] answer = new int[n];
+		
+		return answer;
 	}
 
 }
