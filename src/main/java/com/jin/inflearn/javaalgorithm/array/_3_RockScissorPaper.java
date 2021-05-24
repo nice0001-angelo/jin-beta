@@ -28,8 +28,10 @@ public class _3_RockScissorPaper {
 		for(int i = 0; i < n; i++) {
 			b[i] = kb.nextInt();
 		}
+		for(char x : T.solution(n, a, b).toCharArray()) {
+			System.out.println(x);
+		}
 		
-		System.out.print(T.solution(n, a, b)+" ");
 	}
 	
 	// 1. Scissor 2.Rock 3.Paper
