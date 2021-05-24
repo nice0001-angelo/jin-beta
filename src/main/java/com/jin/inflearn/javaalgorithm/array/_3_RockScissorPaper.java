@@ -28,5 +28,11 @@ public class _3_RockScissorPaper {
 		for(int i = 0; i < n; i++) {
 			b[i] = kb.nextInt();
 		}
+		
+		System.out.println(T.solution(n, a, b));
+	}
+	
+	public int solution(int n, int[] a, int[] b) {
+		
 	}
 }
