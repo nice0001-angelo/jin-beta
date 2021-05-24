@@ -29,23 +29,23 @@ public class _3_RockScissorPaper {
 			b[i] = kb.nextInt();
 		}
 		
-		System.out.print(T.solution(n, a, b).);
+		System.out.print(T.solution(n, a, b)+" ");
 	}
 	
 	// 1. Scissor 2.Rock 3.Paper
-	public String[] solution(int n, int[] a, int[] b) {
-		String[] answer = new String[n]; 
+	public String solution(int n, int[] a, int[] b) {
+		String answer = ""; 
 		for(int i = 0; i < n; i++) {
 			if(a[i] == b[i]) {
-				answer[i] = "D";
+				answer += "D";
 			} else if(a[i] == 1 && b[i] == 2) {
-				answer[i] = "B";
+				answer += "B";
 			} else if(a[i] == 2 && b[i] == 3) {
-				answer[i] = "B";
+				answer += "B";
 			} else if(a[i] == 3 && b[i] == 1) {
-				answer[i] = "B";
+				answer += "B";
 			} else {
-				answer[i] = "A";
+				answer += "A";
 			}
 		}
 		return answer;
