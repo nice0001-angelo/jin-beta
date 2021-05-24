@@ -30,7 +30,13 @@ public class _6_ReversePrimeNumber {
 	public ArrayList<String> solution(int n, int[] arr) {
 		ArrayList<String> answer = new ArrayList<String>();
 		for(int i = 0; i < n; i++) {
-			
+			int tmp = arr[i];
+			int res = 0;
+			while(tmp>0) {
+				int t = tmp%10; //arr[0] 25이면 5
+				res=res*10+t; //0*10+5=5
+				tmp=tmp/10; // 25/10=2.5
+			}
 		}
 		
 		
