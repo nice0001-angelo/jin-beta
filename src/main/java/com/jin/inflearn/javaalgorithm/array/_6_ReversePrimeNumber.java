@@ -27,8 +27,10 @@ public class _6_ReversePrimeNumber {
 		
 	}
 	
-	public int[] solution(int n, int[] arr) {
-		int[] answer = new int[n];
+	public ArrayList<String> solution(int n, int[] arr) {
+		ArrayList<String> answer = new ArrayList<String>();
+		
+		
 		
 		return answer;
 	}
