@@ -25,8 +25,8 @@ public class _3_RockScissorPaper {
 		for(int i = 0; i < n; i++) {
 			a[i] = kb.nextInt();
 		}
-		
-
+		for(int i = 0; i < n; i++) {
+			b[i] = kb.nextInt();
+		}
 	}
-
 }
