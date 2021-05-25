@@ -25,23 +25,28 @@ public class _7_CalculateScore {
 		for(int x : T.solution(n, arr)) {
 			System.out.print(x+" ");
 		}
+		System.out.println();
 		
 	}
 	
 	public int[] solution(int n, int[] arr) {
 		int[] answer = new int[n];
+		int sum =0;
 		if(arr[0] == 1) {
 			answer[0] = 1;
+			sum = 1;
 		} else {
 			answer[0] = 0;
 		}
 		for(int i = 1; i<n; i++) {
 			if(arr[i] == 1 ) {
 				answer[i] = answer[i-1]+1;
+				sum += answer[i];
 			} else {
 				answer[i] = 0;
 			}
 		}
+		System.out.println("sum: "+sum);
 		return answer;
 	}
 }
