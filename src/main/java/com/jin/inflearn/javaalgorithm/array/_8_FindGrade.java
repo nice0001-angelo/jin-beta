@@ -32,9 +32,13 @@ public class _8_FindGrade {
 		int cnt = 1;
 		for(int i = 0; i<n; i++) {
 			for(int j=0; j<n; j++) {
+				if(arr[j] > arr[i]) {
+					cnt++;
+				}
 				
 			}
-			
+			answer[i] = cnt;
+			cnt = 1;
 		}
 		return answer;
 	}
