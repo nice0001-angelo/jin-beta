@@ -43,14 +43,16 @@ public class _9_MaxSumNbyNArray {
 				sum1 += arr[i][j];
 				sum2 += arr[j][i];
 			}
-			answer = Math.max(sum1, sum2);
+			answer = Math.max(answer, sum1);
+			answer = Math.max(answer, sum2);
 		}
 		sum1 = sum2 = 0;
 		for(int i=0; i<n; i++) {
 			sum1 += arr[i][i];
 			sum2 += arr[i][n-1-i];
 		}
-		answer = Math.max(sum1, sum2);
+		answer = Math.max(answer, sum1);
+		answer = Math.max(answer, sum2);
 		return answer;
 	}
 
