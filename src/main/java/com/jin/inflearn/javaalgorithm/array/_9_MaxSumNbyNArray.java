@@ -9,13 +9,13 @@ import java.util.*;
  * @author njh
  *
  */
-public class _9_SumNbyNArray {
+public class _9_MaxSumNbyNArray {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_9_SumNbyNArray T = new _9_SumNbyNArray();
+		_9_MaxSumNbyNArray T = new _9_MaxSumNbyNArray();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		int[][] arr = new int[n][n];
