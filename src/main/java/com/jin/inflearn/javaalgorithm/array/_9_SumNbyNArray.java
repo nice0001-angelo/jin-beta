@@ -29,7 +29,7 @@ public class _9_SumNbyNArray {
 	}
 	
 	public int solution(int n, int[][] arr) {
-		int answer = 0;
+		int answer = Integer.MIN_VALUE;
 		return answer;
 	}
 
