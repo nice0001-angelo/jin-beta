@@ -34,6 +34,7 @@ public class _10_CountPeak {
 		System.out.println(T.solution(n,arr));
 	}
 	
+	
 	public int solution(int n, int[][] arr) {
 		int answer = 0;
 		int[] dx = {-1, 0, 1, 0};
@@ -52,14 +53,14 @@ public class _10_CountPeak {
 					int ny = j+dy[k];
 					if(nx>=0 && nx<n && ny>=0 && ny<n && arr[nx][ny]>=arr[i][j]) {
 						flag = false; 
-						break; // 떨구고 밖으로 나감 어디까지 가는지를 확인해야 함
-					}
-					if(flag) {
-						answer++;
+						break; // 떨구고 밖으로 나감 어디까지 가는지를 확인해야 함(for문 밖으로 나감)
 					}
 				}
+			if(flag) {
+				answer++;
 			}
-		}
+		    }
+	    }
 		return answer;
-	}
+    }
 }
