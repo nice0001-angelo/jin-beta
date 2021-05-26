@@ -50,7 +50,7 @@ public class _10_CountPeak {
 				for(int k=0; k<4; k++) {
 					int nx = i+dx[k];
 					int ny = j+dy[k];
-					if(arr[nx][ny]>=arr[i][j]) {
+					if(arr[nx][ny]>=arr[i][j] && nx>=0 && nx<n && ny>=0 && ny<n) {
 						flag = false; 
 						break;
 					}
