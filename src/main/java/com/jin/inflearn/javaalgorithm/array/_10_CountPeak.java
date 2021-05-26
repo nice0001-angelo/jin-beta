@@ -51,7 +51,8 @@ public class _10_CountPeak {
 					int nx = i+dx[k];
 					int ny = j+dy[k];
 					if(arr[nx][ny]>=arr[i][j]) {
-						flag = false; break;
+						flag = false; 
+						break;
 					}
 					if(flag) {
 						answer++;
