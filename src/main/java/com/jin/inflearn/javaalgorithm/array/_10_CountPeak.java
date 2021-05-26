@@ -36,12 +36,17 @@ public class _10_CountPeak {
 	
 	public int solution(int n, int[][] arr) {
 		int answer = 0;
-		for(int i=1; i<=n; i++) {
-			for(int j=1; j<=n; j++) {
-				arr[0][j]=0; arr[n+1][j]=0; arr[i][0]=0; arr[i][n+1]=0;
-				if(arr[i][j]>arr[i-1][j] && arr[i][j]>arr[i+1][j] && arr[i][j]>arr[i][j-1] && arr[i][j]>arr[i][j+1]) {
-					answer++;
-				}
+		int[] dx = {-1, 0, 1, 0};
+		int[] dy = {0, 1, 0, -1};
+		/*
+		 * for(int i=1; i<=n; i++) { for(int j=1; j<=n; j++) { arr[0][j]=0;
+		 * arr[n+1][j]=0; arr[i][0]=0; arr[i][n+1]=0; if(arr[i][j]>arr[i-1][j] &&
+		 * arr[i][j]>arr[i+1][j] && arr[i][j]>arr[i][j-1] && arr[i][j]>arr[i][j+1]) {
+		 * answer++; } } }
+		 */
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				
 			}
 		}
 		return answer;
