@@ -13,6 +13,12 @@ public class _10_CountPeak {
 
 	/**
 	 * @param args
+5
+5 3 7 2 3
+3 7 1 6 1
+7 2 5 3 4
+4 3 6 4 1
+8 7 3 5 2
 	 */
 	public static void main(String[] args) {
 		_10_CountPeak T = new _10_CountPeak();
@@ -30,9 +36,9 @@ public class _10_CountPeak {
 	
 	public int solution(int n, int[][] arr) {
 		int answer = 0;
-		for(int i=1; i<n-1; i++) {
-			for(int j=1; j<n-1; j++) {
-				arr[0][j]=0; arr[n][j]=0; arr[i][0]=0; arr[i][n-1]=0;
+		for(int i=1; i<=n; i++) {
+			for(int j=1; j<=n; j++) {
+				arr[0][j]=0; arr[n+1][j]=0; arr[i][0]=0; arr[i][n+1]=0;
 				if(arr[i][j]>arr[i-1][j] && arr[i][j]>arr[i+1][j] && arr[i][j]>arr[i][j-1] && arr[i][j]>arr[i][j+1]) {
 					answer++;
 				}
@@ -40,5 +46,4 @@ public class _10_CountPeak {
 		}
 		return answer;
 	}
-
 }
