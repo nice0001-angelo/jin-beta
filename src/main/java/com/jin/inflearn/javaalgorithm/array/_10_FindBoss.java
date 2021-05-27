@@ -30,7 +30,7 @@ public class _10_FindBoss {
 	}
 	
 	public int solution(int n, int[][] arr) {
-		int answer=0;
+		int answer=0, max=Integer.MAX_VALUE;
 		return answer;
 	}
 
