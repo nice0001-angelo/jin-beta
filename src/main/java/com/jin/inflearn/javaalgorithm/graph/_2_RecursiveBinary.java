@@ -22,12 +22,8 @@ public class _2_RecursiveBinary {
 		if(n == 0) {
 			return;
 		}else {
-
 			DFS(n/2);
-			System.out.println(n+" ");			
+			System.out.print(n%2+"");			
 		}
-		
-		
 	}
-
 }
