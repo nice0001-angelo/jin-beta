@@ -3,6 +3,8 @@
  */
 package com.jin.inflearn.javaalgorithm.array;
 
+import java.util.*;
+
 /**
  * @author njh
  *
@@ -13,8 +15,21 @@ public class _11_Mentoring {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		_11_Mentoring T = new _11_Mentoring();
+		Scanner kb = new Scanner(System.in);
+		int n = kb.nextInt();
+		int m = kb.nextInt();
+		int[][] arr = new int[m][n];
+		for(int i=0; i<m; i++) {
+			for(int j=0; j<n; j++) {
+				arr[i][j]=kb.nextInt();
+			}
+		}
+		System.out.print(T.solution(n, m, arr));
+	}
+	
+	public void solution(int n, int m, int[][] arr) {
+		
 	}
 
 }
