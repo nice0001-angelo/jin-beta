@@ -36,7 +36,7 @@ public class _10_FindBoss {
 	}
 	
 	public int solution(int n, int[][] arr) {
-		int answer=0, max=Integer.MAX_VALUE;
+		int answer=0, max=Integer.MIN_VALUE;
 		for(int i=1; i<=n; i++) {
 			int cnt=0;
 			for(int j=1; j<=n; j++) {
