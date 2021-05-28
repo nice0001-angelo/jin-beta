@@ -25,10 +25,12 @@ public class _11_Mentoring {
 				arr[i][j]=kb.nextInt();
 			}
 		}
-		System.out.print(T.solution(n, m, arr));
+		System.out.println(T.solution(n, m, arr));
 	}
 	
-	public void solution(int n, int m, int[][] arr) {
+	public int solution(int n, int m, int[][] arr) {
+		int answer = Integer.MIN_VALUE;
+		return answer;
 		
 	}
 
