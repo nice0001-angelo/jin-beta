@@ -14,7 +14,7 @@ public class _3_Factorial {
 	 */
 	public static void main(String[] args) {
 		_3_Factorial T = new _3_Factorial();
-		T.DFS(9);
+		T.DFS(5);
 
 	}
 	
@@ -22,7 +22,8 @@ public class _3_Factorial {
 		if(n == 0) {
 			return;
 		} else {
-			
+			DFS(n-1);
+			System.out.println(n+(n-1));
 		}
 	}
 
