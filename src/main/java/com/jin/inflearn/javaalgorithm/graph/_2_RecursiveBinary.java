@@ -13,8 +13,22 @@ public class _2_RecursiveBinary {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		_2_RecursiveBinary T = new _2_RecursiveBinary();
+		T.DFS(11);
 
+	}
+	
+	public void DFS(int n) {
+		int result = n%2;
+		if(n == 0) {
+			return;
+		}else {
+			DFS(n/2);
+			System.out.println();
+			answer += result;	
+		}
+		
+		
 	}
 
 }
