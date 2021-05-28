@@ -13,8 +13,17 @@ public class _3_Factorial {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		_3_Factorial T = new _3_Factorial();
+		T.DFS(9);
 
+	}
+	
+	public void DFS(int n) {
+		if(n == 0) {
+			return;
+		} else {
+			
+		}
 	}
 
 }
