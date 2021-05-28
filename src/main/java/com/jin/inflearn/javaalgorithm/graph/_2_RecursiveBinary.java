@@ -19,13 +19,12 @@ public class _2_RecursiveBinary {
 	}
 	
 	public void DFS(int n) {
-		int result = n%2;
 		if(n == 0) {
 			return;
 		}else {
+
 			DFS(n/2);
-			System.out.println();
-			answer += result;	
+			System.out.println(n+" ");			
 		}
 		
 		
