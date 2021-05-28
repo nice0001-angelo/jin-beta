@@ -23,7 +23,7 @@ public class _1_RecursiveStack {
 			return; //메소드 종료 의미
 		} else{
 			DFS(n-1); //자기가 자기를 호출함 재귀함수 Recursive: 재귀함수는 반복문의 형태
-			System.out.print(n+" ");
+			System.out.print(n+" "); //재귀함수는 스택프레임을 사용한다
 		}
 
 	}
