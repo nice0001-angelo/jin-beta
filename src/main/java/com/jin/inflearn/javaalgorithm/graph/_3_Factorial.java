@@ -14,7 +14,7 @@ public class _3_Factorial {
 	 */
 	public static void main(String[] args) {
 		_3_Factorial T = new _3_Factorial();
-		System.out.println(T.DFS(5));
+		System.out.println("Factorial is: "+T.DFS(5));
 
 	}
 	
