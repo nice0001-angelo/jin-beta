@@ -14,7 +14,7 @@ public class _4_FibonacciNumber {
 	 */
 	public static void main(String[] args) {
 		_4_FibonacciNumber T = new _4_FibonacciNumber();
-		int n = 7;
+		int n = 6;
 		System.out.print(T.DFS(n));
 	}
 	
