@@ -27,6 +27,7 @@ public class _8_BFSSearchCow {
 			int len=Q.size();
 			for(int i=0; i<len; i++) {
 				int x=Q.poll(); //큐에 있는 초기값을 받음(
+				if(x==e) return L; //결과값 리턴
 				for(int j=0; j<3; j++) {
 					int nx=x+dis[j]; //nx ==> next x(초기값은 s를 큐에 넣은것을 받아 왔으니 s=5 초기값이면 최초는 5)
 					if(nx>=1 && nx<=10000 && ch[nx]==0) { //ch[nx]==0 이란건 아직 방문안했다는 뜻: 초기화가 0
@@ -35,8 +36,9 @@ public class _8_BFSSearchCow {
 					}
 				}
 			}
+			L++; // for문에서 다 탐색해서 각노드에 값까지 넣고나면 레벨 증가
 		}
-		L++; // while문에서 다 탐색해서 각노드에 값까지 넣고나면 레벨 증가 
+		return -1; //결과가 제대로 안나왔을때 
 	}
 	
 	
