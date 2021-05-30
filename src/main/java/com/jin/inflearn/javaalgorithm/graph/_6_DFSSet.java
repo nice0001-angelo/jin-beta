@@ -16,7 +16,12 @@ public class _6_DFSSet {
 	static int[] ch;
 	
 	public void DFS(int L) {
-		
+		if(L==n+1) {
+			
+		}else {
+			DFS(L+1);
+			DFS(L+1);
+		}
 		
 	}
 	
