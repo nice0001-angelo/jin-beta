@@ -30,6 +30,7 @@ public class _5_DFSSearch {
 			return;
 		}else {
 			DFS(root.lt);
+			DFS(root.rt);
 		}
 	}
 	
