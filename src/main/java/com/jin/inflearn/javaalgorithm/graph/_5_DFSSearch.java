@@ -29,8 +29,11 @@ public class _5_DFSSearch {
 		if(root==null) {
 			return;
 		}else {
+			//System.out.print(root.data+" ");//전위순회
 			DFS(root.lt);
+			//System.out.print(root.data+" ");//중위순회
 			DFS(root.rt);
+			System.out.print(root.data+" ");//후위순회
 		}
 	}
 	
