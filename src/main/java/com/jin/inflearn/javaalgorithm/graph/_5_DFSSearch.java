@@ -26,7 +26,8 @@ public class _5_DFSSearch {
 	 */
 	Node root;
 	public void DFS(Node root) {
-		
+		if(root==null) return;
+		else {
 	}
 	
 	public static void main(String[] args) {
