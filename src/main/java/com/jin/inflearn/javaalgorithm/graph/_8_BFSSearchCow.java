@@ -25,6 +25,12 @@ public class _8_BFSSearchCow {
 		int L=0;
 		while(!Q.isEmpty()){
 			int len=Q.size();
+			for(int i=0; i<len; i++) {
+				int x=Q.poll(); //큐에 있는 초기값을 받음(
+				for(int j=0; j<3; j++) {
+					int nx=x+dis[j]; //nx ==> next x(초기값은 s를 큐에 넣은것을 받아 왔으니 s=5 초기값이면 최초는 5)
+				}
+			}
 		}
 		return answer;
 	}
