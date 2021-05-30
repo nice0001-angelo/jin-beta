@@ -3,15 +3,23 @@
  */
 package com.jin.inflearn.javaalgorithm.graph;
 
+import java.util.*;
+
 /**
  * @author njh
  *
  */
 
 /* class Node는 이미 _5_DFSSearch에서 선언한 클래스 이므로 여기서 다시 선언할 필요가 없다
- * class Node{ int data; Node lt, rt;
+ * class Node{ 
+ * int data; 
+ * Node lt, rt;
  * 
- * public Node(int val) { data=val; lt=rt=null; } }
+ * public Node(int val) { 
+ * data=val; 
+ * lt=rt=null; 
+ * } 
+ * }
  */
 
 
@@ -20,7 +28,13 @@ public class _7_BFSSearch {
 	Node root;
 	
 	public void BFS(Node root) {
-		
+		Queue<Node> Q = new LinkedList<>();
+		Q.offer(root);
+		int L=0;
+		while(!Q.isEmpty()) {
+			int len=Q.size();
+			
+		}
 	}
 
 	public static void main(String[] args) {
