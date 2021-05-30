@@ -31,11 +31,12 @@ public class _8_BFSSearchCow {
 					int nx=x+dis[j]; //nx ==> next x(초기값은 s를 큐에 넣은것을 받아 왔으니 s=5 초기값이면 최초는 5)
 					if(nx>=1 && nx<=10000 && ch[nx]==0) { //ch[nx]==0 이란건 아직 방문안했다는 뜻: 초기화가 0
 						ch[nx]=1; //방문했을때는 check에 1을 세팅
+						Q.offer(nx); //next x를 Q에 넣는다 
 					}
 				}
 			}
 		}
-		return answer;
+		L++; // while문에서 다 탐색해서 각노드에 값까지 넣고나면 레벨 증가 
 	}
 	
 	
