@@ -34,7 +34,7 @@ public class _7_BFSSearch {
 		int L=0;  //레벨
 		while(!Q.isEmpty()) {
 			int len=Q.size();
-			System.out.println(L+" : ");
+			System.out.print(L+" : ");
 			for(int i=0; i<len; i++) {
 				Node cur = Q.poll();
 				System.out.print(cur.data+" ");
@@ -45,7 +45,8 @@ public class _7_BFSSearch {
 					Q.offer(cur.rt);
 				}
 			}
-			
+			L++; //레벨 증가
+			System.out.println();
 		}
 	}
 
