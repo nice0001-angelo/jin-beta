@@ -38,7 +38,7 @@ public class _8_BFSSearchCow {
 			}
 			L++; // for문에서 다 탐색해서 각노드에 값까지 넣고나면 레벨 증가
 		}
-		return -1; //결과가 제대로 안나왔을때 
+		return -1; //정답이 없을때 -1 리턴 
 	}
 	
 	
