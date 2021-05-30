@@ -20,7 +20,7 @@ public class _6_DFSSet {
 			String tmp="";
 			for(int i=1; i<=n; i++) {
 				if(ch[i]==1) {
-					tmp+=(i+" "); //ch[i]의 값이 1인 녀석의 원소 i를 출력해야함
+					tmp+=(i+" "); //ch[i]의 값이 1인 녀석의 원소 i를 출력해야하므로 for 로 처리
 				}
 			}
 			if(tmp.length()>0) {
