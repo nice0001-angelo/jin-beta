@@ -3,7 +3,8 @@
  */
 package com.jin.inflearn.javaalgorithm.graph;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * @author njh
@@ -15,7 +16,7 @@ import java.util.*;
  * int data; 
  * Node lt, rt;
  * 
- * public Node(int val) { 
+ * public Node(int val) { //Constructor
  * data=val; 
  * lt=rt=null; 
  * } 
@@ -30,9 +31,20 @@ public class _7_BFSSearch {
 	public void BFS(Node root) {
 		Queue<Node> Q = new LinkedList<>();
 		Q.offer(root);
-		int L=0;
+		int L=0;  //레벨
 		while(!Q.isEmpty()) {
 			int len=Q.size();
+			System.out.println(L+" : ");
+			for(int i=0; i<len; i++) {
+				Node cur = Q.poll();
+				System.out.print(cur.data+" ");
+				if(cur.lt!=null) { //cur의 현재 왼쪽자식이 있는지 체크: 없다면 말단이므로 큐에 넣을게 없음
+					Q.offer(cur.lt);
+				}
+				if(cur.rt!=null) { //cur의 현재 오른쪽 자식이 있는지 케크: 없다면 말단이므로 큐에 넣을게 없음
+					Q.offer(cur.rt);
+				}
+			}
 			
 		}
 	}
