@@ -17,12 +17,22 @@ package com.jin.inflearn.javaalgorithm.graph;
 
 public class _7_BFSSearch {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	Node root;
+	
+	public void BFS(Node root) {
+		
+	}
 
+	public static void main(String[] args) {
+		_7_BFSSearch tree = new _7_BFSSearch();
+		tree.root = new Node(1);
+		tree.root.lt = new Node(2);
+		tree.root.rt = new Node(3);
+		tree.root.lt.lt = new Node(4);
+		tree.root.lt.rt = new Node(5);
+		tree.root.rt.lt = new Node(6);
+		tree.root.rt.rt = new Node(7);
+		tree.BFS(tree.root);
 	}
 
 }

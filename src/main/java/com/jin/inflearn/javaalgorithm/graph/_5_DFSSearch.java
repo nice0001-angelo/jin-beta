@@ -7,6 +7,10 @@ package com.jin.inflearn.javaalgorithm.graph;
  * @author njh
  *
  */
+
+
+
+
 class Node{
 	int data;
 	Node lt, rt;
@@ -20,12 +24,12 @@ class Node{
 
 
 
+
+
 public class _5_DFSSearch {
 
-	/**
-	 * @param args
-	 */
 	Node root;
+	
 	public void DFS(Node root) {
 		if(root==null) {
 			return;
