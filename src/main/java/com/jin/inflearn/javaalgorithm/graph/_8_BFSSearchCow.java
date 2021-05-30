@@ -27,9 +27,10 @@ public class _8_BFSSearchCow {
 			int len=Q.size();
 			for(int i=0; i<len; i++) {
 				int x=Q.poll(); //큐에 있는 초기값을 받음(
-				if(x==e) return L; //결과값 리턴
+				//if(x==e) return L; //결과값 리턴
 				for(int j=0; j<3; j++) {
 					int nx=x+dis[j]; //nx ==> next x(초기값은 s를 큐에 넣은것을 받아 왔으니 s=5 초기값이면 최초는 5)
+					if(nx==e) return L+1; //여기서 왜 L+1 을 해야함: 부모노드 레벨에서 자식을 찾았을때므로 자식의 레벨은 L+1 임
 					if(nx>=1 && nx<=10000 && ch[nx]==0) { //ch[nx]==0 이란건 아직 방문안했다는 뜻: 초기화가 0
 						ch[nx]=1; //방문했을때는 check에 1을 세팅
 						Q.offer(nx); //next x를 Q에 넣는다 
