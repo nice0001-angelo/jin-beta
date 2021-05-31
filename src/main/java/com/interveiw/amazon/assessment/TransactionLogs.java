@@ -43,7 +43,7 @@ public class TransactionLogs {
 		Map<String, Integer> chkMap = new HashMap<String, Integer>();
 		
 		for(String log : logs) {
-			String[] logArray = log.split(" ");
+			String[] logArray = log.split("");
 			String fromId = logArray[0];
 			String toId = logArray[1];
 			if(fromId.equals(toId)) {
