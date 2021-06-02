@@ -7,17 +7,17 @@ package com.jin.inflearn.javaalgorithm.graph;
  * @author njh
  *
  */
-public class _10_BFSShortestPath {
+
+public class _0_Child extends Mother{
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		_10_BFSShortestPath tree = new _10_BFSShortestPath();
-		tree.root = new Node(1);
-
+		_0_Child child = new _0_Child();
+		System.out.println("내 국적은 "+child.nation+" 입니다");
+		child.family();
 	}
-
 }
 
 
