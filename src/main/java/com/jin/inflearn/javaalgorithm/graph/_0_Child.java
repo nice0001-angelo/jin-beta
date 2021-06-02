@@ -8,7 +8,7 @@ package com.jin.inflearn.javaalgorithm.graph;
  *
  */
 
-public class _0_Child extends Mother{
+public class _0_Child extends _0_Mother{
 
 	/**
 	 * @param args
