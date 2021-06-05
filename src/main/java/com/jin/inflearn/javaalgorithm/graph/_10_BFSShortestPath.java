@@ -20,6 +20,7 @@ public class _10_BFSShortestPath {
 		_10_BFSShortestPath tree = new _10_BFSShortestPath();
 		tree.root = new Node(1);
 		Scanner kb = new Scanner(System.in);
+		int n = kb.nextInt();
 	}
 }
 
