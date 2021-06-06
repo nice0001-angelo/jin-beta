@@ -13,6 +13,18 @@ public class _10_BFSShortestPath {
 	Node root;
 	public int BFS(Node root) {
 		Queue<Node> Q = new LinkedList<Node>();
+		Q.offer(root);
+		int L=0;
+		while(!Q.isEmpty()) {
+			int len=Q.size();
+			for(int i=0; i<len; i++) {
+				Node cur=Q.poll();
+				if(cur.lt==null && cur.rt==null) {
+					return L;
+				}
+				if(cur.lt)
+			}
+		}
 	}
 
 	/**
