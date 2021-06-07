@@ -19,10 +19,9 @@ public class _10_BFSShortestPath {
 			int len=Q.size();
 			for(int i=0; i<len; i++) {
 				Node cur=Q.poll();
-				if(cur.lt==null && cur.rt==null) {
-					return L;
-				}
-				if(cur.lt)
+				if(cur.lt==null && cur.rt==null) return L;
+				if(cur.lt!=null) Q.offer(cur.lt);
+				if(cur.rt!=null) Q.add(cur.rt);
 			}
 		}
 	}
