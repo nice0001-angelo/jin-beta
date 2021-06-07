@@ -23,7 +23,9 @@ public class _10_BFSShortestPath {
 				if(cur.lt!=null) Q.offer(cur.lt);
 				if(cur.rt!=null) Q.add(cur.rt);
 			}
+			L++;
 		}
+		return -1;
 	}
 
 	/**
