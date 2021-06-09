@@ -21,11 +21,16 @@ public class Encode {
 		if(input == null|| input.length()==0) {
 			return "Please enter String value";
 		}
+		StringBuilder sb = new StringBuilder();
 		char[] inputArray = input.toCharArray();
 		char prevArray = 0;
 		int counter = 0;
 		for(char c: inputArray) {
-			
+			if(c==prevArray) {
+				counter++;
+			}else {
+				
+			}
 		}
 		
 	}
