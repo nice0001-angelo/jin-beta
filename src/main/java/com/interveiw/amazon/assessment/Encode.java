@@ -24,7 +24,9 @@ public class Encode {
 		char[] inputArray = input.toCharArray();
 		char prevArray = 0;
 		int counter = 0;
-		
+		for(char c: inputArray) {
+			
+		}
 		
 	}
 }
