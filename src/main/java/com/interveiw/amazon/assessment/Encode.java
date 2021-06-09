@@ -30,6 +30,7 @@ public class Encode {
 		char prevArray = 0;
 		int counter = 0;
 		for(char c: inputArray) {
+			//System.out.println(c);
 			if(c==prevArray) {
 				counter++;
 			}else if(prevArray!=0){
