@@ -3,6 +3,8 @@
  */
 package com.interveiw.amazon.assessment;
 
+import java.util.*;
+
 /**
  * @author njh
  *
@@ -13,11 +15,13 @@ public class Encode {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner kb = new Scanner(System.in);
+		String str = kb.next();
+		System.out.println(encode(str));
 
 	}
 
-	public String encode(String input) {
+	static String encode(String input) {
 		if(input == null|| input.length()==0) {
 			return "Please enter String value";
 		}
