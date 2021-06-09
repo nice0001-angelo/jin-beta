@@ -28,10 +28,13 @@ public class Encode {
 		for(char c: inputArray) {
 			if(c==prevArray) {
 				counter++;
-			}else {
-				
+			}else if(prevArray!=0){
+				sb.append(counter).append(prevArray);
+				prevArray = c;
+				counter = 1;
 			}
 		}
-		
+		sb.append(counter).append(prevArray);
+		return sb.toString();
 	}
 }
