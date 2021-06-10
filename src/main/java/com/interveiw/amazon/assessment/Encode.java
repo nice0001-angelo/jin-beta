@@ -40,6 +40,7 @@ public class Encode {
 			}
 		}
 		sb.append(counter).append(prevArray);
+		sb.append(counter).append(prevArray);
 		return sb.toString();
 	}
 }
