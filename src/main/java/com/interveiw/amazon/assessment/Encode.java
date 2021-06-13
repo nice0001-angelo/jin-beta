@@ -17,7 +17,9 @@ public class Encode {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
+		System.out.println("Pirnt");
 		System.out.println(encode(str));
+		
 
 	}
 
@@ -39,6 +41,7 @@ public class Encode {
 				counter = 1;
 			}
 		}
+		sb.append(counter).append(prevArray);
 		sb.append(counter).append(prevArray);
 		sb.append(counter).append(prevArray);
 		return sb.toString();
