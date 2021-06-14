@@ -37,7 +37,7 @@ public class Encode {
 			if(c==prevArray) {
 				counter++;
 			}else {
-				sb.append(counter).append(prevArray);
+				sb.append(counter).append(prevArray);				
 				prevArray = c;
 				counter = 1;
 			}
