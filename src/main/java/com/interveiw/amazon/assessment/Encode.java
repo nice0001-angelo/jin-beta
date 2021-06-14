@@ -17,7 +17,7 @@ public class Encode {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
-		System.out.println("Print");
+		System.out.println("-------------------");
 		System.out.println(encode(str));
 	}
 
