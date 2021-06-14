@@ -19,11 +19,10 @@ public class Encode {
 		String str = kb.next();
 		System.out.println("Pirnt");
 		System.out.println(encode(str));
-		
-
 	}
 
 	static String encode(String input) {
+		//validation check
 		if(input == null|| input.length()==0) {
 			return "Please enter String value";
 		}
