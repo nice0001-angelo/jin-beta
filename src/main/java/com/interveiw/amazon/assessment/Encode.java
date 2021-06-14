@@ -28,21 +28,19 @@ public class Encode {
 		}
 		StringBuilder sb = new StringBuilder();
 		char[] inputArray = input.toCharArray();
-		System.out.println(input);
-		char prevArray = 0;
+		char prevArray = '0';
 		int counter = 0;
 		for(char c: inputArray) {
-			//System.out.println(c);
+			System.out.println("prevArray: "+prevArray);
+			System.out.println(c);
 			if(c==prevArray) {
 				counter++;
-			}else if(prevArray!=0){
+			}else {
 				sb.append(counter).append(prevArray);
 				prevArray = c;
 				counter = 1;
 			}
 		}
-		sb.append(counter).append(prevArray);
-		sb.append(counter).append(prevArray);
 		sb.append(counter).append(prevArray);
 		return sb.toString();
 	}
