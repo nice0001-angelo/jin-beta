@@ -31,13 +31,13 @@ public class Encode {
 		char prevArray = '0';
 		int counter = 0;
 		for(char c: inputArray) {
-			System.out.println("prevArray: "+prevArray);
-			System.out.println("counter: "+counter);
-			System.out.println("InputArray: "+c);
+			//System.out.println("prevArray: "+prevArray);
+			//System.out.println("counter: "+counter);
+			//System.out.println("InputArray: "+c);
 			if(c==prevArray) {
 				counter++;
 			}else {
-				sb.append(counter).append(prevArray);				
+				if (prevArray != '0') sb.append(counter).append(prevArray);				
 				prevArray = c;
 				counter = 1;
 			}
