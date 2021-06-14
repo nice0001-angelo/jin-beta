@@ -17,7 +17,7 @@ public class Encode {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		String str = kb.next();
-		System.out.println("Pirnt");
+		System.out.println("Print");
 		System.out.println(encode(str));
 	}
 
@@ -28,6 +28,7 @@ public class Encode {
 		}
 		StringBuilder sb = new StringBuilder();
 		char[] inputArray = input.toCharArray();
+		System.out.println(input);
 		char prevArray = 0;
 		int counter = 0;
 		for(char c: inputArray) {
