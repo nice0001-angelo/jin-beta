@@ -57,7 +57,6 @@ public class _7_BFSSearch {
 		tree.root.rt = new Node(3);
 		tree.root.lt.lt = new Node(4);
 		tree.root.lt.rt = new Node(5);
-		
 		tree.BFS(tree.root);
 	}
 
