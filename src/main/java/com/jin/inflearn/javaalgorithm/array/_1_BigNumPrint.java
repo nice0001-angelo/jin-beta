@@ -29,6 +29,7 @@ public class _1_BigNumPrint {
 	}
 
 	public ArrayList<Integer> solution(int n, int[] arr) {
+		//ArrayList
 		ArrayList<Integer> answer = new ArrayList<>();
 		answer.add(arr[0]);
 		for(int i = 1; i < n; i++) {
