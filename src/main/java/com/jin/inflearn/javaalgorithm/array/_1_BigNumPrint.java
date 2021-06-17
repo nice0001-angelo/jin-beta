@@ -25,6 +25,7 @@ public class _1_BigNumPrint {
 		for(int x : T.solution(n, arr)) {
 			System.out.println(x+" ");			
 		}
+		System.out.println();
 		
 	}
 
