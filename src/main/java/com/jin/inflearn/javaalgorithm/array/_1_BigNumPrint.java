@@ -37,12 +37,18 @@ public class _1_BigNumPrint {
 		for(int i=0; i<n; i++) {
 			arr[i] = kb.nextInt();
 		}
+		
+		T.solution(n, arr);
 	
 		
 	}
 
 	public ArrayList<Integer> solution(int n, int[] arr) {
-		
-		return;
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		arrayList.add(arr[0]); 
+		for(int i=1; i<n; i++) {
+			if(arr[i+1]>arr[i]) arrayList.add(arr[i+1]);
+		}
+		return arrayList;
 	}
 }
