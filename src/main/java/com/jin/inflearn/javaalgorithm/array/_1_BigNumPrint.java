@@ -38,7 +38,9 @@ public class _1_BigNumPrint {
 			arr[i] = kb.nextInt();
 		}
 	
-
+		for(int i=0; i<n; i++) {
+			System.out.println(arr[i]);
+		}
 	}
 
 	public void solution(int n, int[] arr) {
