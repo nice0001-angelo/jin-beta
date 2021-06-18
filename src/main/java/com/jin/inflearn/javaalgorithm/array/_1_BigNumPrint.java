@@ -49,7 +49,7 @@ public class _1_BigNumPrint {
 		ArrayList<Integer> arrayList = new ArrayList<Integer>();
 		arrayList.add(arr[0]); 
 		for(int i=1; i<n; i++) {
-			if(arr[i+1]>arr[i]) arrayList.add(arr[i+1]);
+			if(arr[i]>arr[i-1]) arrayList.add(arr[i]);
 		}
 		return arrayList;
 	}
