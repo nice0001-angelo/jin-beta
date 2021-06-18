@@ -33,8 +33,10 @@ public class _1_BigNumPrint {
 		_1_BigNumPrint T = new _1_BigNumPrint();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
-		System.out.println("n: "+n);
-
+		int[] arr = new int[n];
+		for(int i=0; i<n; i++) {
+			
+		}
 	}
 
 	public void solution(int n, int[] arr) {
