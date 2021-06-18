@@ -37,8 +37,10 @@ public class _1_BigNumPrint {
 		for(int i=0; i<n; i++) {
 			arr[i] = kb.nextInt();
 		}
+		for(int x : T.solution(n, arr)) {
+			System.out.println(x);
+		}
 		
-		T.solution(n, arr);
 	
 		
 	}
