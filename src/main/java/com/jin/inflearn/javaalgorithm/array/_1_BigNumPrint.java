@@ -51,6 +51,7 @@ public class _1_BigNumPrint {
 		for(int i=1; i<n; i++) {
 			if(arr[i]>arr[i-1]) arrayList.add(arr[i]);
 		}
+		System.out.println();
 		return arrayList;
 	}
 }
