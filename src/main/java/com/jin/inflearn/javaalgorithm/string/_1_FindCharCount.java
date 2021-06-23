@@ -28,6 +28,7 @@ public class _1_FindCharCount {
 		char c = kb.next().charAt(0); 
 		
 		System.out.println(T.solution(str,c));
+		System.out.print("");
 	}
 	
 	public int solution(String str, char t) {
