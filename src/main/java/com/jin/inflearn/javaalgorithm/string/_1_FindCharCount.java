@@ -29,6 +29,7 @@ public class _1_FindCharCount {
 		
 		System.out.println(T.solution(str,c));
 		System.out.print("");
+		System.out.println();
 	}
 	
 	public int solution(String str, char t) {
