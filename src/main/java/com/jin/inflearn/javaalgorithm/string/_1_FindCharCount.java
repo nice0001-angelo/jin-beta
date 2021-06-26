@@ -28,14 +28,13 @@ public class _1_FindCharCount {
 		char c = kb.next().charAt(0); 
 		
 		System.out.println(T.solution(str,c));
-		System.out.print("");
-		System.out.println();
+
 	}
 	
 	public int solution(String str, char t) {
 		int answer=0;
 		str = str.toUpperCase();
-		t = Character.toUpperCase(t); //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이 Character은 char으 레퍼
+		t = Character.toUpperCase(t); //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이 Character은 char은 레퍼
 		/*
 		 * for(int i=0; i < str.length(); i++) {
 		 *     if(str.charAt(i) == t) { 
@@ -48,5 +47,4 @@ public class _1_FindCharCount {
 		}
 		return answer;
 	}
-
 }
