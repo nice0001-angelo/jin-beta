@@ -13,9 +13,9 @@ public class _1_FindCharCount {
 
 	/**
 	 * @param args: Input Parameter로 String 열과 찾고자하는 값을 넣었을때 몇개가 나오는지 확인하는 코드
-	 * Input: Computer
+	 * Input: ComputerCooler
 	 * Input: c
-	 * Output: 1
+	 * Output: 2
 	 */
 	public static void main(String[] args) {
 		//static 에서 instance(Non-static) 객체를 생성하기 위해서는 이렇게 클래스 객체를 생성해야함
@@ -29,6 +29,7 @@ public class _1_FindCharCount {
 		char c = kb.next().charAt(0); 
 	
 		System.out.println(T.solution(str,c));
+		System.out.println();
 	}
 	
 	public int solution(String str, char t) {
