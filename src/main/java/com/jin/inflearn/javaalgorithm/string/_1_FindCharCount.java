@@ -26,18 +26,12 @@ public class _1_FindCharCount {
 		String str = kb.next();
 		
 		//String을 읽어들이고(next()) charAt(0)을 통해서 첫번째 char 값을 가져오는 것임. charAt는 char 변수를 return함. 매우 유용함.
-		char c = kb.next().charAt(0);
-	
-		System.out.println(T.solution(str,c));
-		System.out.println();
-		System.out.println();
-		System.out.println();
+
 	}
 	
 	public int solution(String str, char t) {
-		int answer=0;
-		str = str.toUpperCase();
-		t = Character.toUpperCase(t); //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이 Character은 char은 레퍼
+
+ //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이 Character은 char의 레퍼
 		/*
 		 * for(int i=0; i < str.length(); i++) {
 		 *     if(str.charAt(i) == t) { 
@@ -45,9 +39,6 @@ public class _1_FindCharCount {
 		 *     } 
 		 *  }
 		 */
-		for(char x : str.toCharArray()) {
-			if(x == t) answer++;
-		}
-		return answer;
+
 	}
 }
