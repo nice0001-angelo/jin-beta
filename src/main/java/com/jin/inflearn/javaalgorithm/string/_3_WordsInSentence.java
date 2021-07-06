@@ -31,11 +31,12 @@ public class _3_WordsInSentence {
 		 */
 		
 		  int pos; 
-		  while((pos = str.indexOf(" ")!=-1) { 
+		  while((pos = str.indexOf(" "))!=-1) { 
 			  String tmp = str.substring(0,pos); 
 			  int len = tmp.length(); 
 			  if(len > m) { 
-				  m = len; answer = tmp; 
+				  m = len; 
+				  answer = tmp; 
 				  } 
 			  str = str.substring(pos+1); //pos+1 부터 끝까지 
 			  } 
