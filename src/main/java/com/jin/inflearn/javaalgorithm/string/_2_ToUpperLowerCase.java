@@ -27,9 +27,11 @@ public class _2_ToUpperLowerCase {
 	}
 
 	public String solution(String str) {
+		String result = "";
 		for(char x : str.toCharArray()) {
-			
-			
+			if(Character.isUpperCase(x)) result+=Character.toLowerCase(x);
+			else result+=Character.toUpperCase(x);
 		}
+		return result;
 	}
 }
