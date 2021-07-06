@@ -30,11 +30,19 @@ public class _3_WordsInSentence {
 		 * s[i].length()) { answer=s[i]; m = s[i].length(); } } return answer;
 		 */
 		
-		  int pos; while((pos = str.indexOf(" "))!=-1) { String tmp =
-		  str.substring(0,pos); int len = tmp.length(); if(len > m) { m = len; answer =
-		  tmp; } str = str.substring(pos+1); //pos+1 부터 끝까지 } if(str.length() > m) {
-		  answer = str; } return answer;
-		 
+		  int pos; 
+		  while((pos = str.indexOf(" "))!=-1) { 
+			  String tmp = str.substring(0,pos); 
+			  int len = tmp.length(); 
+			  if(len > m) { 
+				  m = len; answer = tmp; 
+				  } 
+			  str = str.substring(pos+1); //pos+1 부터 끝까지 
+			  } 
+		  if(str.length() > m) {
+		  answer = str; 
+		  } 
+		  return answer;
 	}
 
 }
