@@ -27,9 +27,14 @@ public class _3_WordsInSentence {
 	public String solution(String str) {
 		String answer = "";
 		int m = Integer.MIN_VALUE;
-		
-			
+		String[] s = str.split(" ");
+		for(int i = 0; i < s.length; i++) {
+			if(m < s[i].length()) {
+				answer+=s[i];
+				m = s[i].length();
+			}
 		}
+		return answer;
 		/*
 		 * int pos; while((pos = str.indexOf(" "))!=-1) { String tmp =
 		 * str.substring(0,pos); int len = tmp.length(); if(len > m) { m = len; answer =
