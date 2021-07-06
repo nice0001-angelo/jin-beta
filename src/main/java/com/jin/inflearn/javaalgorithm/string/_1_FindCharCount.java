@@ -33,8 +33,8 @@ public class _1_FindCharCount {
 	public int solution(String str, char t) {
 		//char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이 Character은 char의 레퍼
 		int result = 0;
-		Character.toUpperCase(t);
-		for(char x : str.toCharArray()) {
+		t= Character.toUpperCase(t);
+		for(char x : str.toUpperCase().toCharArray()) {
 			if(t == x) {
 				result++;
 			}
