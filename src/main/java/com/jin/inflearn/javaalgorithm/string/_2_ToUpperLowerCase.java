@@ -13,6 +13,8 @@ public class _2_ToUpperLowerCase {
 
 	/**
 	 * @param args
+	 * Input: stuDY
+	 * Output: STUdy
 	 */
 	public static void main(String[] args) {
 		_2_ToUpperLowerCase T = new _2_ToUpperLowerCase();
