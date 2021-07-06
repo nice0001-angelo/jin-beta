@@ -27,6 +27,9 @@ public class _2_ToUpperLowerCase {
 	}
 
 	public String solution(String str) {
-
+		for(char x : str.toCharArray()) {
+			
+			
+		}
 	}
 }
