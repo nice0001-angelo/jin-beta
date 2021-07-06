@@ -28,6 +28,8 @@ public class _3_WordsInSentence {
 		String answer = "";
 		int m = Integer.MIN_VALUE;
 		
+			
+		}
 		/*
 		 * int pos; while((pos = str.indexOf(" "))!=-1) { String tmp =
 		 * str.substring(0,pos); int len = tmp.length(); if(len > m) { m = len; answer =
