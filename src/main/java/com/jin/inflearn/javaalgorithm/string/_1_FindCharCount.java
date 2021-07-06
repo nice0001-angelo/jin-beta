@@ -26,7 +26,8 @@ public class _1_FindCharCount {
 		String str = kb.next();
 		
 		//String을 읽어들이고(next()) charAt(0)을 통해서 첫번째 char 값을 가져오는 것임. charAt는 char 변수를 return함. 매우 유용함.
-
+		char c = kb.next().charAt(0);
+		System.out.print(T.solution(str, c));
 	}
 	
 	public int solution(String str, char t) {
