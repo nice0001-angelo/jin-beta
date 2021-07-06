@@ -30,7 +30,7 @@ public class _3_WordsInSentence {
 		String[] s = str.split(" ");
 		for(int i = 0; i < s.length; i++) {
 			if(m < s[i].length()) {
-				answer+=s[i];
+				answer=s[i];
 				m = s[i].length();
 			}
 		}
