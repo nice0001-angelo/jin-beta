@@ -16,6 +16,7 @@ public class _2_ToUpperLowerCase {
 	 * Input: stuDY
 	 * Output: STUdy
 	 * 대문자 ASCII 65~90, 소문자 ASCII 97~122 (소문자에서 32를 빼면 대문자가 됨)
+	 * if(Character.isLowerCase(x)) answer += Character.toUpperCase(x);
 	 */
 	public static void main(String[] args) {
 		_2_ToUpperLowerCase T = new _2_ToUpperLowerCase();
@@ -26,15 +27,6 @@ public class _2_ToUpperLowerCase {
 	}
 
 	public String solution(String str) {
-		String answer = "";
-		for(char x : str.toCharArray()) {
-			//if(Character.isLowerCase(x)) answer += Character.toUpperCase(x);
-			//대문자 ASCII 65~90, 소문자 ASCII 97~122 (소문자에서 32를 빼면 대문자가 됨)
-			if(x>=97 && x<=122) answer+=(char)(x-32);
-			
-			//else answer += Character.toLowerCase(x);
-			else answer+=(char)(x+32);
-		}
-		return answer;
+
 	}
 }
