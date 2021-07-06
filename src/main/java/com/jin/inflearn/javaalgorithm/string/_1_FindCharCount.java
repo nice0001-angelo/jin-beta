@@ -31,15 +31,10 @@ public class _1_FindCharCount {
 	}
 	
 	public int solution(String str, char t) {
-
  //char은 Character(java.lang) 써야 함. 배열을 Arrays 쓰듯이 Character은 char의 레퍼
-		/*
-		 * for(int i=0; i < str.length(); i++) {
-		 *     if(str.charAt(i) == t) { 
-		 *     answer++; 
-		 *     } 
-		 *  }
-		 */
+		int result = 0;
+		
+	x = Character.toUpperCase(t);	
 
 	}
 }
