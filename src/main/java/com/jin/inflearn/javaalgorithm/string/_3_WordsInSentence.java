@@ -44,6 +44,7 @@ public class _3_WordsInSentence {
 		  answer = str; 
 		  } 
 		  System.out.println();
+		  System.out.println();
 		  return answer;
 	}
 }
