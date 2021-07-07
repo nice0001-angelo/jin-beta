@@ -43,6 +43,7 @@ public class _3_WordsInSentence {
 		  if(str.length() > m) {
 		  answer = str; 
 		  } 
+		  System.out.println();
 		  return answer;
 	}
 }
