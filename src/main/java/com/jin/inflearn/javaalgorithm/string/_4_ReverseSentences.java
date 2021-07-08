@@ -25,7 +25,10 @@ public class _4_ReverseSentences {
 		_4_ReverseSentences T = new _4_ReverseSentences();
 		Scanner kb = new Scanner(System.in);
 		int x = kb.nextInt();
-		String[] str = array[x];
+		String[] str = new String[x];
+		for(int i=0; i<x; i++) {
+			str[i] = kb.next();
+		}
 		
 	}
 
