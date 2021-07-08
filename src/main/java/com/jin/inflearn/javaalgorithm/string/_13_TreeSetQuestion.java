@@ -15,11 +15,10 @@ public class _13_TreeSetQuestion {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Set<Student> set = new TreeSet<Student>();
-		
+		HashSet<Student> set = new HashSet<Student>();
 		set.add(new Student(1,"A"));
-		
-		System.out.println(set.toString());
+		set.add(new Student(2,"B"));
+		System.out.println(set);
 		
 	}
 
