@@ -15,9 +15,12 @@ public class _13_TreeSetQuestion {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Set<Student> student = new TreeSet<Student>();
+		Set<Student> set = new TreeSet<Student>();
 		
-		student.add(new Student());
+		set.add(new Student(1,"A"));
+		
+		System.out.println(set);
+		
 	}
 
 }
@@ -25,4 +28,9 @@ public class _13_TreeSetQuestion {
 class Student {
 	int id;
 	String name;
+	
+	Student(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
 }
