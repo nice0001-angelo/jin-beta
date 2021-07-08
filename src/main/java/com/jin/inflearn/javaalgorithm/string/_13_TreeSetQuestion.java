@@ -17,7 +17,7 @@ public class _13_TreeSetQuestion {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		HashSet<Student> set = new HashSet<Student>();
+		TreeSet<Student> set = new TreeSet<Student>();
 		set.add(new Student(1,"A"));
 		set.add(new Student(2,"B"));
 		set.add(new Student(1,"A"));
