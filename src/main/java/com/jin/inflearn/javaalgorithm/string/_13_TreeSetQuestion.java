@@ -20,6 +20,7 @@ public class _13_TreeSetQuestion {
 		HashSet<Student> set = new HashSet<Student>();
 		set.add(new Student(1,"A"));
 		set.add(new Student(2,"B"));
+		set.add(new Student(1,"A"));
 		System.out.println(set);
 		
 	}
