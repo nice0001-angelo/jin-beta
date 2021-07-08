@@ -39,8 +39,10 @@ public class _4_ReverseSentences {
 		List<String> answer = new ArrayList<String>();
 		
 		  //StringBuilder를 이용한 리버스 
-		for(String x : str) { String tmp = new
-		  StringBuilder(x).reverse().toString(); answer.add(tmp); }
+		for(String x : str) { 
+			String tmp = new StringBuilder(x).reverse().toString(); 
+			answer.add(tmp); 
+			}
 		 
 //		for(String s : str) {
 //			char[] x = s.toCharArray();
