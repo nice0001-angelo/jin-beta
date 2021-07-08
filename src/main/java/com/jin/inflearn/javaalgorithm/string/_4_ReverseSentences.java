@@ -60,6 +60,8 @@ public class _4_ReverseSentences {
 //		}
 		for(String s : str) {
 			char[] arr = s.toCharArray();
+			int lt = 0;
+			int rt = str.length-1;
 		}
 		
 		return answer;
