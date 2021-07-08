@@ -19,7 +19,7 @@ public class _13_TreeSetQuestion {
 		
 		set.add(new Student(1,"A"));
 		
-		System.out.println(set);
+		System.out.println(set.toString());
 		
 	}
 
