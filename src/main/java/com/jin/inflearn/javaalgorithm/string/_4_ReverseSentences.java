@@ -23,7 +23,8 @@ public class _4_ReverseSentences {
 	 */
 	public static void main(String[] args) {
 		_4_ReverseSentences T = new _4_ReverseSentences();
-
+		Scanner kb = new Scanner(System.in);
+		
 	}
 
 	public List<String> solution(int n, String[] str) {
