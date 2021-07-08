@@ -29,7 +29,10 @@ public class _4_ReverseSentences {
 		for(int i=0; i<x; i++) {
 			str[i] = kb.next();
 		}
-		System.out.println(T.solution(x, str));
+		for(String c : T.solution(x, str)) {
+			System.out.println(c);	
+		}
+		
 	}
 
 	public List<String> solution(int n, String[] str) {
