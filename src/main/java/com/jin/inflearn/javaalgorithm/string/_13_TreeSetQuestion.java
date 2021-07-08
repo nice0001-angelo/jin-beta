@@ -5,8 +5,6 @@ package com.jin.inflearn.javaalgorithm.string;
 
 import java.util.*;
 
-import lombok.*;
-
 /**
  * @author njh
  *
@@ -23,10 +21,9 @@ public class _13_TreeSetQuestion {
 		set.add(new Student(1,"A"));
 		set.add(new Student(1,"C"));
 		System.out.println(set);
-		
 	}
-
 }
+
 
 class Student {
 	int id;
@@ -40,6 +37,4 @@ class Student {
 	public String toString(){
 		return id+":"+name;
 	}
-	
-
 }
