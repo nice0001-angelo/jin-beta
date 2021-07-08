@@ -69,6 +69,7 @@ public class _4_ReverseSentences {
 				lt++;
 				rt--;
 			}
+			String.valueOf(arr);
 			
 		}
 		
