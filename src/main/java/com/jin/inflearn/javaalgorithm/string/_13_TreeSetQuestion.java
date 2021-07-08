@@ -5,6 +5,8 @@ package com.jin.inflearn.javaalgorithm.string;
 
 import java.util.*;
 
+import lombok.*;
+
 /**
  * @author njh
  *
@@ -33,7 +35,9 @@ class Student {
 		this.name = name;
 	}
 	
-	public String toString() {
-		return id+" : "+name;
+	public String toString(){
+		return id+":"+name;
 	}
+	
+
 }
