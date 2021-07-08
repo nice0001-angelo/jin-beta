@@ -21,6 +21,7 @@ public class _13_TreeSetQuestion {
 		set.add(new Student(1,"A"));
 		set.add(new Student(2,"B"));
 		set.add(new Student(1,"A"));
+		set.add(new Student(1,"C"));
 		System.out.println(set);
 		
 	}
