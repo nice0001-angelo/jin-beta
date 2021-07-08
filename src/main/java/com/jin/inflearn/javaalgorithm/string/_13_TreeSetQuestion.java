@@ -33,4 +33,8 @@ class Student {
 		this.id = id;
 		this.name = name;
 	}
+	
+	public String toString() {
+		return id+" : "+name;
+	}
 }
