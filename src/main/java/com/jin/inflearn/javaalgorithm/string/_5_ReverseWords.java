@@ -13,6 +13,8 @@ public class _5_ReverseWords {
 
 	/**
 	 * @param args
+	 * Input: a#b!GE*T@S
+	 * Output: S#T!EG*b@a
 	 */
 	public static void main(String[] args) {
 		_5_ReverseWords T = new _5_ReverseWords();
