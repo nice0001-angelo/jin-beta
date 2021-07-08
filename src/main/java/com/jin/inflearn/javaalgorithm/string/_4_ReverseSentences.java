@@ -69,8 +69,8 @@ public class _4_ReverseSentences {
 				lt++;
 				rt--;
 			}
-			String.valueOf(arr);
-			
+			String result = String.valueOf(arr);
+			answer.add(result);
 		}
 		
 		return answer;
