@@ -12,7 +12,9 @@ import java.util.*;
 public class _3_WordsInSentence {
 
 	/**
-	 * @param args Input: It is time to Study Output: Study
+	 * @param args 
+	 * Input: It is time to Study 
+	 * Output: Study
 	 */
 	public static void main(String[] args) {
 		_3_WordsInSentence T = new _3_WordsInSentence();
