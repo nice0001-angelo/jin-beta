@@ -62,6 +62,14 @@ public class _4_ReverseSentences {
 			char[] arr = s.toCharArray();
 			int lt = 0;
 			int rt = str.length-1;
+			while(lt < rt) {
+				char tmp = arr[lt];
+				arr[lt] = arr[rt];
+				arr[rt]=tmp;
+				lt++;
+				rt--;
+			}
+			
 		}
 		
 		return answer;
