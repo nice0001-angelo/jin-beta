@@ -50,6 +50,13 @@ public class _5_ReverseWords {
 		for (char c : charArr) {
 			int lt = 0;
 			int rt = charArr.length-1;
+			while(lt < rt) {
+				char tmp = charArr[lt];
+				charArr[lt] = charArr[rt];
+				charArr[rt] = tmp;
+				lt++;
+				rt--;
+			}
 		}
 		}
 }
