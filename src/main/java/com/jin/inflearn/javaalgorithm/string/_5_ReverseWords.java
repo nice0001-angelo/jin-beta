@@ -45,6 +45,8 @@ public class _5_ReverseWords {
 //		answer = String.valueOf(s); //s의 실제 값이 리턴 s는 char[]
 //		return answer;
 		
+		String answer = "";
+		char[] charArr = str.toCharArray();
 		
 		}
 }
