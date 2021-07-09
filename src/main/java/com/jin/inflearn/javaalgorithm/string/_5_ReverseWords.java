@@ -47,7 +47,10 @@ public class _5_ReverseWords {
 		
 		String answer = "";
 		char[] charArr = str.toCharArray();
-		
+		for (char c : charArr) {
+			int lt = 0;
+			int rt = charArr.length-1;
+		}
 		}
 }
 
