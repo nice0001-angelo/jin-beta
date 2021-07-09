@@ -32,7 +32,6 @@ public class _4_ReverseSentences {
 		for(String c : T.solution(x, str)) {
 			System.out.println(c);	
 		}
-		
 	}
 
 	public List<String> solution(int n, String[] str) {
