@@ -7,7 +7,8 @@ import java.util.*;
 
 /**
  * @author njh
- *
+ * Input: ksekkset
+ * Output: kset
  */
 public class _6_DeleteDupChar {
 
