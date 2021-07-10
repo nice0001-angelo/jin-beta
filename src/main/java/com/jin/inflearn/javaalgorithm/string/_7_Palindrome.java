@@ -24,22 +24,22 @@ public class _7_Palindrome {
 	}
 	
 	public String solution(String str) {
-		String upstr = str.toUpperCase();
-		
-		int rt = upstr.length()-1; 
-		for (int lt = 0 ; lt < upstr.length()/2; lt++) {
-		if(str.charAt(lt) == str.charAt(rt)) { 
-			rt--; 
-			} else { 
-				return "N0"; 
-				} 
-		} return "YES";
+//		String upstr = str.toUpperCase();
+//		
+//		int rt = upstr.length()-1; 
+//		for (int lt = 0 ; lt < upstr.length()/2; lt++) {
+//		if(str.charAt(lt) == str.charAt(rt)) { 
+//			rt--; 
+//			} else { 
+//				return "N0"; 
+//				} 
+//		} return "YES";
 		 
-		/*
-		 * for(int i = 0 ; i < upstr.length()/2; i++) {
-		 * if(upstr.charAt(i)!=upstr.charAt(upstr.length()-1-i)) return "NO"; } return
-		 * "YES";
-		 */
+		 String upstr = str.toUpperCase();
+		 for(int i = 0 ; i < upstr.length()/2; i++) {
+		 if(upstr.charAt(i)!=upstr.charAt(upstr.length()-1-i)) return "NO"; 
+		 } return "YES";
+		 
 //		String reveredStr = new StringBuffer(str).reverse().toString();
 //		//if(str.equals(reveredStr)) return "YES"; // 대소문자구분할때
 //		if(str.equalsIgnoreCase(reveredStr)) return "YES"; //대소문자 구분없이 무시하고 결과 낼때 
