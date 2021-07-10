@@ -7,7 +7,8 @@ import java.util.*;
 
 /**
  * @author njh
- *
+ * Input: g0en2T0s8eSoft
+ * Ouput: 208
  */
 public class _9_ExtractNum {
 
