@@ -7,7 +7,8 @@ import java.util.*;
 
 /**
  * @author njh
- *
+ * Input: found7, time: study; yduts; emit, 7Dnuof
+ * Output: YES
  */
 public class _8_EffectivePalindrome {
 
