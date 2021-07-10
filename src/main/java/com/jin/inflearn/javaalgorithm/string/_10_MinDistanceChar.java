@@ -13,6 +13,8 @@ public class _10_MinDistanceChar {
 
 	/**
 	 * @param args
+	 * Input: teachermode e
+	 * Output: 10121012210
 	 */
 	public static void main(String[] args) {
 		_10_MinDistanceChar T = new _10_MinDistanceChar();
