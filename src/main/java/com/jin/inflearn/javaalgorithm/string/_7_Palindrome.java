@@ -45,10 +45,14 @@ public class _7_Palindrome {
 //		if(str.equalsIgnoreCase(reveredStr)) return "YES"; //대소문자 구분없이 무시하고 결과 낼때 
 //		return "NO";
 		
-		String reversedStr = new StringBuilder(str).reverse().toString();
-		if(str.equals(reversedStr)) return "YES";
-		return "NO";
+//		String reversedStr = new StringBuilder(str).reverse().toString();
+//		if(str.equals(reversedStr)) return "YES";
+//		return "NO";
 		
+		String upperCasedStr = str.toUpperCase();
+		for(int i=0; i<upperCasedStr.length()/2; i++) {
+			
+		}
 		
 	}
 }
