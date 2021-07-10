@@ -28,13 +28,18 @@ public class _9_ExtractNum {
 		 * answer = answer*10 + (x-48); //숫자 0~9: ASCII 48~57 x 값에 있는 char은 숫자연산시 ASCII
 		 * 값으로 연산된다 } }
 		 */
+//		String answer = "";
+//		for(char x : str.toCharArray()) {
+//			if(Character.isDigit(x)) {
+//				answer += x;
+//			}
+//		}
+//		return Integer.parseInt(answer);
 		String answer = "";
-		for(char x : str.toCharArray()) {
-			if(Character.isDigit(x)) {
-				answer += x;
-			}
+		for(char c : str.toCharArray()) {
+			if(Character.isDigit(c)) answer += c;
 		}
-		return Integer.parseInt(answer);
+		return Integer.parseInt(answer);  //래퍼클래스 Integer를 이용해서 String 값을 int value로 변환
 	}
 
 }
