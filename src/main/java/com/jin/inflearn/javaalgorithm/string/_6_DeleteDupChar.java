@@ -32,7 +32,8 @@ public class _6_DeleteDupChar {
 //		}
 		char[] charArr = str.toCharArray();
 		for(int i=0; i<str.length(); i++) {
-			
+			if(i==str.indexOf(charArr[i]))
+			answer+=charArr[i];
 		}
 		return answer;
 	}
