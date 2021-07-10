@@ -51,7 +51,7 @@ public class _7_Palindrome {
 		
 		String upperCasedStr = str.toUpperCase();
 		for(int i=0; i<upperCasedStr.length()/2; i++) {
-			if(upperCasedStr.charAt(i)!=upperCasedStr.charAt(upperCasedStr.length()-i)) return "NO";
+			if(upperCasedStr.charAt(i)!=upperCasedStr.charAt(upperCasedStr.length()-1-i)) return "NO";
 		} return "YES";
 	}
 }
