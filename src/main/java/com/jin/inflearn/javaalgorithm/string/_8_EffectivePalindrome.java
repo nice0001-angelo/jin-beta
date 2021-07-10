@@ -29,6 +29,9 @@ public class _8_EffectivePalindrome {
 //		System.out.println(temp);
 //		if(str.equals(temp)) return "YES";
 //		return "No";
-		str.replaceAll("[^a-z]", ""); //regex googling
+		str = str.toUpperCase().replaceAll("[^a-z]", ""); //regex googling
+		String reversedStr = new StringBuffer(str).reverse().toString();
+		if(str.equals(reversedStr)) return "YES";
+		return "NO";
 	}
 }
