@@ -35,14 +35,20 @@ public class _7_Palindrome {
 //				} 
 //		} return "YES";
 		 
-		 String upstr = str.toUpperCase();
-		 for(int i = 0 ; i < upstr.length()/2; i++) {
-		 if(upstr.charAt(i)!=upstr.charAt(upstr.length()-1-i)) return "NO"; 
-		 } return "YES";
+//		 String upstr = str.toUpperCase();
+//		 for(int i = 0 ; i < upstr.length()/2; i++) {
+//		 if(upstr.charAt(i)!=upstr.charAt(upstr.length()-1-i)) return "NO"; 
+//		 } return "YES";
 		 
 //		String reveredStr = new StringBuffer(str).reverse().toString();
 //		//if(str.equals(reveredStr)) return "YES"; // 대소문자구분할때
 //		if(str.equalsIgnoreCase(reveredStr)) return "YES"; //대소문자 구분없이 무시하고 결과 낼때 
 //		return "NO";
+		
+		String reversedStr = new StringBuilder(str).reverse().toString();
+		if(str.equals(reversedStr)) return "YES";
+		return "NO";
+		
+		
 	}
 }
