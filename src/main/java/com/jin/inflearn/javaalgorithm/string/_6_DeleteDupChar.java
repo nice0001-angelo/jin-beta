@@ -30,7 +30,10 @@ public class _6_DeleteDupChar {
 //			answer +=str.charAt(i);	
 //			}
 //		}
-		
+		char[] charArr = str.toCharArray();
+		for(int i=0; i<str.length(); i++) {
+			
+		}
 		return answer;
 	}
 }
