@@ -13,6 +13,8 @@ public class _7_Palindrome {
 
 	/**
 	 * @param args
+	 * Input: gooG
+	 * Output: YES
 	 */
 	public static void main(String[] args) {
 		_7_Palindrome T = new _7_Palindrome();
