@@ -13,7 +13,7 @@ public class _10_MinDistanceChar {
 
 	/**
 	 * @param args
-	 * Input: teachermode e
+	 * Input: teachermode e 문자열(teachermode)내에서 각문자와 문자(e)와의 거리를 계산하시오
 	 * Output: 10121012210
 	 */
 	public static void main(String[] args) {
