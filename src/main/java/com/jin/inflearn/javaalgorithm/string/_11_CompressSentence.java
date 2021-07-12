@@ -41,7 +41,7 @@ public class _11_CompressSentence {
 //		return result;
 		int count = 1;
 		String result ="";
-		for(int i=0; i<str.length(); i++) {
+		for(int i=0; i<str.length()-1; i++) {
 			if(str.charAt(i)==str.charAt(i+1)) {
 				count++;
 			}else {
