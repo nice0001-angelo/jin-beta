@@ -15,6 +15,7 @@ public class _10_MinDistanceChar {
 	 * @param args
 	 * Input: teachermode e 문자열(teachermode)내에서 각문자와 문자(e)와의 거리를 계산하시오
 	 * Output: 10121012210
+	 * 왼쪽에서 오른쪽으로 한번 검색하고 오른쪽에서 왼쪽을 한번씩 검색해서 목적어랑의 거리를 구한후 두 개의 스캔중에 작은 숫자를 리턴하면 좌로부터 우로부터 최소거리를 구할수 있다.
 	 */
 	public static void main(String[] args) {
 		_10_MinDistanceChar T = new _10_MinDistanceChar();
