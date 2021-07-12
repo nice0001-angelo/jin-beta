@@ -19,14 +19,14 @@ public class _10_MinDistanceChar {
 	public static void main(String[] args) {
 		_10_MinDistanceChar T = new _10_MinDistanceChar();
 		Scanner kb = new Scanner(System.in);
-//		String str = kb.next();
+//		String str = kb.next();i
 //		char t = kb.next().charAt(0);
 //		for(int x : T.solution(str, t)) {
 //			System.out.print(x+" ");
 		String str = kb.next();
 		char x = kb.next().charAt(0);
-		for(int x : T.solution(str, x)) {
-			System.out.println(x+" ");
+		for(int i : T.solution(str, x)) {
+			System.out.println(i+" ");
 		}
 	}
 	
