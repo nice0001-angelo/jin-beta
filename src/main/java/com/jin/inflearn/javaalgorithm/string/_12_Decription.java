@@ -7,7 +7,9 @@ import java.util.*;
 
 /**
  * @author njh
- *
+ *Input: 4
+ *Input: #****###**#####**#####**##**
+ *Oupput: COOL
  */
 public class _12_Decription {
 
