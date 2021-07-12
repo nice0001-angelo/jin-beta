@@ -24,29 +24,17 @@ public class _11_CompressSentence {
 	}
 
 	public String solution(String str) {
-//		String result = new String();
-//		str = str+" ";
-//		int cnt = 1;
-//		for(int i = 0; i < str.length()-1; i++) {
-//			if(str.charAt(i) == str.charAt(i+1)) {
-//				cnt++;
-//			}else {
-//				result += str.charAt(i);
-//				if(cnt > 1) {
-//					result += String.valueOf(cnt);
-//				}
-//				cnt = 1;
-//			}
-//		}
-//		return result;
 		int count = 1;
 		String result ="";
+		str=str+" "; //마지막 문자도 return 될 수 있도록 하는 중요한 장치
 		for(int i=0; i<str.length()-1; i++) {
 			if(str.charAt(i)==str.charAt(i+1)) {
 				count++;
 			}else {
 				result += str.charAt(i);
-				result += String.valueOf(count);
+				if(count>1) {
+					result += String.valueOf(count);
+				}
 				count=1;
 			}
 		}
