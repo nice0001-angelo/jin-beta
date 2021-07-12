@@ -32,27 +32,42 @@ public class _10_MinDistanceChar {
 	}
 	
 	public int[] solution(String str, char t) {
-		int[] answer = new int[str.length()];
-		int lp = 1000;
-		for(int i = 0; i < str.length(); i++) {
-			if(str.charAt(i) == t) {
-				lp = 0;
-				answer[i] = lp;
+//		int[] answer = new int[str.length()];
+//		int lp = 1000;
+//		for(int i = 0; i < str.length(); i++) {
+//			if(str.charAt(i) == t) {
+//				lp = 0;
+//				answer[i] = lp;
+//			} else {
+//				lp++;
+//				answer[i] = lp;
+//			}
+//		}
+//		int rp = 1000;
+//		for(int i = str.length()-1 ; i >= 0 ; i--) {
+//			if(str.charAt(i) == t) {
+//				rp = 0;
+//			} else {
+//				rp++;
+//				answer[i] = Math.min(rp, answer[i]);
+//			}
+//		}
+//		return answer;
+		int[] result = new int[str.length()];
+		int lt = 1000;
+		for(int i=0; i<str.length(); i++) {
+			if(t==str.charAt(i)) {
+				lt = 0;
+				result[i]=lt;
 			} else {
-				lp++;
-				answer[i] = lp;
+				lt++;
+				result[i]=lt;
 			}
 		}
-		int rp = 1000;
-		for(int i = str.length()-1 ; i >= 0 ; i--) {
-			if(str.charAt(i) == t) {
-				rp = 0;
-			} else {
-				rp++;
-				answer[i] = Math.min(rp, answer[i]);
-			}
+		int rt = 1000;
+		for(int j=str.length()-1; j>=0; j--) {
+			
 		}
-		return answer;
 	}
 	
 	
