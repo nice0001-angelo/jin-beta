@@ -45,7 +45,7 @@ public class _11_CompressSentence {
 			if(str.charAt(i)==str.charAt(i+1)) {
 				count++;
 			}else {
-				result = str.charAt(i)+Integer.toString(count);
+				result += str.charAt(i);
 			}
 		}
 		return result;
