@@ -66,8 +66,15 @@ public class _10_MinDistanceChar {
 		}
 		int rt = 1000;
 		for(int j=str.length()-1; j>=0; j--) {
-			
+			if(t==str.charAt(j)) {
+				rt=0;
+				result[j]=rt;
+			} else {
+				rt--;
+				result[j]=Math.min(rt, result[j]);
+			}
 		}
+		return result;
 	}
 	
 	
