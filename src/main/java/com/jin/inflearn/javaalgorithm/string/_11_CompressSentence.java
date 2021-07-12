@@ -39,7 +39,15 @@ public class _11_CompressSentence {
 //			}
 //		}
 //		return result;
-
-		
+		int count = 1;
+		String result ="";
+		for(int i=0; i<str.length(); i++) {
+			if(str.charAt(i)==str.charAt(i+1)) {
+				count++;
+			}else {
+				result = str.charAt(i)+Integer.toString(count);
+			}
+		}
+		return result;
 	}
 }
