@@ -47,6 +47,7 @@ public class _11_CompressSentence {
 			}else {
 				result += str.charAt(i);
 				result += String.valueOf(count);
+				count=1;
 			}
 		}
 		return result;
