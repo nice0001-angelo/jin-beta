@@ -13,6 +13,8 @@ public class _11_CompressSentence {
 
 	/**
 	 * @param args
+	 * Input: KKHSSSSSSSE
+	 * Output: K2HS7E
 	 */
 	public static void main(String[] args) {
 		_11_CompressSentence T = new _11_CompressSentence();
