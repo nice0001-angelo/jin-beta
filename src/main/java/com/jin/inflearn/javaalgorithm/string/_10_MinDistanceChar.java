@@ -23,6 +23,10 @@ public class _10_MinDistanceChar {
 //		char t = kb.next().charAt(0);
 //		for(int x : T.solution(str, t)) {
 //			System.out.print(x+" ");
+		String str = kb.next();
+		char x = kb.next().charAt(0);
+		for(int x : T.solution(str, x)) {
+			System.out.println(x+" ");
 		}
 	}
 	
