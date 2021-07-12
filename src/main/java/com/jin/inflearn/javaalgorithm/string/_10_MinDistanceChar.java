@@ -70,7 +70,7 @@ public class _10_MinDistanceChar {
 				rt=0;
 				result[j]=rt;
 			} else {
-				rt--;
+				rt++;
 				result[j]=Math.min(rt, result[j]);
 			}
 		}
