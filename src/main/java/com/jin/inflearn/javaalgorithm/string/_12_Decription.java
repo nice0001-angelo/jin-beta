@@ -32,6 +32,7 @@ public class _12_Decription {
 			answer +=(char)num;
 			System.out.println(tmp+" "+num);
 			str = str.substring(7);
+			System.out.println();
 		}
 		return answer;
 	}
