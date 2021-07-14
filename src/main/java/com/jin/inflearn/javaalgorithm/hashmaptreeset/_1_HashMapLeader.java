@@ -26,7 +26,7 @@ public class _1_HashMapLeader {
 	}
 
 	public char Solution(int n, String str) {
-		HashMap<String, String> map = new HashMap<String, String>();
+		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		return 'x';
 	}
 }
