@@ -25,16 +25,16 @@ public class _12_Decription {
 	}
 
 	public String solution(int k, String str) {
+//		String answer = "";
+//		for(int i=0; i < k ; i++) {
+//			String tmp = str.substring(0,7).replace('#', '1').replace('*','0');
+//			int num = Integer.parseInt(tmp,2);
+//			answer +=(char)num;
+//			System.out.println(tmp+" "+num);
+//			str = str.substring(7);
 		String answer = "";
-		for(int i=0; i < k ; i++) {
-			String tmp = str.substring(0,7).replace('#', '1').replace('*','0');
-			int num = Integer.parseInt(tmp,2);
-			answer +=(char)num;
-			System.out.println(tmp+" "+num);
-			str = str.substring(7);
-			System.out.println();
-			System.out.println();
-		}
+		answer = str.substring(0, 7);
 		return answer;
-	}
+		}
+	
 }
