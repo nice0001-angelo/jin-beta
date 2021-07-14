@@ -19,7 +19,10 @@ public class _1_HashMapLeader {
 	 */
 	public static void main(String[] args) {
 		_1_HashMapLeader T = new _1_HashMapLeader();
-
+		Scanner kb = new Scanner(System.in);
+		int n = kb.nextInt();
+		String str = kb.next();
+		T.Solution(n, str);
 	}
 
 	public String Solution(int n, String str) {
