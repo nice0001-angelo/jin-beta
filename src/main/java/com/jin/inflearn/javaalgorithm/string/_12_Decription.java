@@ -33,6 +33,7 @@ public class _12_Decription {
 			System.out.println(tmp+" "+num);
 			str = str.substring(7);
 			System.out.println();
+			System.out.println();
 		}
 		return answer;
 	}
