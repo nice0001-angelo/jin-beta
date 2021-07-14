@@ -22,10 +22,11 @@ public class _1_HashMapLeader {
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		String str = kb.next();
-		T.Solution(n, str);
+		System.out.println(T.Solution(n, str));
 	}
 
 	public String Solution(int n, String str) {
 		HashMap<String, String> map = new HashMap<String, String>();
+		return "";
 	}
 }
