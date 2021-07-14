@@ -3,6 +3,8 @@
  */
 package com.jin.inflearn.javaalgorithm.hashmaptreeset;
 
+import java.util.*;
+
 /**
  * @author njh
  *
@@ -21,6 +23,6 @@ public class _1_HashMapLeader {
 	}
 
 	public String Solution(int n, String str) {
-		
+		HashMap<String, String> map = new HashMap<String, String>();
 	}
 }
