@@ -36,6 +36,7 @@ public class _12_Decription {
 		for(int i=0; i<k; i++) {
 			String tmp = str.substring(0, 7).replace("#", "1").replace("*", "0");
 			int num = Integer.parseInt(tmp, 2); //String 값인 tmp를 2진수로 받아서 10진수로 변환하여 int 값으로 리턴
+			answer +=(char)num; //int value를 char로 형변환 하면 Ascii 코드에 해당하는 녀석으로 변환됨 answer는 String 이므로 char 타입을 붙이면 String 됨
 			System.out.println(tmp+" "+num);
 			str=str.substring(7);
 		}
