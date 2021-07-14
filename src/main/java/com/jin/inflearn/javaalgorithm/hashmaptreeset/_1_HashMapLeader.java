@@ -25,8 +25,8 @@ public class _1_HashMapLeader {
 		System.out.println(T.Solution(n, str));
 	}
 
-	public String Solution(int n, String str) {
+	public char Solution(int n, String str) {
 		HashMap<String, String> map = new HashMap<String, String>();
-		return "";
+		return 'x';
 	}
 }
