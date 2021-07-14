@@ -33,8 +33,12 @@ public class _12_Decription {
 //			System.out.println(tmp+" "+num);
 //			str = str.substring(7);
 		String answer = "";
-		answer = str.substring(0, 7);
-		return answer;
+		for(int i=0; i<k; i++) {
+			String tmp = str.substring(0, 7).replace("#", "1").replace("*", "0");
+			int num = Integer.parseInt(tmp, 2); //String 값인 tmp를 2진수로 받아서 10진수로 변환하여 int 값으로 리턴
+			System.out.println(tmp+" "+num);
+			str=str.substring(7);
 		}
-	
+		return answer;
+	}
 }
