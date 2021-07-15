@@ -26,10 +26,10 @@ public class _1_HashMapLeader {
 	}
 
 	public char Solution(int n, String str) {
+
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-		for(char x : str.toCharArray()) {
-			map.put(x, map.getOrDefault(x, 0)+1);
+		for(char c : str.toCharArray()) {
+			
 		}
-		return 'x';
 	}
 }
