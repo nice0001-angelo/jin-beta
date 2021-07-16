@@ -35,7 +35,7 @@ public class _1_HashMapLeader {
 		for(char key : map.keySet()) { //keySet() key 집합을 리턴하는 method
 			System.out.println(key+" "+map.get(key)); // get(key) key에 해당하는 value를 리턴하는 method
 			if(map.get(key) > max) {
-				max = map.get(key);
+				max = map.get(key); //비교해서 가장 큰 value를 max에 넣고 Key를 리턴한다 
 				answer = key;
 			}
 		} 
