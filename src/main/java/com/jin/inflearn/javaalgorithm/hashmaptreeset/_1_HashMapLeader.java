@@ -45,5 +45,14 @@ public class _1_HashMapLeader {
 		for (char x : str.toCharArray()) {
 			map.put(x, map.getOrDefault(x, 0)+1);
 		}
+		int max = Integer.MIN_VALUE;
+		for(char key : map.keySet()) {
+			System.out.println(key+" "+map.get(key));
+			if(map.get(key) > max) {
+				max = map.get(key); // max에는 key에 해당하는 value의 값을 넣고
+				answer = key; // key 자체를 리턴
+			}
+		}
+		return answer;
 	}
 }
