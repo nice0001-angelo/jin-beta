@@ -24,12 +24,15 @@ public class _2_HashMapAnagram {
 	public static void main(String[] args) {
 		_2_HashMapAnagram T = new _2_HashMapAnagram();
 		Scanner kb = new Scanner(System.in);
-		String str = kb.next();
-		System.out.println(T.Solution(str));
+		String a = kb.next();
+		String b = kb.next();
+		System.out.println(T.Solution(a, b));
 	}
 
-	public String Solution(String str) {
-		String Answer = "";
+	public String Solution(String a, String b) {
+		String Answer = "YES";
+		new HashMap<Character, Integer>();
+		
 		return Answer;
 	}
 }
