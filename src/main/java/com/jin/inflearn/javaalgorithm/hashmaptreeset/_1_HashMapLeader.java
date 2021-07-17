@@ -45,6 +45,7 @@ public class _1_HashMapLeader {
 		for (char x : str.toCharArray()) {
 			map.put(x, map.getOrDefault(x, 0)+1);
 		}
+		System.out.println(map.containsKey('A'));
 		int max = Integer.MIN_VALUE;
 		for(char key : map.keySet()) {
 			System.out.println(key+" "+map.get(key));
