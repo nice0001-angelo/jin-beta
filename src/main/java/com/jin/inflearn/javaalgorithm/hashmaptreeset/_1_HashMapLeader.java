@@ -47,6 +47,7 @@ public class _1_HashMapLeader {
 		}
 		System.out.println("A 가 key 중의 하나인가: "+ map.containsKey('A'));
 		System.out.println("Map의 key의 갯수는: "+map.size());
+//		System.out.println(map.remove('A'));
 		int max = Integer.MIN_VALUE;
 		for(char key : map.keySet()) {
 			System.out.println(key+" "+map.get(key));
