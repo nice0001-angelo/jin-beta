@@ -42,5 +42,8 @@ public class _1_HashMapLeader {
 //		return answer;
 		char answer = ' ';
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		for (char x : str.toCharArray()) {
+			map.put(x, map.getOrDefault(x, 0)+1);
+		}
 	}
 }
