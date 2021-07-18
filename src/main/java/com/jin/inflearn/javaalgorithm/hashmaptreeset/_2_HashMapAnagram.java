@@ -35,6 +35,11 @@ public class _2_HashMapAnagram {
 		for(char c : a.toCharArray()) {
 			map.put(c, map.getOrDefault(c, 0)+1);
 		}
+		for(char c : b.toCharArray()) {
+			if(!map.containsKey(c) || map.get(c) == 0) { //String a에 b의 원소가 없거나  count가 0면 일치하지 않는 것이므로 "NO" 리턴
+				return "NO";
+			}
+		}
 		return Answer;
 	}
 }
