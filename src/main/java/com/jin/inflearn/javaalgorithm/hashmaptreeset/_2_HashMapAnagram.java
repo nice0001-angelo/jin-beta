@@ -31,7 +31,7 @@ public class _2_HashMapAnagram {
 
 	public String Solution(String a, String b) {
 		String Answer = "YES";
-		new HashMap<Character, Integer>();
+		HashMap<Character, Integer> map =new HashMap<Character, Integer>();
 		
 		return Answer;
 	}
