@@ -32,6 +32,7 @@ public class _2_HashMapAnagram {
 	public String Solution(String a, String b) {
 		String Answer = "YES";
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		System.out.println(map.entrySet());
 		for(char c : a.toCharArray()) {
 			map.put(c, map.getOrDefault(c, 0)+1);
 		}
