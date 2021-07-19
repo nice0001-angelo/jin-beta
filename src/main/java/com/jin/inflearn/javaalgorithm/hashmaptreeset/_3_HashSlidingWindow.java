@@ -11,6 +11,9 @@ public class _3_HashSlidingWindow {
 
 	/**
 	 * @param args
+	 * Input: 7 4
+	 * Input: 20 12 20 10 23 17 10
+	 * Output: 3 4 4 3
 	 */
 	public static void main(String[] args) {
 		_3_HashSlidingWindow T = new _3_HashSlidingWindow();
