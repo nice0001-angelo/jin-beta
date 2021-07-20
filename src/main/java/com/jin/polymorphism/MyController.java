@@ -22,8 +22,13 @@ public class MyController {
 	
 	public void methodA() {
 		RemoteControl rc = new Audio();
-		
-		
+		rc.turnOn();
+		rc.setVolume(5);
+	}
+	
+	public void methodB() {
+		rc.turnOn();
+		rc.setVolume(5);
 	}
 	
 }
