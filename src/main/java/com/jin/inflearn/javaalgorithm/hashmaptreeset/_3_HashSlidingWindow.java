@@ -26,7 +26,7 @@ public class _3_HashSlidingWindow {
 		for(int i=0; i<arr.length; i++) {
 			arr[i] = kb.nextInt();
 		}
-		
+		System.out.println(T.Solution(a, b, arr));
 	}
 	
 	public ArrayList<Integer> Solution(int a, int b, int[] arr) {
