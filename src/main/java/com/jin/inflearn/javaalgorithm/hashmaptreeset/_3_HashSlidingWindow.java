@@ -26,6 +26,11 @@ public class _3_HashSlidingWindow {
 		for(int i=0; i<arr.length; i++) {
 			arr[i] = kb.nextInt();
 		}
-
+		
+	}
+	
+	public ArrayList<String> Solution(int a, int b, int[] arr) {
+		ArrayList<String> arrayList = new ArrayList<String>();
+		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 	}
 }
