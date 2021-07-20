@@ -32,6 +32,9 @@ public class Television implements RemoteControl{
 			this.volume = remoteControl.MAX_VOLUME;
 		} else if(volume < remoteControl.MIN_VOLUME){
 			this.volume = remoteControl.MIN_VOLUME;
+		} else {
+			this.volume = volume;
 		}
+		System.out.println("현재 volue: "+this.volume);
 	}
 }
