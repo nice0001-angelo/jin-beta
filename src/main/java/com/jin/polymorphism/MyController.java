@@ -26,7 +26,7 @@ public class MyController {
 		rc.setVolume(5);
 	}
 	
-	public void methodB() {
+	public void methodB(RemoteControl rc) {
 		rc.turnOn();
 		rc.setVolume(5);
 	}
