@@ -35,5 +35,14 @@ public class _3_HashSlidingWindow {
 		for(int i=0; i<b-1; i++) {
 			hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0)+1);
 		}
+		int lt=0;
+		for(int rt=b-1; rt<a; rt++) {
+			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
+			arrayList.add(hashMap.size());
+			hashMap.put(arr[lt], hashMap.get(arr[lt])-1);
+			if(hashMap.get(arr[lt])==0) hashMap.remove(arr[lt]);
+			lt++;
+		}
+		return arrayList;
 	}
 }
