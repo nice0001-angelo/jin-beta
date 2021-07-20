@@ -22,5 +22,7 @@ public class _3_HashSlidingWindow {
 		Scanner kb = new Scanner(System.in);
 		int a = kb.nextInt();
 		int b = kb.nextInt();
+		int[] arr = new int[a];
+
 	}
 }
