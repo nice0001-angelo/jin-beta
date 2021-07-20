@@ -16,6 +16,7 @@ public class _3_HashSlidingWindow {
 	 * Input: 7 4
 	 * Input: 20 12 20 10 23 17 10
 	 * Output: 3 4 4 3
+	 * SlidingWindow에 대해서 사전 지식 있어야 함
 	 */
 	public static void main(String[] args) {
 		_3_HashSlidingWindow T = new _3_HashSlidingWindow();
