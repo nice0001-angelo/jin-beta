@@ -29,8 +29,8 @@ public class _3_HashSlidingWindow {
 		
 	}
 	
-	public ArrayList<String> Solution(int a, int b, int[] arr) {
-		ArrayList<String> arrayList = new ArrayList<String>();
+	public ArrayList<Integer> Solution(int a, int b, int[] arr) {
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
 		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 		for(int i=0; i<b-1; i++) {
 			hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0)+1);
