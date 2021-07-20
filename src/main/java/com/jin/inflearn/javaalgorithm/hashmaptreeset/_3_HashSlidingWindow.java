@@ -23,6 +23,9 @@ public class _3_HashSlidingWindow {
 		int a = kb.nextInt();
 		int b = kb.nextInt();
 		int[] arr = new int[a];
+		for(int i=0; i<arr.length; i++) {
+			arr[i] = kb.nextInt();
+		}
 
 	}
 }
