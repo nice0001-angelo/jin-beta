@@ -10,11 +10,11 @@ import org.springframework.beans.factory.annotation.*;
  *
  */
 public class Audio implements RemoteControl{
-	private int volume;
-	
 	@Autowired
 	RemoteControl remote;
 	
+	private int volume;
+		
 	@Override
 	public void turnOn() {
 		System.out.println("라디오 전원을 켭니다");
