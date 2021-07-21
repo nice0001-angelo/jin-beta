@@ -23,4 +23,7 @@ public class _3_SlidingWindow {
 
 	}
 
+	public void Solution() {
+		
+	}
 }
