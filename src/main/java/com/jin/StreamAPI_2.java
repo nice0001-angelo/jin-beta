@@ -19,5 +19,6 @@ public class StreamAPI_2 {
 		System.out.println(
 				IntStream.range(0, 1001).skip(500).filter(i->i%2==0).filter(i->i%5==0).sum()
 				);
+		System.out.println();
 	}
 }
