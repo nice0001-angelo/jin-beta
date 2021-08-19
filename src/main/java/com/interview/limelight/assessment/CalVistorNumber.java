@@ -6,22 +6,20 @@ package com.interview.limelight.assessment;
 import java.util.*;
 
 /**
- * @author njh
+ * @author JinHyun
  *
  */
 public class CalVistorNumber {
 
 	/**
 	 * @param args
+	 * Input:
+	 * maxSum(1, 5, null, 1, 2, 2, null, 3)
+	 * minAvg(1, 5, null, 1, 2, 2, null, 3)
+	 * Output:
+	 * [1, 5]
+	 * [1,2,2]
 	 */
-	public static void main(String[] args) {
-		CalVistorNumber T = new CalVistorNumber();
-		List<Integer> input = new ArrayList<Integer>();
-
-		T.maxSum(input);
-
-	}
-
 	public List<Integer> maxSum(List<Integer> input){
 		
 		int sumValue = 0;
