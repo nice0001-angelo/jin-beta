@@ -19,6 +19,7 @@ public class _4_HashSlidingWondow {
 		_4_HashSlidingWondow T = new _4_HashSlidingWondow();
 		Scanner kb = new Scanner(System.in);
 		String a = kb.next();
+		String b = kb.next();
 	}
 
 }
