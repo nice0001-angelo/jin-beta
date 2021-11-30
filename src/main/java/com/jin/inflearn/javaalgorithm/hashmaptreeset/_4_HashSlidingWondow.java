@@ -21,5 +21,9 @@ public class _4_HashSlidingWondow {
 		String a = kb.next();
 		String b = kb.next();
 	}
+	
+	public int solution(String a, String b) {
+		return 0;
+	}
 
 }
