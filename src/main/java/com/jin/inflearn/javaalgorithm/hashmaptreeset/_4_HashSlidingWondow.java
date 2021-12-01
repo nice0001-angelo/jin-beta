@@ -28,6 +28,7 @@ public class _4_HashSlidingWondow {
 		HashMap<Character, Integer> bm = new HashMap<Character, Integer>();
 		for(char x : b.toCharArray()) {
 			bm.put(x, bm.getOrDefault(x, 0)+1);
+			System.out.println();
 		}
 		return 0;
 	}
