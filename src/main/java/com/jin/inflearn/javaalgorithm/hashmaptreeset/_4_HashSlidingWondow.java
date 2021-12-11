@@ -32,7 +32,8 @@ public class _4_HashSlidingWondow {
 			System.out.print(b);
 			System.out.println();
 			System.out.println();
-			System.out.println();	
+			System.out.println();
+			System.out.println();
 
 		}
 		return 0;
