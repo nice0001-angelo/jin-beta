@@ -29,7 +29,6 @@ public class _4_HashSlidingWondow {
 		for(char x : b.toCharArray()) {
 			bm.put(x, bm.getOrDefault(x, 0)+1);
 			System.out.println();
-			System.out.print(b);
 
 
 
