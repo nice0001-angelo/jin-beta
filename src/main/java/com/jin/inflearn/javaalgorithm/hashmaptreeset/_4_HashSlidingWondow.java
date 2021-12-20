@@ -20,6 +20,7 @@ public class _4_HashSlidingWondow {
 		Scanner kb = new Scanner(System.in);
 		String a = kb.next();
 		String b = kb.next();
+		System.out.println(T.solution(a, b));
 	}
 	
 	public int solution(String a, String b) {
@@ -28,10 +29,7 @@ public class _4_HashSlidingWondow {
 		HashMap<Character, Integer> bm = new HashMap<Character, Integer>();
 		for(char x : b.toCharArray()) {
 			bm.put(x, bm.getOrDefault(x, 0)+1);
-			System.out.println();
-			System.out.println();
-			System.out.println();
-			System.out.println();
+			int L=b.length()-1;
 
 		}
 		return 0;
