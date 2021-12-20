@@ -24,15 +24,7 @@ public class _4_HashSlidingWondow {
 	}
 	
 	public int solution(String a, String b) {
-		int answer = 0;
-		HashMap<Character, Integer> am = new HashMap<Character, Integer>();
-		HashMap<Character, Integer> bm = new HashMap<Character, Integer>();
-		for(char x : b.toCharArray()) {
-			bm.put(x, bm.getOrDefault(x, 0)+1);
-			int L=b.length()-1;
-
-		}
-		return 0;
+		
 	}
 
 }
