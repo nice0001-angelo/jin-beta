@@ -25,7 +25,11 @@ public class _4_HashSlidingWondow {
 	
 	public int solution(String a, String b) {
 		int answer = 0;
-		
+		HashMap<Character, Integer> am = new HashMap<>();
+		HashMap<Character, Integer> bm = new HashMap<>();
+		for(char x : b.toCharArray()) {
+			
+		}
 	}
 
 }
