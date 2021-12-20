@@ -24,6 +24,7 @@ public class _4_HashSlidingWondow {
 	}
 	
 	public int solution(String a, String b) {
+		int answer = 0;
 		
 	}
 
