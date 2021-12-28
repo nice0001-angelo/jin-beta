@@ -29,6 +29,7 @@ public class _4_HashSlidingWondow {
 		HashMap<Character, Integer> bm = new HashMap<>();
 		for(char x : b.toCharArray()) {
 			System.out.println();
+			System.out.println();
 
 		}
 	}
