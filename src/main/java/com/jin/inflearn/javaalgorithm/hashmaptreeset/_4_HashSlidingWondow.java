@@ -30,8 +30,7 @@ public class _4_HashSlidingWondow {
 		for(char x : b.toCharArray()) {
 			System.out.println();
 			System.out.println();
-			System.out.println();
-			System.out.println();
+
 
 
 
