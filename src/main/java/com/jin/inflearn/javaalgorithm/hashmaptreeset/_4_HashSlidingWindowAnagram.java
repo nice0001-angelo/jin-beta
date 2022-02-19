@@ -29,7 +29,7 @@ public class _4_HashSlidingWindowAnagram {
 		HashMap<Character, Integer> bm = new HashMap<>();
 		for(char x : b.toCharArray()) bm.put(x, bm.getOrDefault(x, 0)+1);
 		int L=b.length()-1;
-		for(int i=0; i<L; i++)
+		for(int i=0; i<L; i++) am.put(a.charAt(i), am.getOrDefault(a.charAt(i), 0)+1);
 		
 		return answer;
 	}
