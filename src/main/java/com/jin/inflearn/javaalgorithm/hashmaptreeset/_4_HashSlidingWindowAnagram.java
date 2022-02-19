@@ -17,7 +17,7 @@ public class _4_HashSlidingWindowAnagram {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		_4_HashSlidingWindowAnagram T = new _4_HashSlidingWindowAnagram();
-		System.out.println("Please Enter numbers===>");
+		System.out.println("Please Enter Character for Anagram: Example: ㅁ===>");
 		Scanner kb = new Scanner(System.in);
 		String a = kb.next();
 		String b = kb.next();
@@ -38,6 +38,7 @@ public class _4_HashSlidingWindowAnagram {
 			am.put(a.charAt(lt), am.get(a.charAt(lt)-1));
 			lt++;
 		}
+		System.out.println();
 		return answer;
 	}
 }
