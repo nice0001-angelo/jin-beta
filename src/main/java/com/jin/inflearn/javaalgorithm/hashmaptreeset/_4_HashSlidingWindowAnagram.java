@@ -30,6 +30,11 @@ public class _4_HashSlidingWindowAnagram {
 		for(char x : b.toCharArray()) bm.put(x, bm.getOrDefault(x, 0)+1);
 		int L=b.length()-1;
 		for(int i=0; i<L; i++) am.put(a.charAt(i), am.getOrDefault(a.charAt(i), 0)+1);
+		int lt=0;
+		for(int rt=L; rt<a.length(); rt++) {
+			am.put(a.charAt(rt), am.getOrDefault(a.charAt(i), 0)+1);
+			
+		}
 		
 		return answer;
 	}
