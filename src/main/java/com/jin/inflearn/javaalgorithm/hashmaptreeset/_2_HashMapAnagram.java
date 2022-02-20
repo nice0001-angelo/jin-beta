@@ -44,8 +44,16 @@ public class _2_HashMapAnagram {
 //		}
 //		return Answer;
 		
-		
 		String answer = "Yes";
+
+		HashMap<Character, Integer> aHashMap = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> bHashMap = new HashMap<Character, Integer>();
+		
+		if(a.length()!=b.length()) answer = "No";
+		
+		for(char x : a.toCharArray()) {
+			aHashMap.put(x, aHashMap.getOrDefault(x, 0)+1);
+		}
 		 
 		
 		return answer;
