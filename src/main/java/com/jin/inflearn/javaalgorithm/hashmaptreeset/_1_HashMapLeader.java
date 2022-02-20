@@ -38,6 +38,7 @@ public class _1_HashMapLeader {
 		
 		System.out.println(hashMap);
 		System.out.println(hashMap.keySet());
+		System.out.println(hashMap.containsKey('A'));
 //		for(int i=0; i<hashMap.size(); i++) {
 //			System.out.println(+":"+hashMap.get(i));
 //		}
