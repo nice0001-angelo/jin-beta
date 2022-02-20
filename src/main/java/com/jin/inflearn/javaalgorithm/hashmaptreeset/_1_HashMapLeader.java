@@ -35,6 +35,9 @@ public class _1_HashMapLeader {
 
 			hashMap.put(x, hashMap.getOrDefault(x, 0)+1); //hashMap 객체에 key와 key의 Value를 넣는다
 		}
+		for(char x : hashMap.keySet()) {
+			System.out.println(x+":"+hashMap.get(x));
+		}
 		
 		System.out.println(hashMap);
 		System.out.println(hashMap.keySet());
