@@ -22,6 +22,7 @@ public class _1_HashMapLeader {
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		String str = kb.next();
+		System.out.println("투표자수와 득표자의 알파벳을 입력하세요");
 		System.out.println(T.Solution(n, str));
 	}
 
