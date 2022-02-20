@@ -13,8 +13,7 @@ public class _1_HashMapLeader {
 
 	/**
 	 * @param args
-	 * Input: 15
-	 * Input: BACBACCACCBDEDE
+	 * Input: 15 BACBACCACCBDEDE
 	 * Output: C
 	 */
 	public static void main(String[] args) {
@@ -31,20 +30,21 @@ public class _1_HashMapLeader {
 
 		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
 		
+		// 입력받은 String 값을 char로 변환하여 hashMap에 Key, Value 형태로 넣는다(key, key의 갯수)
 		for(char x : str.toCharArray()) {
-
 			hashMap.put(x, hashMap.getOrDefault(x, 0)+1); //hashMap 객체에 key와 key의 Value를 넣는다
 		}
-		for(char x : hashMap.keySet()) {
-			System.out.println(x+":"+hashMap.get(x));
-		}
 		
-		System.out.println(hashMap);
-		System.out.println(hashMap.keySet());
-		System.out.println(hashMap.containsKey('A'));
-//		for(int i=0; i<hashMap.size(); i++) {
-//			System.out.println(+":"+hashMap.get(i));
-//		}
+		// hashMap 으로 부터 key와 value를 꺼낸다
+		int maxValue = Integer.MIN_VALUE;
+		
+		for(char key : hashMap.keySet()) {
+			System.out.println(key+":"+hashMap.get(key));
+			if(hashMap.get(key)>maxValue) {
+				maxValue = hashMap.get(key);
+				answer = key;
+			}
+		}
 		return answer;
 	}
 }
