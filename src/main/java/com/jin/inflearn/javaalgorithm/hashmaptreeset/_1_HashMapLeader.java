@@ -28,17 +28,17 @@ public class _1_HashMapLeader {
 
 	public char Solution(int n, String str) {
 		char answer = ' ';
-		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
 		for (char x : str.toCharArray()) {
-			map.put(x, map.getOrDefault(x, 0)+1);
+			hashMap.put(x, hashMap.getOrDefault(x, 0)+1);
 		}
-		System.out.println("A 가 key 중의 하나인가: "+ map.containsKey('A'));
-		System.out.println("Map의 key의 갯수는: "+map.size());
+		System.out.println("A 가 key 중의 하나인가: "+ hashMap.containsKey('A'));
+		System.out.println("Map의 key의 갯수는: "+hashMap.size());
 		int max = Integer.MIN_VALUE;
-		for(char key : map.keySet()) {
-			System.out.println(key+" "+map.get(key));
-			if(map.get(key) > max) {
-				max = map.get(key); // max에는 key에 해당하는 value의 값을 넣고
+		for(char key : hashMap.keySet()) {
+			System.out.println(key+" "+hashMap.get(key));
+			if(hashMap.get(key) > max) {
+				max = hashMap.get(key); // max에는 key에 해당하는 value의 값을 넣고
 				answer = key; // key 자체를 리턴
 			}
 		}
