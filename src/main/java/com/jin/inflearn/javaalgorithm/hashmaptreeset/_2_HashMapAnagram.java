@@ -43,6 +43,7 @@ public class _2_HashMapAnagram {
 //			}
 //		}
 //		return Answer;
+		System.out.println("2개의 String Value를 넣으시오");
 		
 		String answer = "Yes";
 
@@ -55,7 +56,10 @@ public class _2_HashMapAnagram {
 			aHashMap.put(x, aHashMap.getOrDefault(x, 0)+1);
 		}
 		 
-		
+		for(char y : b.toCharArray()) {
+			if(!aHashMap.containsKey(y)||aHashMap.get(y)==0) return "No";
+			aHashMap.put(y, aHashMap.get(y)-1);
+		}
 		return answer;
 	}
 }
