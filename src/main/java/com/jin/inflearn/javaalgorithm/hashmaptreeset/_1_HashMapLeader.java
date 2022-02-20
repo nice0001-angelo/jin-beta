@@ -30,7 +30,7 @@ public class _1_HashMapLeader {
 		char answer = ' ';
 		HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
 		for (char x : str.toCharArray()) {
-			hashMap.put(x, hashMap.getOrDefault(x, 0)+1);
+			hashMap.put(x, hashMap.getOrDefault(x, 0)+1); //Input String을 한자 한자 따로 떼어서 hashMap에 key로 넣고 Value에는 key의 갯수를 넣는 Code.
 		}
 		System.out.println("A 가 key 중의 하나인가: "+ hashMap.containsKey('A'));
 		System.out.println("Map의 key의 갯수는: "+hashMap.size());
