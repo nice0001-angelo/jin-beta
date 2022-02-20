@@ -31,7 +31,7 @@ public class _1_HashMapLeader {
 		
 		for(char x : str.toCharArray()) {
 			HashMap<Character, Integer> hashMap = new HashMap<Character, Integer>();
-			hashMap.put(x, hashMap.getOrDefault(x, 0)+1); //
+			hashMap.put(x, hashMap.getOrDefault(x, 0)+1); //hashMap 객체에 key와 key의 Value를 넣는다
 		}
 		return answer;
 	}
