@@ -34,7 +34,7 @@ public class _1_HashMapLeader {
 		}
 		//System.out.println("A 가 key 중의 하나인가: "+ hashMap.containsKey('A'));
 		//System.out.println("Map의 key의 갯수는: "+hashMap.size());
-		int max = Integer.MIN_VALUE;
+		int max = Integer.MIN_VALUE; //max를 Integer MIN_VALUE로 초기화
 		for(char key : hashMap.keySet()) {
 			System.out.println(key+" "+hashMap.get(key)); //key와 key의 Value를 return하는 code
 			if(hashMap.get(key) > max) {
