@@ -39,9 +39,9 @@ public class _3_HashSlidingWindow {
 		int lt=0;
 		
 		//hashMap에 arr 값 넣기(b-1 자리수 전까지, cf b-1 자리는 rt의 자리
-        for(int i=0; i<b-1; i++) {
-        	hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0)+1);
-        }
+		for(int i=0; i<b-1; i++) {
+			hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0)+1);
+		}
 		
         //Sliding Window: 초기 lt=0, rt=b-1  ==> b가 4라면 lt=0, rt=3(총 4자리) 윈도우를 만들고 오른쪽으로 슬라이딩 시키는 로직
 		for(int rt=b-1; rt<a; rt++) {
