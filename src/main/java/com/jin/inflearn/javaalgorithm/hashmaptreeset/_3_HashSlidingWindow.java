@@ -45,6 +45,13 @@ public class _3_HashSlidingWindow {
 		
         //Sliding Window: 초기 lt=0, rt=b-1  ==> b가 4라면 lt=0, rt=3(총 4자리) 윈도우를 만들고 오른쪽으로 슬라이딩 시키는 로직
 		for(int rt=b-1; rt<a; rt++) {
+			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
+			
+			arrayList.add(hashMap.size());
+		}
+		
+		
+		for(int rt=b-1; rt<a; rt++) {
 			//rt의 key, value 세팅
 			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
 			
