@@ -13,7 +13,7 @@ public class _3_HashSlidingWindow {
 
 	/**
 	 * @param args
-	 * Input: 7 4
+	 * Input: 7 4 (총 매출기간이 7일이고 그중에서 4일간의 연속된 일자의 매출액의 종류를 구하시오)
 	 * Input: 20 12 20 10 23 17 10
 	 * Output: 3 4 4 3
 	 * SlidingWindow에 대해서 사전 지식 있어야 함
