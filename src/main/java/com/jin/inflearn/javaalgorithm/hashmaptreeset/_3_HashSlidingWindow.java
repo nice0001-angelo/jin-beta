@@ -40,13 +40,10 @@ public class _3_HashSlidingWindow {
 		
 		//hashMap에 arr 값 넣어두기
         for(int i=0; i<b-1; i++) {
-        	hashMap.put(arr[i], hashMap.getOrDefault(arr[i], hashMap.getOrDefault(arr[i], 0)+1));
+        	hashMap.put(arr[i], hashMap.getOrDefault(arr[i], 0)+1);
         }
 		
-		System.out.println(hashMap);
-		
-
-		
+        //rt 값 세팅
 		for(int rt=b-1; rt<a; rt++) {
 			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
 			arrayList.add(hashMap.size());
