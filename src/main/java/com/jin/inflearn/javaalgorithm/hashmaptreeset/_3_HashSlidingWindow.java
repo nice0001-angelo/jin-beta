@@ -32,7 +32,7 @@ public class _3_HashSlidingWindow {
 	
 	public ArrayList<Integer> Solution(int a, int b, int[] arr) {
 		
-		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		ArrayList<Integer> answer = new ArrayList<Integer>();
 		
 		HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
 		
@@ -47,7 +47,7 @@ public class _3_HashSlidingWindow {
 		for(int rt=b-1; rt<a; rt++) {
 			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
 			
-			arrayList.add(hashMap.size());
+			answer.add(hashMap.size()); //최종 결과에 size 리턴
 		}
 		
 		
@@ -56,7 +56,7 @@ public class _3_HashSlidingWindow {
 			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
 			
 			//key의 갯수 측정
-			arrayList.add(hashMap.size()); 
+			answer.add(hashMap.size()); 
 			
 			//lt의 value -1, lt의 값 슬라이딩 전처리,,
 			hashMap.put(arr[lt], hashMap.get(arr[lt])-1);
@@ -67,6 +67,6 @@ public class _3_HashSlidingWindow {
 			//lt 위치 오른쪽으로 sliding
 			lt++;
 		}
-		return arrayList;
+		return answer;
 	}
 }
