@@ -47,21 +47,13 @@ public class _3_HashSlidingWindow {
 		for(int rt=b-1; rt<a; rt++) {
 			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
 			
-			answer.add(hashMap.size()); //최종 결과에 size 리턴
-		}
-		
-		
-		for(int rt=b-1; rt<a; rt++) {
-			//rt의 key, value 세팅
-			hashMap.put(arr[rt], hashMap.getOrDefault(arr[rt], 0)+1);
-			
 			//key의 갯수 측정
-			answer.add(hashMap.size()); 
+			answer.add(hashMap.size()); //최종 결과에 size 리턴
 			
-			//lt의 value -1, lt의 값 슬라이딩 전처리,,
+			//lt 값 슬라이딩 전처리, lt의 value -1(lt 위치의 값을 제거 하기 위해) 그리고 getOrDefault 쓰면 안됨. 없을 수가 없기 때문(미리 세팅해뒀음)
 			hashMap.put(arr[lt], hashMap.get(arr[lt])-1);
 			
-			//lt의 value -1 후에 value가 0 가 되면 해당 key 삭제
+			//lt 의 값이 0 되면 삭제
 			if(hashMap.get(arr[lt])==0) hashMap.remove(arr[lt]);
 			
 			//lt 위치 오른쪽으로 sliding
