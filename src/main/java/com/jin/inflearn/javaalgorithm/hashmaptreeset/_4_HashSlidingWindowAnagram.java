@@ -38,11 +38,16 @@ public class _4_HashSlidingWindowAnagram {
 		int lt=0;
 		
 		for(int rt=b.length()-1; rt<a.length(); rt++) {
+			
 			am.put(a.charAt(rt), am.getOrDefault(a.charAt(rt), 0)+1);
+			
 			if(am.equals(bm)) answer++;
+			
 			am.put(a.charAt(lt), am.get(a.charAt(lt)-1));
+			
 			lt++;
 		}
+		System.out.println();
 		System.out.println();
 		System.out.println();
 		System.out.println();
