@@ -56,7 +56,7 @@ public class _4_HashSlidingWindowAnagram {
 		HashMap<Character, Integer> bm = new HashMap<Character, Integer>();
 		
 		for(char x : b.toCharArray()) {
-			bm.put(x, bm.getOrDefault(x, 0)+1); 
+			bm.put(x, bm.getOrDefault(x, 0)+1);
 		}
 		
 	}
