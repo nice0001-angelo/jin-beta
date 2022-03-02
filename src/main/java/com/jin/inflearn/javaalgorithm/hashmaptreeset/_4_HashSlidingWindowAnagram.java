@@ -65,7 +65,7 @@ public class _4_HashSlidingWindowAnagram {
 		
 		int lt = 0;
 		
-		for(int rt=b.length()-1; rt<am.size(); rt++) {
+		for(int rt=b.length()-1; rt<a.length(); rt++) {
 			
 		}
 	}
