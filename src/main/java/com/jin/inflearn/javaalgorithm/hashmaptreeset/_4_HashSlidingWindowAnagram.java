@@ -59,5 +59,8 @@ public class _4_HashSlidingWindowAnagram {
 			bm.put(x, bm.getOrDefault(x, 0)+1);
 		}
 		
+		for(int i=0; i<b.length()-1; i++) {
+			am.put(a.charAt(i), am.getOrDefault(a.charAt(i), 0)+1);
+		}
 	}
 }
