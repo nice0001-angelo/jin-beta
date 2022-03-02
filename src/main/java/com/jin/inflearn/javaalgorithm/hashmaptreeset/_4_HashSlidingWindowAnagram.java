@@ -52,10 +52,12 @@ public class _4_HashSlidingWindowAnagram {
 		//From here I made the code by myself
 		int answer = 0;
 		
-		HashMap<String, Integer> am = new HashMap<String, Integer>();
-		HashMap<String, Integer> bm = new HashMap<String, Integer>();
+		HashMap<Character, Integer> am = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> bm = new HashMap<Character, Integer>();
 		
-		
+		for(char x : b.toCharArray()) {
+			bm.put(x, bm.getOrDefault(x, 0)+1); 
+		}
 		
 	}
 }
