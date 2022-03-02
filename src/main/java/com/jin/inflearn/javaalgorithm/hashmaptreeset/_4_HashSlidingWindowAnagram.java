@@ -52,5 +52,10 @@ public class _4_HashSlidingWindowAnagram {
 		//From here I made the code by myself
 		int answer = 0;
 		
+		HashMap<String, Integer> am = new HashMap<String, Integer>();
+		HashMap<String, Integer> bm = new HashMap<String, Integer>();
+		
+		
+		
 	}
 }
