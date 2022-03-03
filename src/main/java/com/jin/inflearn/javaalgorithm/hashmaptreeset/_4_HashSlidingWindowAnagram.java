@@ -55,14 +55,17 @@ public class _4_HashSlidingWindowAnagram {
 		HashMap<Character, Integer> am = new HashMap<Character, Integer>();
 		HashMap<Character, Integer> bm = new HashMap<Character, Integer>();
 	
-		for(int i=0; i<b.length()-1; i++) {
+		//Put into the am using the String a (array from 0 to b-1
+		for(int i = 0; i<b.length()-1; i++) {
 			am.put(a.charAt(i), am.getOrDefault(a.charAt(i), 0)+1);
 		}
 		
+		//Put into the bm using the String b
 		for(char x : b.toCharArray()) {
 			bm.put(x, bm.getOrDefault(x, 0)+1);
 		}
 		
+		//Left point
 		int lt = 0;
 		
 		for(int rt=b.length()-1; rt<a.length(); rt++) {
