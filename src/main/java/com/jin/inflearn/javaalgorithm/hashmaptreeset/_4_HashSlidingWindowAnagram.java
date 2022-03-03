@@ -68,8 +68,20 @@ public class _4_HashSlidingWindowAnagram {
 		//Left point
 		int lt = 0;
 		
+		//rt will shift from length of b-1
 		for(int rt=b.length()-1; rt<a.length(); rt++) {
-			System.out.println();
+			
+			//rt의 값을 am 넣기
+			am.put(a.charAt(rt), am.getOrDefault(a.charAt(rt), 0)+1);
+			
+			//값 비교하기
+			if(am.equals(bm)) answer++;
+			
+			//lt 값의 value -1
+			am.put(a.charAt(lt), am.get(a.charAt(lt))-1);
+			
+			
+			
 			
 		}
 	}
