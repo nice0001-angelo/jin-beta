@@ -13,6 +13,10 @@ public class _4_HashSlidingWindowAnagram {
 
 	/**
 	 * @param args
+	 * Instruction: 7 4 (총 매출기간이 7일이고 그중에서 4일간의 연속된 일자의 매출액의 종류를 구하시오)
+	 * Input: bacaAacbaa abca
+	 * Output: 3 4 4 3
+	 * SlidingWindow에 대해서 사전 지식 있어야 함
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -25,30 +29,7 @@ public class _4_HashSlidingWindowAnagram {
 	}
 	
 	public int solution(String a, String b) {
-//		
-//		int answer = 0;
-//		
-//		HashMap<Character, Integer> am = new HashMap<>();
-//		HashMap<Character, Integer> bm = new HashMap<>();
-//		
-//		for(char x : b.toCharArray()) bm.put(x, bm.getOrDefault(x, 0)+1);
-//		
-//		for(int i=0; i<b.length()-1; i++) am.put(a.charAt(i), am.getOrDefault(a.charAt(i), 0)+1);
-//		
-//		int lt=0;
-//		
-//		for(int rt=b.length()-1; rt<a.length(); rt++) {
-//			
-//			am.put(a.charAt(rt), am.getOrDefault(a.charAt(rt), 0)+1);
-//			
-//			if(am.equals(bm)) answer++;
-//			
-//			am.put(a.charAt(lt), am.get(a.charAt(lt)-1));
-//			
-//			lt++;
-//		}
-//		return answer;
-		
+
 		//From here I made the code by myself
 		int answer = 0;
 		
@@ -80,9 +61,12 @@ public class _4_HashSlidingWindowAnagram {
 			//lt 값의 value -1
 			am.put(a.charAt(lt), am.get(a.charAt(lt))-1);
 			
+			//제일 왼쪽의 값이 0 이면 삭제
+			if(am.get(a.charAt(lt))==0) am.remove(a.charAt(lt));
 			
-			
-			
+			//다음 턴을 위해서 lt값 증가 
+			lt++;
 		}
+		return answer;
 	}
 }
