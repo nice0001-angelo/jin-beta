@@ -25,7 +25,7 @@ public class _4_HashSlidingWindowAnagram {
 		Scanner kb = new Scanner(System.in);
 		String a = kb.next();
 		String b = kb.next();
-		System.out.println(T.solution(a, b));
+		System.out.println("The Answers are ===> "+T.solution(a, b));
 	}
 	
 	public int solution(String a, String b) {
