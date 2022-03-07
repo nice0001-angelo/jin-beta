@@ -21,6 +21,7 @@ public class _5_BigNumberK {
 		_5_BigNumberK T = new _5_BigNumberK();
 		Scanner kb = new Scanner(System.in);
 		int a = kb.nextInt();
+		T.solution()
 
 	}
 	
