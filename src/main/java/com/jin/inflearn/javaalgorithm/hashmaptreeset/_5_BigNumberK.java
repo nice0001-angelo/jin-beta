@@ -18,8 +18,18 @@ public class _5_BigNumberK {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Scanner tb = new Scanner(file.in);
+		_5_BigNumberK T = new _5_BigNumberK();
+		Scanner kb = new Scanner(System.in);
+		int a = kb.nextInt();
 
+	}
+	
+	
+	public int solution() {
+		int answer;
+		
+		return answer;
+		
 	}
 
 }
