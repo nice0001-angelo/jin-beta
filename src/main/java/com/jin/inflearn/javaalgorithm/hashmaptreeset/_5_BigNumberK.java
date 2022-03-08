@@ -24,13 +24,19 @@ public class _5_BigNumberK {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		_5_BigNumberK T = new _5_BigNumberK();
+		
 		Scanner kb = new Scanner(System.in);
+		
 		int n = kb.nextInt(); // 총 숫자 갯수
 		int k = kb.nextInt(); // 합을 구해야하는 숫자 갯수
-		int[] arr = new int[n];
+		
+		int[] arr = new int[n]; //실제 숫자 array 선언
+		
+		//Array 입력
 		for(int i=0; i<n; i++) {
-			arr[i] = 
+			arr[i] = kb.nextInt();
 		}
 		T.solution();
 
