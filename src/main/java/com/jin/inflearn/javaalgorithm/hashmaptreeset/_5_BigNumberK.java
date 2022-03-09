@@ -38,13 +38,13 @@ public class _5_BigNumberK {
 		for(int i=0; i<n; i++) {
 			arr[i] = kb.nextInt();
 		}
-		T.solution();
+		T.solution(n,k,arr);
 
 	}
 	
 	
-	public int solution(int arr[], int n,  int k) {
-		int answer;
+	public int solution(int n,  int k, int arr[]) {
+		int answer = 0;
 		
 		return answer;
 		
