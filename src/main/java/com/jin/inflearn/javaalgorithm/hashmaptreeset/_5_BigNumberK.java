@@ -45,7 +45,7 @@ public class _5_BigNumberK {
 	
 	public int solution(int n,  int k, int arr[]) {
 		int answer = 0;
-		
+		System.out.println();
 		return answer;
 		
 	}
