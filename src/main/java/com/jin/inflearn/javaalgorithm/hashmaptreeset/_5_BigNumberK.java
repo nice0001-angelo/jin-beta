@@ -45,6 +45,7 @@ public class _5_BigNumberK {
 	
 	public int solution(int n,  int k, int arr[]) {
 		int answer = 0;
+		TreeSet<Integer> Tset = new TreeSet<Integer>(Collections.reverseOrder());
 		System.out.println();
 		System.out.println();
 		return answer;
