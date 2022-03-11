@@ -11,6 +11,7 @@ import inflearn.springcorebasic.hello.core.member.*;
  */
 public interface DiscountPolicy {
 	
-	int discount(Member member);
+	//return 할인 대상 금액
+	int discount(Member member, int price);
 
 }
