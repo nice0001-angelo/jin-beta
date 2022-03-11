@@ -1,12 +1,8 @@
-/**
- * 
- */
 package com.jin.inflearn.springcorebasic.hello.core.member;
 
-/**
- * @author njh
- *
- */
-public class Grade {
+public enum Grade {
+	
+	BASIC,
+	VIP
 
 }
