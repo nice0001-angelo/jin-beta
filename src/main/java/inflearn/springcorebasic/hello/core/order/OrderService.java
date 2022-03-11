@@ -8,5 +8,5 @@ package inflearn.springcorebasic.hello.core.order;
  *
  */
 public interface OrderService {
-	Order createOrder(Long memberId, String itemName, int itemPrice, int discountPrice);
+	Order createOrder(Long memberId, String itemName, int itemPrice);
 }

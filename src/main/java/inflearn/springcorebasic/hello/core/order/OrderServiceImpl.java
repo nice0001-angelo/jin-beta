@@ -16,8 +16,11 @@ public class OrderServiceImpl implements OrderService{
 	private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
 	
 	@Override
-	public Order createOrder(Long memberId, String itemName, int itemPrice, int discountPrice) {
-		// TODO Auto-generated method stub
+	public Order createOrder(Long memberId, String itemName, int itemPrice) {
+		
+		Member member = memberRepository.findById(memberId);
+		int discountPrice = discountPolicy.discount(member, itemPrice);
+		
 		return null;
 	}
 }
