@@ -10,13 +10,14 @@ import inflearn.springcorebasic.hello.core.member.*;
  *
  */
 public class RateDicountPolicy implements DiscountPolicy{
+	
+	private int discountPercent = 10;
 
 	@Override
 	public int discount(Member member, int price) {
-		// TODO Auto-generated method stub
+		if(member.getGrade() == Grade.VIP) {
+			
+		}
 		return 0;
 	}
-	
-	
-
 }
