@@ -5,6 +5,7 @@ package inflearn.springcorebasic.hello.core.order;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
+import org.springframework.boot.test.context.*;
 
 import inflearn.springcorebasic.hello.core.member.*;
 
@@ -12,6 +13,7 @@ import inflearn.springcorebasic.hello.core.member.*;
  * @author njh
  *
  */
+@SpringBootTest
 public class OrderServiceTest {
 	
 	MemberService memberService = new MemberServiceImpl();
