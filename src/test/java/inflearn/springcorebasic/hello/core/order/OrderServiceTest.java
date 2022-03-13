@@ -13,7 +13,6 @@ import inflearn.springcorebasic.hello.core.member.*;
  * @author njh
  *
  */
-@SpringBootTest
 public class OrderServiceTest {
 	
 	MemberService memberService = new MemberServiceImpl();
