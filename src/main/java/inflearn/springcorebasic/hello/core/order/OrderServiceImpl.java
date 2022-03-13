@@ -40,7 +40,7 @@ public class OrderServiceImpl implements OrderService{
 //	private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
 //	private final DiscountPolicy discountPolicy = new RateDicountPolicy();
 //  해결방안: 이 문제를 해결하려면 누군가가 클라이언트 OrderServiceImpl에 	discountPolicy 구현 객체를 대신 생성하고 주입해줘야 한다
-	private DiscountPolicy discountPolicy; // 이렇게만 해두면 Nullpoint Exception 발생한다
+	private DiscountPolicy discountPolicy; // 이렇게만 해두면 DIP는 지켰으나 Nullpoint Exception 발생한다
 	
 	@Override
 	public Order createOrder(Long memberId, String itemName, int itemPrice) {
