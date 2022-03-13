@@ -13,7 +13,8 @@ import inflearn.springcorebasic.hello.core.member.*;
 public class OrderServiceImpl implements OrderService{
 
 	private final MemberRepository memberRepository = new MemoryMemberRepository();
-	private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+//	private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
+	private final DiscountPolicy discountPolicy = new RateDicountPolicy(); //DIP 위배 구현체에도 의존하고 있다
 	
 	@Override
 	public Order createOrder(Long memberId, String itemName, int itemPrice) {
