@@ -16,8 +16,8 @@ public class OrderApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		MemberService memberService = new MemberServiceImpl();
-		OrderService orderService = new OrderServiceImpl();
+		MemberService memberService = new MemberServiceImpl(null);
+		OrderService orderService = new OrderServiceImpl(null,null);
 		
 		Long memberId = 1L;
 		
