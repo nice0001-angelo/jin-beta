@@ -6,6 +6,8 @@ package inflearn.springcorebasic.hello.core.member;
 /**
  * @author njh
  *
+ *< 멤버 객체>
+ *
  */
 public class Member {
 	

@@ -6,6 +6,8 @@ package inflearn.springcorebasic.hello.core.member;
 /**
  * @author njh
  *
+ *<맴버 서비스 구현체>
+ *
  */
 public class MemberServiceImpl implements MemberService{
 

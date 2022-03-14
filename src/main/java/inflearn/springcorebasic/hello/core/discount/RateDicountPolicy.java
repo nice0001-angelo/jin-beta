@@ -8,6 +8,8 @@ import inflearn.springcorebasic.hello.core.member.*;
 /**
  * @author njh
  *
+ *<정률 디스카운트 구현체>
+ *
  */
 public class RateDicountPolicy implements DiscountPolicy{
 	

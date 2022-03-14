@@ -8,6 +8,8 @@ import java.util.*;
 /**
  * @author njh
  *
+ *<매모리 멤버 레파지토리>
+ *
  */
 public class MemoryMemberRepository implements MemberRepository{
 

@@ -9,6 +9,7 @@ import inflearn.springcorebasic.hello.core.member.*;
 /**
  * @author njh
 
+<주문 구현체>
  *
 DIP : 의존 역전 원칙 
 

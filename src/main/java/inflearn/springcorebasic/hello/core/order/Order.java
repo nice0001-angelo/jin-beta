@@ -6,6 +6,7 @@ package inflearn.springcorebasic.hello.core.order;
 /**
  * @author njh
  *
+ * <주문 객체>
  */
 public class Order {
 	
