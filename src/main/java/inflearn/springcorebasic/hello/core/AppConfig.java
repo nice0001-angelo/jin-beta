@@ -11,6 +11,15 @@ import inflearn.springcorebasic.hello.core.order.*;
  * @author njh
  * DIP, OCP를 해결하기 위한 클래스
  * 
+ * 
+ * AppConfig는애플리케이션의실제동작에필요한구현객체를생성한다.
+	MemberServiceImpl MemoryMemberRepository OrderServiceImpl
+	FixDiscountPolicy
+   
+   AppConfig는생성한객체인스턴스의참조(레퍼런스)를생성자를통해서주입(연결)해준다.
+	MemberServiceImpl   MemoryMemberRepository
+	OrderServiceImpl   MemoryMemberRepository, FixDiscountPolicy
+
  */
 public class AppConfig {
 	
