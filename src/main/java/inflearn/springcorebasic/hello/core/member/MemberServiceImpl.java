@@ -12,7 +12,7 @@ package inflearn.springcorebasic.hello.core.member;
 public class MemberServiceImpl implements MemberService{
 
 	//MemberRepository memberRepository = new MemoryMemberRepository();
-	MemberRepository memberRepository;
+	private final MemberRepository memberRepository;
 	
 	
 	//AppConfig를 통해서 접근 가능하도록 생성자를 만들었음
