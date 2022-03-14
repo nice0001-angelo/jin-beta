@@ -16,7 +16,10 @@ public class MemberApp {
 	 */
 	public static void main(String[] args) {
 		
-		MemberService memberService = new MemberServiceImpl();
+		//MemberService memberService = new MemberServiceImpl(); AppConfig 에서 담당하도록 변경함
+		AppConfig appConfig = new AppConfig();
+		
+		MemberService memberService = appConfig.memberService();
 		
 		Member member = new Member(1L, "memberA", Grade.VIP);
 		
