@@ -23,12 +23,14 @@ import inflearn.springcorebasic.hello.core.order.*;
  */
 public class AppConfig {
 	
-	//구현체에서 직접 인터페이스에 접근하지 않게 하자(MemberService에 MemberServiceImpl이 접근할때 생성자를 통해서 접근하도록 세팅해 줌
+	//구현체는 해당 인터페이스에만 접근하고 다른 구현체에 접근하지 않게 하자 즉 MemberServiceImpl 에서는 memberService 만 신경쓰게 하고
+	//다른 구현체와의 관계는 AppConfig에서 접근하도록(생성자 이용:MemberServiceImpl에 필드 및 생성자를 만들어서 관계를 맺게 한다)
 	public MemberService memberService() {
 		return new MemberServiceImpl(new MemoryMemberRepository());
 	}
 
-	//구현체에서 직접 인터페이스에 접근하지 않게 하자(OrderService에 OrderServiceImpl이 접근할때 생성자를 통해서 접근하도록 세팅해 줌
+	//구현체에서 해당 인터페이스에만 접근하고 다른 구현체에 접근하지 않게 하자 즉 OrderServiceImpl는 해당 인터페이스인 orderService 만 접근하게 하고
+	//다른 구현체와의 관계는 AppConfig에서 접근하도록(생성자 이용: OrderServiceImpl에 필드 및 생성자를 만들어서 관계를 맺게 한다)
 	public OrderService orderService() {
 		return new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
 	}
