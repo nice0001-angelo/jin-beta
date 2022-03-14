@@ -34,7 +34,7 @@ OCP - 개방 폐쇄 원칙
 
 public class OrderServiceImpl implements OrderService{
 
-	private final MemberRepository memberRepository = new MemoryMemberRepository();
+	private final MemberRepository memberRepository;
 	
 	//FixDiscountPolicy를 RateDicountPolicy로 변경하려면 OrderServiceImpl의 코드를 변경해야 한다. OCP 위반
 	//역할과 구현을 구분해두면 휘발유차(구현체)를 전기차(구현체)로 바꾸어도 자동차운전(역할)을 바꾸면 안된다.
@@ -43,6 +43,15 @@ public class OrderServiceImpl implements OrderService{
 //  해결방안: 이 문제를 해결하려면 누군가가 클라이언트 OrderServiceImpl에 	discountPolicy 구현 객체를 대신 생성하고 주입해줘야 한다
 	private DiscountPolicy discountPolicy; // 이렇게만 해두면 DIP는 지켰으나 Nullpoint Exception 발생한다
 	
+	
+	//AppConfig를 통해서 접근하도록 생성자를 만든다: OCP, DIP를 위배 하지 않기 위해서 만든다
+	public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+		super();
+		this.memberRepository = memberRepository;
+		this.discountPolicy = discountPolicy;
+	}
+
+
 	@Override
 	public Order createOrder(Long memberId, String itemName, int itemPrice) {
 		

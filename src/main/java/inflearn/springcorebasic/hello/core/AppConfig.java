@@ -3,7 +3,9 @@
  */
 package inflearn.springcorebasic.hello.core;
 
+import inflearn.springcorebasic.hello.core.discount.*;
 import inflearn.springcorebasic.hello.core.member.*;
+import inflearn.springcorebasic.hello.core.order.*;
 
 /**
  * @author njh
@@ -12,7 +14,10 @@ import inflearn.springcorebasic.hello.core.member.*;
 public class AppConfig {
 	
 	public MemberService memberService() {
-		return MemberServiceImpl(new MemoryMemberRepository());
+		return new MemberServiceImpl(new MemoryMemberRepository());
 	}
 
+	public OrderService orderService() {
+		return new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
+	}
 }
