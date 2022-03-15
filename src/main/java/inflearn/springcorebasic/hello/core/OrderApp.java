@@ -21,6 +21,9 @@ public class OrderApp {
 		
 		AppConfig appConfig = new AppConfig();
 		
+		MemberService memberService = appConfig.memberService();
+		
+		OrderService orderService = appConfig.orderService();
 		
 		Long memberId = 1L;
 		
@@ -31,7 +34,8 @@ public class OrderApp {
 		Order order = orderService.createOrder(memberId, "itemA", 10000);
 		
 		System.out.println("Order ==> "+order);
-		System.out.println("calculatePrice ==> "+order.calculatePrice());
+		System.out.println("member information ==>"+member.toString());
+		System.out.println("calculatePrice(itemPrice - discountPrice) ==> "+order.calculatePrice());
 
 	}
 
