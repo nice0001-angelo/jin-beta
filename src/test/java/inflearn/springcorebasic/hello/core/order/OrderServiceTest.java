@@ -7,6 +7,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.*;
 
+import inflearn.springcorebasic.hello.core.*;
 import inflearn.springcorebasic.hello.core.member.*;
 
 /**
@@ -15,8 +16,23 @@ import inflearn.springcorebasic.hello.core.member.*;
  */
 public class OrderServiceTest {
 	
-	MemberService memberService = new MemberServiceImpl();
-	OrderService orderService = new OrderServiceImpl();
+//	MemberService memberService = new MemberServiceImpl();
+//	OrderService orderService = new OrderServiceImpl();
+	
+//	AppConfig appConfig = new AppConfig();
+//	
+//	MemberService memberService = appConfig.memberService();
+//	OrderService orderService = appConfig.orderService();
+	
+	MemberService memberService;
+	OrderService orderService;
+	
+	@BeforeEach
+	public void BeforeEach() {
+		AppConfig appConfig = new AppConfig();
+		memberService = appConfig.memberService();
+		orderService = appConfig.orderService();
+	}
 	
 	@Test
 	void creatOrder() {
