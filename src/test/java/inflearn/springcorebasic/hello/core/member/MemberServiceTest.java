@@ -6,6 +6,8 @@ package inflearn.springcorebasic.hello.core.member;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
 
+import inflearn.springcorebasic.hello.core.*;
+
 /**
  * @author njh
  *
@@ -14,7 +16,9 @@ public class MemberServiceTest {
 	
 	//MemberService memberService = new MemberServiceImpl();
 	
-	MemberService memberService;
+	AppConfig appConfig = new AppConfig();
+	
+	MemberService memberService = appConfig.memberService();
 	
 	@Test
 	void join() {
