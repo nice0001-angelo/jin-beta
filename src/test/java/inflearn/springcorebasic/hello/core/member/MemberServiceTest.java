@@ -16,9 +16,17 @@ public class MemberServiceTest {
 	
 	//MemberService memberService = new MemberServiceImpl();
 	
-	AppConfig appConfig = new AppConfig();
+//	AppConfig appConfig = new AppConfig();
+//	
+//	MemberService memberService = appConfig.memberService();
 	
-	MemberService memberService = appConfig.memberService();
+	MemberService memberService;
+	
+	@BeforeEach
+	public void beforeEach() {
+		AppConfig appConfig = new AppConfig();
+		appConfig.memberService();
+	}
 	
 	@Test
 	void join() {
