@@ -19,6 +19,9 @@ import inflearn.springcorebasic.hello.core.order.*;
    AppConfig는생성한객체인스턴스의참조(레퍼런스)를생성자를통해서주입(연결)해준다.
 	MemberServiceImpl   MemoryMemberRepository
 	OrderServiceImpl   MemoryMemberRepository, FixDiscountPolicy
+	
+	
+	
 
  */
 public class AppConfig {
@@ -33,5 +36,9 @@ public class AppConfig {
 	//다른 구현체와의 관계는 AppConfig에서 접근하도록(생성자 이용: OrderServiceImpl에 필드 및 생성자를 만들어서 관계를 맺게 한다)
 	public OrderService orderService() {
 		return new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
+	}
+	
+	public MemberRepository memberRepository() {
+		return new MemoryMemberRepository();
 	}
 }
