@@ -3,6 +3,7 @@
  */
 package inflearn.springcorebasic.hello.core;
 
+import inflearn.springcorebasic.hello.core.discount.*;
 import inflearn.springcorebasic.hello.core.member.*;
 import inflearn.springcorebasic.hello.core.order.*;
 
@@ -25,6 +26,8 @@ public class OrderApp {
 		
 		OrderService orderService = appConfig.orderService();
 		
+		DiscountPolicy discountPolicy = appConfig.discountPolicy();
+		
 		Long memberId = 1L;
 		
 		Member member = new Member(memberId, "memberA", Grade.VIP);
@@ -35,6 +38,7 @@ public class OrderApp {
 		
 		System.out.println("Order ==> "+order);
 		System.out.println("member information ==>"+member.toString());
+		System.out.println("Discount Policy =====>"+discountPolicy.getClass());
 		System.out.println("calculatePrice(itemPrice - discountPrice) ==> "+order.calculatePrice());
 
 	}
