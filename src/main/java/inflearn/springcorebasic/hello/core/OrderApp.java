@@ -40,6 +40,7 @@ public class OrderApp {
 		System.out.println("member information ==>"+member.toString());
 		System.out.println("Discount Policy =====>"+discountPolicy.getClass());
 		System.out.println("calculatePrice(itemPrice - discountPrice) ==> "+order.calculatePrice());
+		System.out.println();
 
 	}
 
