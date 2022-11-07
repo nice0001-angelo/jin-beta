@@ -38,7 +38,7 @@ public class _5_BigNumberK {
 		for(int i=0; i<n; i++) {
 			arr[i] = kb.nextInt();
 		}
-		T.solution(n,k,arr);
+		System.out.println(T.solution(n,k,arr));
 
 	}
 	

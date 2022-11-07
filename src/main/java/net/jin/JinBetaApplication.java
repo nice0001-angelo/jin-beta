@@ -32,9 +32,9 @@ import net.jin.utils.Board;
 import net.jin.utils.Car;
 import net.jin.utils.Solution;
 import net.jin.vehicle.service.Vehicle;
-import net.jin.vehicle.service.impl.Bus;
-import net.jin.vehicle.service.impl.Driver;
-import net.jin.vehicle.service.impl.Taxi;
+//import net.jin.vehicle.service.impl.Bus;
+//import net.jin.vehicle.service.impl.Driver;
+//import net.jin.vehicle.service.impl.Taxi;
 
 @SpringBootApplication
 public class JinBetaApplication {
@@ -46,12 +46,12 @@ public class JinBetaApplication {
 		 *************************************/
 		System.out.println();
 		System.out.println("*************Start of Interface fareCheck************ ");
-		Vehicle vehicle = new Bus();
-		vehicle.run();
+//		Vehicle vehicle = new Bus();
+//		vehicle.run();
 //		vehicle.checkFare();
 		
-		Bus busVehicle = (Bus) vehicle;
-		busVehicle.checkFare();
+//		Bus busVehicle = (Bus) vehicle;
+//		busVehicle.checkFare();
 		
 		System.out.println();
 		System.out.println("*************End of Interfae fareCheck*************");
@@ -59,12 +59,12 @@ public class JinBetaApplication {
 		
 		System.out.println();
 		System.out.println("*************Start of Interface Vehicle************ ");
-		Driver driver = new Driver();
+//		Driver driver = new Driver();
 		
-		Bus bus = new Bus();
-		Taxi taxi = new Taxi();
+//		Bus bus = new Bus();
+//		Taxi taxi = new Taxi();
 		
-		driver.driver(taxi);
+//		driver.driver(taxi);
 		
 		System.out.println();
 		System.out.println("*************End of Interfae Vehicle*************");
