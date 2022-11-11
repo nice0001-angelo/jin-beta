@@ -31,9 +31,7 @@ public class _5_BigNumberK {
 		
 		int n = kb.nextInt(); // 총 숫자 갯수
 		int k = kb.nextInt(); // 합을 구해야하는 숫자 갯수
-		
 		int[] arr = new int[n]; //실제 숫자 array 선언
-		
 		//Array 입력
 		for(int i=0; i<n; i++) {
 			arr[i] = kb.nextInt();
@@ -44,11 +42,22 @@ public class _5_BigNumberK {
 	
 	
 	public int solution(int n,  int k, int arr[]) {
-		int answer = 0;
+		int answer = -1;
 		TreeSet<Integer> Tset = new TreeSet<Integer>(Collections.reverseOrder());
-		System.out.println();
-		System.out.println();
-
+		for(int i=0; i<n; i++) {
+			for(int j=i+1; j<n; j++) {
+				for(int l=j+1; l<n; l++) {
+					Tset.add(arr[i]+arr[j]+arr[l]);
+				}
+			}
+		}
+		int cnt = 0;
+		for(int x : Tset) {
+			cnt++;
+			if(cnt == k) {
+				return x;	
+			}
+		}
 		return answer;
 		
 	}
